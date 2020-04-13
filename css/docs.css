@@ -1,0 +1,390 @@
+
+/*----------------------------------------------------------------
+
+// Table of contents //
+
+  - General
+  - Banner
+  - Nav
+  - Wedding Block
+  - Family Info 
+  - Wedding Event
+  - Our Story
+  - Attending Info
+  - Galler View
+  - Location Info
+  - Gift View
+  - footer section
+  - Mobile Responsive styles
+
+------------------------------------------------------------------*/
+
+/*---------------------------------------
+   General              
+-----------------------------------------*/
+
+img {max-width:100%; }
+section {padding:66px 0 0 0;}
+.title-main {display:block; text-align:center; }
+.title-main h2 {margin:0 0 22px 0;}
+.title-main p {line-height:30px; font-size:18px; color:#666666; font-weight:500; margin:0px; }
+.title-main .headin-img {display:block; text-align:center; padding:27px 0 0 0;}
+::-webkit-input-placeholder {opacity:1;}
+::-moz-placeholder {opacity:1;}
+:-ms-input-placeholder {opacity:1;}
+:-moz-placeholder {opacity:1;}
+
+/*---------------------------------------
+   Banner              
+-----------------------------------------*/
+
+.banner {background-size:cover; background-position:left top; width:100%; background-repeat:no-repeat; position:relative; height:800px; }
+.banner .banner-text {position:absolute; bottom:50px; right:46px; width:700px; min-height:700px; background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/banner-textBg.png) no-repeat top left; text-align:center; background-size:100% auto;}
+.banner .logo {position:absolute; top:50px; left:50px;}
+.banner .banner-text .title {display:block; padding:172px 0 0 0; }
+.banner .banner-text .title h1 {display:inline-block; width:100%; max-width:456px; line-height:60px; font-size:70px; color:#d81b60; margin:0px; font-weight:normal;}
+.banner .banner-text .title h1 span {display:block; line-height:52px; }
+.banner .banner-text .line {display:block; text-align:center; padding:16px 0 14px 0;}
+.banner .banner-text .date {display:block; text-align:center; line-height:50px; font-size:36px; color:#000000; font-family: 'Redressed', cursive;}
+.banner .banner-text .statest {display:block; line-height:32px; padding:17px 0 0 0; font-size:24px; color:#000000; font-weight:500; }
+
+/*---------------------------------------
+   Nav              
+-----------------------------------------*/
+
+#nav-main {background:#d81b60; padding:22px 0 17px 0; position:absolute; top:0px; left:0px; width:100%; z-index:9999;}
+#nav-main.fiexd {position:fixed; }
+#nav-main ul li a .fa {padding:0 0 0 14px; font-size:14px;}
+#nav-main ul li.active a .fa {color:#fff;}
+#nav-main ul li a:hover .fa {color:#fff;}
+#nav-main ul li:last-child .fa {display:none;}
+
+/*---------------------------------------
+   Wedding Block              
+-----------------------------------------*/
+
+.wedding-block {padding-bottom:80px; position:relative; padding-top:144px; }
+.wedding-block .title-main {padding-bottom:70px;}
+.wedding-block .wedding-box {display:block; width:100%; text-align:center; }
+.wedding-block .wedding-box .img {width:100%; max-width:370px; border-radius:10px; overflow:hidden; display:inline-block;}
+.wedding-block .wedding-box .name {display:block; text-align:center; line-height:44px; padding:54px 0 20px 0; font-size:30px; color:#000000; font-weight:bold; letter-spacing:1px; }
+.wedding-block .wedding-box p {display:block; text-align:center; line-height:30px; font-size:18px; color:#666666; margin:0px; }
+.wedding-block .wedding-box .social-share {display:block; padding:20px 0 0 0; text-align:center;}
+.wedding-block .wedding-box .social-share ul {padding:0px; margin:0px; display:inline-block; width:auto; }
+.wedding-block .wedding-box .social-share ul li {list-style:none; padding:0 5px; float:left; }
+.wedding-block .wedding-box .social-share ul li a {width:36px; height:36px; background:#efefef; border-radius:50%; display:block;text-decoration:none;color:#d81b60;}
+.wedding-block .wedding-box .social-share ul li a:hover {background:#d81b60; color:#fff}
+.wedding-block .wedding-box .social-share ul li a .fa {display:block; text-align:center; line-height:36px;  font-size:16px; }
+.wedding-block .wedding-member {position:relative; }
+.wedding-member #countdowncont {position:absolute; top:0px; left:50%; margin-left:-44px; }
+.wedding-member #countdowncont ul {padding:0px; margin:0px; float:left; position:relative; }
+.wedding-member #countdowncont ul:after {position:absolute; top:0px; left:50%; margin-left:-2px; width:4px; background:#d81b60; content:""; height:100%;}
+.wedding-member #countdowncont ul li {list-style:none; width:88px; padding:9px 0 18px 0; text-align:center; margin-bottom:22px; background:#d81b60; border-radius:5px; position:relative; z-index:2;}
+.wedding-member #countdowncont ul li:last-child {margin:0px; }
+.wedding-member #countdowncont ul li span {display:block; line-height:34px; font-size:30px; color:#ffffff; text-align:center; font-family: 'Redressed', cursive; padding-bottom:7px; }
+.wedding-member #countdowncont ul li p {display:block; line-height:20px; font-size:14px; color:#ffffff; font-weight:500; margin:0px; text-transform:uppercase; }
+
+/*---------------------------------------
+   Family Info              
+-----------------------------------------*/
+
+.family-info {display:block; padding:0px;  }
+.family-info .main-member {background-size:cover; background-position:50% 50%; background-attachment:fixed; background-repeat:no-repeat; padding:110px 0 104px 0; position:relative;}
+.family-info .main-member:after {position:absolute; top:0px; left:0px; width:100%; height:100%; background:rgba(0,0,0,0.5); content:"";}
+.family-info .main-member .container {position:relative; z-index:2; }
+.family-info .main-member h2 {display:block; line-height:86px; text-align:center; color:#fff; padding-bottom:18px; }
+.family-info .main-member span {display:block; text-align:center; line-height:32px; font-size:18px; font-weight:600; color:#ffffff; }
+.family-info .family-view {padding-bottom:70px; }
+.family-info .family-view .family-box {display:block; padding:60px 0 16px 0; text-align:center; }
+.family-info .family-view .family-box .img {width:100%; max-width:370px; border:solid 5px #e5e5e5; border-radius:50%; overflow:hidden; display:inline-block;}
+.family-info .family-view .family-box .name {display:block; text-align:center; padding:28px 0 0 0; font-size:18px; color:#000000; font-weight:600; line-height:30px;}
+.family-info .family-view .family-box p {display:block; text-align:center; font-size:18px; color:#666666; line-height:30px; margin:0px; }
+.family-info .family-view .family-box.small .img {max-width:234px;}
+.family-info .family-view .family-box.small .name {padding:33px 0 0 0;}
+
+/*---------------------------------------
+   Wedding Event              
+-----------------------------------------*/
+
+.wedding-event {background:#d81b60; padding-bottom:40px; }
+.wedding-event .title-main {padding-bottom:67px;}
+.wedding-event .title-main h2 {color:#fff; }
+.wedding-event .title-main p {color:#fff; }
+.wedding-event .event-img {width:100%; max-width:637px; position:relative; }
+.wedding-event .event-img .heart-img {position:absolute; top:0px; left:0px; width:100%; }
+.wedding-event .event-info {display:block; }
+.wedding-event .event-info h3 {display:block; line-height:42px; font-size:30px; color:#ffffff; font-weight:500; padding:20px 0 16px 0; font-family: "Raleway",sans-serif; margin:0px; background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/event-lineBg.png) repeat-x bottom left; cursor:pointer; }
+.wedding-event .event-info h3 .icon {float:right; width:23px; height:42px; background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/plush-icon.png) no-repeat left center; }
+.wedding-event .event-info .info-slide {display:block; padding:10px 0 13px 0; }
+.wedding-event .event-info .info-slide .info-box {display:inline-block; padding:0 27px 0 0;line-height:34px; font-size:14px; font-weight:500; color:#27e49e; }
+.wedding-event .event-info .info-slide .info-box .fa {padding:0 10px 0 0; font-size:16px; }
+.wedding-event .event-info p {font-size:14px; color:#fff; line-height:24px; margin:0 0 30px 0;}
+.wedding-event .event-info .img {display:block; padding-bottom:7px;}
+.wedding-event .event-content {display:none;}
+.wedding-event .event-slide:first-child .event-content {display:block;}
+.wedding-event .event-slide.active h3 .icon {background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/minus-icon.png) no-repeat left center; }
+
+/*---------------------------------------
+   Our Story              
+-----------------------------------------*/
+
+.our-story {padding-bottom:80px;}
+.our-story .title-main {padding-bottom:67px; }
+.our-story .story-tree {position:relative; padding:50px 0; width:100%; display:inline-block; }
+.our-story .story-tree:after {position:absolute; top:0px; left:50%; height:100%; background:#d91a61; width:2px; margin-left:-1px; content:""; } 
+.our-story .story-tree .story-box:first-child {margin-top:0px;}
+.our-story .story-tree .story-box {width:44.10%; float:left; background:#efefef; position:relative; margin-top:-40px; }
+.our-story .story-tree .story-box:after {border-top: 12px solid transparent;border-bottom: 12px solid transparent; border-left: 12px solid #efefef; position:absolute; top:16px; right:-12px; content:""; }
+.our-story .story-tree .story-box:before {position:absolute; top:11px; right:-87px; width:34px; height:34px; background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/round-img.png) no-repeat top left; content:""; z-index:2;}
+.our-story .story-tree .story-box .story {padding:12px 22px 18px 46.31%; }
+.our-story .story-tree .story-box .img {position:absolute; top:0px; width:42.63%; height:100%; background-size:cover; background-position:50% 50%; background-repeat:no-repeat; }
+.our-story .story-tree .story-box .story-title  {display:block; line-height:26px; font-size:18px; color:#252222; font-weight:500; padding-bottom:8px; }
+.our-story .story-tree .story-box .story-date {display:block; line-height:30px; font-size:14px; color:#252222; font-weight:500; padding-bottom:6px; }
+.our-story .story-tree .story-box .story-date .fa {padding:0 10px 0 0; color:#d91a61; font-size:18px; }
+.our-story .story-tree .story-box p {display:block; line-height:24px; color:#666666; margin:0px; font-size:14px; }
+.our-story .story-tree .story-box.right {margin-left:30%; float:right; }
+.our-story .story-tree .story-box.right .img {left:auto; right:0px; }
+.our-story .story-tree .story-box.right .story {padding:12px 46.31% 18px 22px; }
+.our-story .story-tree .story-box.right:after { border-right: 12px solid #efefef;  border-left:none; right:auto; left:-12px; }
+.our-story .story-tree .story-box.right:before { left:-86px; right:auto}
+
+/*---------------------------------------
+   Attending Info              
+-----------------------------------------*/
+
+.attending-info {background-size:cover; background-position:50% 50%; background-repeat:no-repeat; position:relative; padding-bottom:80px; background-attachment:fixed;}
+.attending-info:after {position:absolute; top:0px; left:0px; width:100%; height:100%; background:rgba(0,0,0,0.7); content:""; }
+.attending-info .container {z-index:3; position:relative; }
+.attending-info .title-main {padding-bottom:70px;}
+.attending-info .title-main h2,
+.attending-info .title-main p {color:#fff;}
+.attending-info .input-box {position:relative; padding-bottom:30px; }
+.attending-info .input-box .icon {position:absolute; top:0px; left:0px; width:42px; }
+.attending-info .select-box .icon {position:absolute; top:0px; left:0px; width:42px; z-index:9;}
+.attending-info .input-box input {width:100%; border:none; background:#fff; border-radius:10px; height:60px; line-height:26px; padding:12px 20px 12px 43px; font-size:18px; color:#333333; }
+.attending-info .form-error {font-weight:500; color:#f00; font-size:15px; margin:0px; line-height:30px; }
+.attending-info .select-box {padding-bottom:30px; position:relative; }
+.attending-info .input-box textarea {width:100%; border:none; background:#fff; border-radius:10px; height:120px; line-height:26px; padding:12px 20px 12px 43px; font-size:18px; color:#333333; resize:none; }
+.attending-info .input-box.textarea .icon {top:11px; left:15px; }
+.attending-info .submit-slide {display:block; width:100%; text-align:center;}
+.attending-info .submit-slide .submit-btn {display:inline-block; width:100%; max-width:230px; position:relative; }
+.attending-info .submit-slide .submit-btn .icon {position:absolute; top:17px; left:30px; }
+.attending-info .submit-slide .submit-btn .icon .fa {color:#fff; font-size:20px; }
+.attending-info .submit-slide .submit-btn input {background:#d81b60; border-radius:10px; height:60px; border:none; font-size:18px; color:#ffffff; font-weight:500; text-align:center; width:100%; padding:0 0 0 20px;}
+.attending-info .submit-slide .submit-btn input:focus {outline:none; border:none; }
+
+/*---------------------------------------
+   Galler View              
+-----------------------------------------*/
+
+.galler-view  {padding-bottom:50px;}
+.galler-view .title-main {padding-bottom:70px; }
+.galler-view .galler-box {margin-bottom:30px; width:100%; overflow:hidden; }
+.galler-view .galler-box img {width:100%; -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transform:scale(1.2); transform:scale(1.2); -moz-transition:all 1s ease-in-out 0s; -ms-transition:all 1s ease-in-out 0s; -o-transition:all 1s ease-in-out 0s; -webkit-transition:all 1s ease-in-out 0s; transition:all 1s ease-in-out 0s; }
+.galler-view .galler-box:hover img { -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); -webkit-transform:scale(1); transform:scale(1);}
+
+
+/*---------------------------------------
+   Location Info              
+-----------------------------------------*/
+
+.location-info {padding:0px; background:#1f1d3f; display:inline-block; width:100%; position:relative; }
+.location-info .map {float:right; width:50%; height:600px}
+
+.location-info .loction-view {position:absolute; width:50%; left:0px; top:0px; height:100%; }
+.location-info .loction-view .inner-view {position:absolute; top:50%; left:50%; -moz-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); width:100%; max-width:567px; }
+.location-info .title-main {padding-bottom:52px; }
+.location-info .title-main h2,
+.location-info .title-main p {color:#fff;}
+.location-info .loction-view .info-slide {display:block; padding-bottom:14px; text-align:center;}
+.location-info .loction-view .info-slide .info-box {display:inline-block; padding:0 25px 0 0;line-height:34px; font-size:14px; font-weight:500; color:#31aae9; }
+.location-info .loction-view .info-slide .info-box .fa {padding:0 10px 0 0; font-size:16px; }
+.location-info .loction-view p {font-size:14px; color:#f5f5f5; line-height:24px; margin:0; text-align:center;}
+
+/*---------------------------------------
+   Gift View              
+-----------------------------------------*/
+
+.gift-view {padding-bottom:75px; }
+.gift-view .title-main {padding-bottom:90px;}
+.gift-view .gift-logo {text-align:center; padding-bottom:20px; }
+
+/*---------------------------------------
+   Footer              
+-----------------------------------------*/
+
+#footer-template {background:#d81b60; padding:54px 0 59px 0; }
+#footer-template .date {display:block; text-align:center; line-height:42px; font-size:36px; color:#ffffff; font-family: 'Redressed', cursive; }
+#footer-template p {display:block; text-align:center; padding:23px 0 0 0; line-height:22px; font-size:24px; color:#ffffff; font-weight:500; margin:0px; }
+
+/*---------------------------------------
+   Mobile Responsive styles              
+-----------------------------------------*/
+
+.page-main {padding:30px 30px 30px 360px; background:#fff;}
+.left-nav {position:fixed; top: 30px; left: 30px; width: 300px; bottom: 30px;}
+.left-nav:after {position:absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(47,29,72,0.8); content: ""; }
+.left-nav .logo {padding: 60px 50px 80px 50px; position: relative; z-index: 9;}
+.left-nav .nav-list {display: block; position: relative; z-index: 9;}
+.left-nav .nav-list ul {padding: 0px; margin: 0px; }
+.left-nav .nav-list ul li {list-style:none; padding-bottom: 30px; display: block; text-align: center; }
+.left-nav .nav-list ul li a {line-height:32px; font-size: 20px; color: rgba(255,255,255,0.6); text-decoration: none; }
+.left-nav .nav-list ul li a:hover,
+.left-nav .nav-list ul li.active a {color:#fff; }
+
+
+.right-content {background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/home2-rightBg.jpg) repeat top left; width: 100%; padding-bottom: 30px; display: inline-block; }
+.page-main .right-content .right-blcok {display:none; }
+.page-main .right-content .right-blcok.home-view {display:block; }
+.right-content .home-view {padding: 20px 0; }
+.right-content .home-view .top-title {display:block; padding: 130px 0 5px 0; background: url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/home2-headingTop.png) no-repeat center top; text-align: center; font-size: 24px; color: #333333; font-weight: 500; letter-spacing: 13px; text-transform: uppercase; position: relative; }
+.right-content .home-view .top-title:after {position:absolute; bottom: 0px; left: 0px; width: 100%; height: 5px; background: url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/home2-headingBottom.png) no-repeat center bottom; content: "";}
+.right-content .home-view .wedding-name {display:block; padding: 44px 0 63px 0; line-height: 160px; color: #333333; font-size: 150px; text-align: center; font-family: 'Dancing Script', cursive; text-shadow: 4px 4px 4px #fff; }
+.right-content .home-view .icon {display:block; padding: 0px 0 43px 0; text-align: center;}
+.right-content .home-view .date {display:block; line-height: 42px; font-size: 24px; color: #333333; font-weight: 500; text-align: center; }
+
+.right-content .heading-main {display: block; padding: 76px 0 0 0; }
+.right-content .heading-main h2 {display:block; text-align: center; padding-bottom: 93px; background: url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/heading-bg.png) no-repeat center bottom; font-size: 36px; color: #4f292b; font-weight: 500;text-transform: uppercase; font-family: "Raleway",sans-serif; }
+.right-content .wedding-view {display:block; }
+.right-content .wedding-view #countdowncont {padding: 85px 0 0 0; text-align: center;}
+.right-content .wedding-view #countdowncont li {list-style:none; display: inline-block; padding: 0 10px; min-width:228px; position: relative;}
+.right-content .wedding-view #countdowncont li:after {position: absolute; top: 44px; right: 0px; font-size: 24px; font-weight: bold; color: #666666; content: ":"; }
+.right-content .wedding-view #countdowncont li:last-child:after {display: none;}
+.right-content .wedding-view #countdowncont li span {font-size: 72px; color: #333333; line-height: 74px; font-family: 'Redressed', cursive;}
+.right-content .wedding-view #countdowncont li p {display:block; line-height: 36px; margin: 0px; font-size: 24px; color: #666666; font-weight: 500; font-style: italic; }
+.right-content .wedding-view .info-text {padding:105px 0 0 0; text-align: center; }
+.right-content .wedding-view .info-text p {display: inline-block; text-align: center; font-size: 18px; color: #666666; line-height: 30px; margin: 0px; max-width: 770px; width: 100%; }
+.right-content .wedding-view .event-type {padding:103px 0 0 0; }
+.right-content .wedding-view .event-type .event-box {display:block; text-align: center; }
+.right-content .wedding-view .event-type .event-box .icon {display:block; text-align: center; min-height: 60px; }
+.right-content .wedding-view .event-type .event-box h3 {display:block; padding: 11px 0 0 0; font-size: 30px; color: #000000; line-height: 48px; font-weight: 500; text-align: center; margin: 0px; font-family: "Raleway",sans-serif; }
+.right-content .wedding-view .event-type .event-box .date {padding: 9px 0 0 0; text-align: center; line-height: 36px; font-size: 18px; color: #d70060; font-weight: 500; }
+.right-content .wedding-view .event-type .event-box p {font-size:16px; color: #666666; line-height: 28px; margin: 0px; padding: 8px 0 0 0; }
+.right-content .people-view {display:block;}
+.right-content .people-view .tab-content {display: none;}
+.right-content .people-view .tab-content.bride-content {display:block; }
+.right-content .people-view .people-info {padding:82px 0 0 0;}
+.right-content .people-view .people-info ul {padding:0px; margin: 0px; display: block; text-align: center; padding-bottom: 70px; }
+.right-content .people-view .people-info ul li {list-style: none; display: inline-block; padding: 0 8px; }
+.right-content .people-view .people-info ul li a {padding: 0 40px; font-size: 30px; color: #000000; line-height: 60px; border-radius: 30px; background: #fff; text-decoration: none; display: block; border: solid 1px #fff; }
+.right-content .people-view .people-info ul li a:hover,
+.right-content .people-view .people-info ul li.active a{background:#deae5f; border: solid 1px #c79037; box-shadow: 0px 3px 5px #f8cc84 inset; color: #fff;  }
+.right-content .people-view .tab-content .row {margin:0 -5px;}
+.right-content .people-view .tab-content .row .col-sm-3{padding: 0 5px;}
+.right-content .people-view .tab-content .img {border-radius:10px; width: 100%; margin-bottom: 10px; overflow: hidden; position: relative;}
+.right-content .people-view .tab-content .img:after {position:absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(222,174,95,0.8);content:"";transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; opacity: 0;}
+.right-content .people-view .tab-content .img img {width:100%; }
+.right-content .people-view .tab-content .hover-text {position:absolute; top: 50%; left: 0px; width: 100%; transform: translateY(-50%); text-align: center; z-index: 99; transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; opacity: 0;}
+.right-content .people-view .tab-content .hover-text .name {display:block; padding: 14px 0; text-align: center; line-height: 22px; font-size: 16px; color: #ffffff; background: rgba(47,29,72,0.7); margin-bottom: 37px;}
+.right-content .people-view .tab-content .img:hover .hover-text {opacity: 1;}
+.right-content .people-view .tab-content .img:hover:after {opacity: 1;}
+.right-content .people-view .tab-content .hover-text .name span {font-size:14px; display: block;}
+.right-content .people-view .tab-content .hover-text p {display: inline-block; padding: 0 30px; font-size: 14px; line-height: 28px; color: #ffffff; margin: 0px;}
+
+.right-content .story-view .tab-content {padding: 85px 0 0 0; display: none; }
+.right-content .story-view .tab-content.met-content {display:block; }
+.right-content .story-view .tab-content .img {border: solid 8px rgba(255,255,255,0.5); border-radius: 50%; overflow: hidden; width: 100%; max-width: 387px; }
+.right-content .story-view .tab-content .story-info {padding:74px 0 0 0; }
+.right-content .story-view .tab-content .story-info h3 {display:block; line-height: 44px; font-size: 30px; color: #333333; font-weight: 500; margin: 0px; font-family: "Raleway",sans-serif; padding-bottom: 16px; }
+.right-content .story-view .tab-content .story-info .date {display:block; padding: 0 0 12px 0;}
+.right-content .story-view .tab-content .story-info .date p {display:inline-block; padding: 0 30px; position: relative; line-height: 32px; color: #be7f16; font-weight: 500; font-size: 14px; margin: 0px; }
+.right-content .story-view .tab-content .story-info .date p span {position: absolute; top: 7px; left: 0px; line-height: 0px; }
+.right-content .story-view .tab-content .story-info p {line-height:30px; font-size: 16px; color: #666666; margin: 0px; padding: 0px; }
+.right-content .story-view .tab-nav {width:100%; border-bottom: solid 2px #deae5e; margin-bottom: 9px; display: inline-block; width: 100%; margin-top: 43px; }
+.right-content .story-view .tab-nav ul {padding:0px; margin: 0px; }
+.right-content .story-view .tab-nav ul li {list-style:none; width: 25%; float:left; text-align: center; padding-top: 30px; padding-bottom: 17px; position: relative;  transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; }
+.right-content .story-view .tab-nav ul li:after {position: absolute; bottom: -9px; left: 50%; margin-left: -10px; width: 20px; height: 20px; background: #f6ede0; border: solid 2px #deae5e; content: ""; border-radius: 50%;}
+.right-content .story-view .tab-nav ul li:before {position:absolute; bottom: -3px; width: 8px; height: 8px; background: #deae5e; border-radius: 50%; content: ""; left: 50%; margin-left: -4px; z-index: 4;}
+.right-content .story-view .tab-nav ul li a {display: inline-block; width: 100%; max-width: 98px; min-height: 125px; background: url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/story-tabBg.png) no-repeat top left; padding: 26px 20px 0 20px; font-size: 16px; color: #ffffff; font-weight: 500; line-height: 30px; text-decoration: none;}
+.right-content .story-view .tab-nav ul li a:after {position: absolute; bottom: 0px; left: 50%; margin-left: -1px; width: 2px; height: 50%; background: #deae5e; content: ""; }
+.right-content .story-view .tab-nav ul li:hover,
+.right-content .story-view .tab-nav ul li.active {padding:0 0 47px 0; }
+.right-content .attending-view:after {display: none; }
+.right-content .attending-view #attending_form {padding:106px 0 0 0;}
+.right-content .attending-view .submit-slide .submit-btn input {background:#deae5f; border: solid 1px #c79037; box-shadow: 0px 3px 5px #f8cc84 inset; color: #fff;  }
+.right-content .photo-view .heading-main {padding-bottom: 77px; }
+.right-content .photo-view .img {border-radius: 10px; overflow: hidden; margin-bottom: 30px; }
+.right-content .location-view .heading-main {padding-bottom: 85px; }
+.right-content .location-view .location-map {height:550px; border: solid 10px #fff; max-width: 470px; }
+.right-content .location-view .contact-details {display: block; padding: 105px 0 0 0; }
+.right-content .location-view .contact-details .location-slide {position:relative; padding: 0 0 23px 46px; font-size: 24px; color: #666666; line-height: 36px; font-weight: 500; }
+.right-content .location-view .contact-details .location-slide .fa {position:absolute; top: 2px; left: 0px; width: 32px; height: 32px; background: #deae5f;font-size: 16px; color: #ffffff; line-height: 32px; text-align: center; display: block; border-radius: 50%; }
+.right-content .location-view .contact-details .location-slide a {color: #666666; text-decoration: none; }
+
+
+
+
+@media (max-width: 1199px) {
+.our-story .story-tree .story-box:before {right:-74px;}
+.our-story .story-tree .story-box.right:before {left:-74px; }
+.navbar-nav > li {padding:0 4px; }
+.navbar-nav > li > a {font-size:17px; }
+
+}
+
+@media (max-width: 991px) {
+#nav-main ul li a .fa {font-size:12px; padding:0 0 0 7px;}
+.nav > li > a {font-size:16px; }
+#nav-main ul li a .fa {display:none;}
+.our-story .story-tree {padding-left:52px;}
+.our-story .story-tree:after {left:10px; margin:0px; }
+.our-story .story-tree .story-box:before {right:auto; left:-58px; }
+.our-story .story-tree .story-box:after {left:-12px; right:auto; border-right:12px solid #efefef; border-left:none; }
+.our-story .story-tree .story-box.right:before {left:-58px;}
+.our-story .story-tree .story-box.right {margin:0px 0 20px 0; float:left; }
+.our-story .story-tree .story-box {margin:0 0 20px 0; width:100%; }
+.location-info .loction-view {position:static; width:100%;text-align:center; padding:20px 10px;}
+.location-info .loction-view .inner-view {position:static; -moz-transform:translate(0,0); -ms-transform:translate(0,0); -o-transform:translate(0,0); -webkit-transform:translate(0,0); transform:translate(0,0);display:inline-block; }
+.location-info .map {width:100%; }
+.wedding-member #countdowncont ul li {margin-bottom:10px; padding-bottom:10px;}
+.family-info .family-view .family-box.small .name {min-height:93px;}
+}
+
+@media (max-width: 767px) {
+#nav-main {position:absolute !important; padding:10px 0; }
+.nav > li {padding:5px 0 10px 0;background:url(http://design.dev.drcsystems.ooo:8084/themeforest/wedding_invitation/images/event-lineBg.png) repeat-x bottom left; }
+.nav > li > a{ font-size:18px;}
+.title-main h2 {font-size:45px; line-height:50px; }
+.container {padding:0 20px; }
+.banner .banner-text {width:440px; min-height:440px; right:20px; }
+.banner .banner-text .title {padding:100px 0 0 0;}
+.banner .banner-text .title h1 {font-size:40px; line-height:40px; }
+.banner .banner-text .title h1 span {line-height:22px;}
+.banner .banner-text .line img {max-width:50%; }
+.banner .banner-text .date {font-size:26px; line-height:34px; }
+.banner .banner-text .statest {font-size:16px; line-height:22px; padding:10px 0 0 0; }
+.banner {height:590px; }
+.wedding-member #countdowncont {position:static; margin:0px; width:100%; margin-bottom:30px; }
+.wedding-member #countdowncont ul {float:none; margin-right:-2%; overflow:hidden;}
+.wedding-member #countdowncont ul:after {width:95%; top:50%; left:0px; height:2px; margin:-1px 0 0 0;}
+.wedding-member #countdowncont ul li {margin:0px; width:23%; margin:0 2% 0 0;float:left; }
+.wedding-block .wedding-box .name {padding:20px 0 20px 0; }
+.wedding-block .wedding-box {padding-bottom:20px;}
+#nav-main ul li a .fa {display:inline-block;}
+#nav-main ul li:last-child .fa {display:inline-block;}
+.family-info .family-view .family-box.small .name {min-height:inherit;}
+.banner .logo {top:20px; left:20px; }
+}
+
+@media (max-width: 479px) {
+.banner {height:380px; }
+.banner .banner-text {width:280px; min-height:280px; }
+.banner .banner-text .title {padding:65px 0 0 0;}
+.banner .banner-text .title h1 {font-size:30px; line-height:20px;}
+.banner .banner-text .date {line-height:28px; font-size:20px; padding-top:10px; }
+.banner .banner-text .line {display:none;}
+.banner .banner-text .statest {font-size:14px; padding:0px; }
+.wedding-member #countdowncont ul li span {font-size:26px;}
+.wedding-member #countdowncont ul li p {font-size:12px; }
+.our-story .story-tree .story-box .img {display:none; }
+.our-story .story-tree .story-box .story {padding:12px 10px 18px 10px}
+.our-story .story-tree .story-box.right .story {padding:12px 10px 18px 10px}
+.wedding-block .wedding-box .name {font-size:26px; line-height:34px; }
+section {padding:40px 0 0 0; }
+.wedding-event {padding-bottom:0px;  }
+.our-story {padding-bottom:40px; }
+.galler-view {padding-bottom:10px; }
+.gift-view .title-main{ padding-bottom:40px;}
+.gift-view {padding-bottom:40px;}
+.family-info .main-member h2 {font-size:50px; line-height:52px; }
+}
