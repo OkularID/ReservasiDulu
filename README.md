@@ -63,5 +63,9 @@ py manage.py runserver
 ```
 
 Todo lists:
+- [x] Adding event for each logged in user
+- [x] Adding more option to choose in the admin dashboard
+- [x] Adding multiple form (input choice) for user to choose the price of the events
 - [ ] Adding dashboard
 - [ ] Adding payment
+- [ ] Adding template models to use multiple template choices
