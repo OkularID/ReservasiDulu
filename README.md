@@ -20,7 +20,7 @@ The application itself has three modules.
 
 ```shell
 # clone the repository
-git clone https://github.com/icoldplayer/events
+git clone https://github.com/OkularID/ReservasiDulu
 
 
 # move into it
