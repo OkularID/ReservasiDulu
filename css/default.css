@@ -23,32 +23,40 @@
     font-family: "Montserrat SemiBold";
     src: url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
   }
-  .container-fluid{overflow: hidden !important;}
-  /* Header, Paragraf, Anchor Desktop */
-  h1, h2, h3, h4, h5, h6{font-family: "Montserrat Regular";}
-  h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family: "Montserrat Bold";}
-  h1{font-size: 45px !important;}
-  h2{font-size: 40px !important;}
-  h3{font-size: 36px !important;}
-  h4{font-size: 21px !important;}
-  h5{font-size: 18px !important;}
-  p,a,label,th,td,li{
-    font-family: "Montserrat Regular";
-    font-size :  14px !important;
-    line-height : 24px;
+    @font-face {
+    font-family: "Gilroy Bold";
+    src: url(../fonts/Gilroy-Bold.ttf) format("truetype");
   }
+  @font-face {
+    font-family: "Gilroy Light";
+    src: url(../fonts/Gilroy-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Oswald ExtraLight";
+    src: url(../fonts/Oswald-ExtraLight.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Oswald Medium";
+    src: url(../fonts/Oswald-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Overpass Light";
+    src: url(../fonts/Overpass-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "ZillaSlab SemiBold";
+    src: url(../fonts/ZillaSlab-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Overpass Bold";
+    src: url(../fonts/Overpass-Bold.ttf) format("truetype");
+  }
+  /* Link Setup */
   a{transition: all .3s;}
   a:hover{text-decoration: none !important;}
   a[data-toggle="collapse"]{cursor:pointer;}
-  @media screen and (max-width: 846px) {
-    /* Header, Paragraf, Anchor Mobile */
-    h1{font-size: 35px !important;}
-    h2{font-size: 30px !important;}
-    h4{font-size: 16px !important;}
-    h5{font-size: 14px !important;}
-    p{font-size: 12px !important;}
-  }
-/* Fonts */
+  
+  /* Fonts */
   .font-white,.font-white p,.font-white a{color: #fff !important;}
   .font-orange,.font-orange p,.font-orange a{color: #ffb64d !important;}
   .font-darkgrey,.font-darkgrey p,.font-darkgrey a{color: #333333 !important;}
@@ -789,6 +797,7 @@
     .pl-lg-4p{padding-left: 4% !important;}
     .pl-lg-5p{padding-left: 5% !important;}
     .pl-lg-10p{padding-left: 10% !important;}
+    .pl-lg-13p{padding-left: 13% !important;}
     .pl-lg-15p{padding-left: 15% !important;}
     .pl-lg-20p{padding-left: 20% !important;}
     .pl-lg-25p{padding-left: 25% !important;}

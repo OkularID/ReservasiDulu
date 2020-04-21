@@ -1,0 +1,153 @@
+	h1, h2, h3, h4, h5, h6{font-family: "ZillaSlab SemiBold";}
+	.font-weight-bold{
+	  font-family: "Overpass Light";
+	}
+	h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family: "ZillaSlab SemiBold";}
+	h2{
+		font-size: 72px !important;
+		line-height: 1 !important;
+	}
+	p,a,label,th,td,li, input{
+	    font-family: "Overpass Light";
+	    font-size :  12pt;
+	    line-height : 24px;
+	}
+	.font-zilla{
+	    font-family: "ZillaSlab SemiBold";
+	}
+	.font-overpass-light{
+	    font-family: "Overpass Light";
+	 }
+	.text-light-brown{
+	 	color: #C7B198;
+	}
+	.text-dark-blue{
+		color: #284C5B;
+	}
+	.text-gray{
+		color: #5D5D5D;
+	}
+	.nav-wedding-2{
+	    width: 100%;
+	    z-index: 2;
+	}
+	.nav-wedding-2 ul{
+		margin-top: 1.8em;
+	}
+	.nav-wedding-2 ul li{
+    	display: inline;
+  	}
+  	.nav-wedding-2 ul li a{
+  		color: #596E79;
+  	}
+  	.bg-grayish-blue{
+  		background: #596E79;
+  	}
+  	.text-grayish-blue{
+  		color: #596E79;
+  	}
+  	.content-header-home{
+  		position: absolute;
+		transform: translateX(-50%);
+		bottom: 13%;
+		left: 50%;
+		font-style: italic;
+  	}
+  	.content-header-home p{
+		font-size: 20px;
+  	}
+  	.inseparable-section{
+  		background-image: url(images/bg-inseparable-06.jpg);
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-color: #c7b199;
+  	}
+  	.will-you .content{
+  		position: absolute;
+		top: 50%;
+		right: 5%;
+		transform: translateY(-50%);
+  	}
+  	.bg-celebrate{
+  		background-image: url(images/bg-celebration-04.jpg);
+  		background-position: top left;
+  		background-repeat: no-repeat;
+  		background-color: #284C5B;
+  		padding-top: 30px;
+  		-webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.7);
+		-moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.7);
+		box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.7);
+  	}
+  	.bg-celebrate img.image-celebrate{
+  		margin-bottom: -200px;
+  	}
+  	.gallery-section{
+  		padding-top: 200px;
+  	}
+  	.bg-celebrate .section-left::after {
+  		content: "";
+  		background-image: url('images/ver-line-celebrate-section-02.png');
+    	background-size: 10px 20px;
+    	display: inline-block;
+	    width: 2px; 
+	    height: 280px;
+	    position: absolute;
+	    right: 0;
+	    top: 150px;
+	}
+	.form-control{
+		font-family: "Overpass Light"
+	}
+	.rsvp-section{
+		background-image: url(images/bg-rsvp-12.jpg);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		background-color: #f0ece1;
+		-webkit-box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
+		box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
+	}
+	.name-text::after{
+		content: " : ";
+		font-family: "ZillaSlab SemiBold";
+		float: right;
+	}
+	.rsvp-section .form-control, .rsvp-section label{
+		background: none;
+		border: none;
+		color: #284C5B;
+		font-family: "Overpass Bold";
+	}
+	.rsvp-section .form-control:focus{
+		background-color: #f0ece1;
+		border: none;
+		outline: 0;
+		box-shadow: none;
+	}
+	.rsvp-section .form-group.row{
+		border-bottom: 2px solid #C7B198;
+	}
+	.w-lg-38p{
+		width: 38%;
+	}
+	.rsvp-section .form-group .button-submit{
+		color: #284C5B;
+		font-family: "Overpass Bold";
+		border-bottom: 2px solid #C7B198;
+	}
+	.img-mobile{
+		object-fit: cover;
+		height: 100vh !important;
+	}
+	@media screen and (max-width: 846px) {
+		.content-header-home{
+			width: 100%;
+			text-align: center;
+		}
+		h2 {
+    		font-size: 50px !important;
+    	}
+    	p, a, label, th, td, li, input{
+    		font-size: 11pt;
+    	}
+	}
