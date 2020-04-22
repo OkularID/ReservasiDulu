@@ -1,0 +1,289 @@
+/* Default */
+	body{background-color: #f6f5f3 !important;}
+	h1, h2, h3, h4, h5, h6, h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+		font-family: "Gotu";
+		color: #333333;
+	}
+	h1{font-size: 40px !important;}
+	h2{font-size: 32px !important;}
+	h3{font-size: 30px !important;}
+	h4{font-size: 26px !important;}
+	p,a,label,th,td,li, input{
+		font-family: "Nunito";
+	  	font-size: 14px !important;
+	  	line-height: 20px;
+	  	color: #333333;
+	}
+	.font-maroon,.font-maroon p{color: #952437;}
+	.font-grey,.font-grey p{color: #aaabab;}
+	.line-grey{border-bottom: 2px solid #c5c5c5;}
+	.line-brown{border-bottom: 2px solid #753e45;}
+	.bg-grey{background-color: #e6e6e6;}
+	.bg-brown{background-color: #572e32;}
+	.button-default{
+		padding: 15px 40px;
+		font-family : "Nunito SemiBold";
+	  	font-size : 14px !important;
+	  	letter-spacing : 1.4px;
+	  	color : #333333;
+	  	background-color: #ebd8cf;
+	  	border: none;
+	  	border-radius: 50px;
+	}
+	.title-def h3{
+		display: inline-block;
+		margin: 0 0 0 4%;
+		padding: 0 20px;
+		color: #952437;
+		background-color: #f6f5f3;
+	}
+	.title-def .title-line{
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		border-bottom: 1px solid #952437;
+	}
+/* Navbar */
+	nav{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		padding: 3% 5%;
+		width: 100%;
+	}
+	nav .logo{
+		font-family: "Afterglow";
+		font-size: 53px;
+		line-height: 48.71px;
+		color: #333333;
+	}
+	nav .menu{padding: 10px 0;}
+	nav ul{
+		margin-bottom: 0;
+		padding-left: 0;
+		list-style-type: none;
+		text-align: right;
+	}
+	nav ul li{
+		position: relative;
+		display: inline;
+		padding: 0 15px;
+	}
+	nav ul li a{
+		font-size: 13px;
+		letter-spacing: 0.65px;
+		text-transform: uppercase;
+		color: #333333;
+	}
+	nav ul li a:hover,
+	nav ul li a:active,
+	nav ul li a.active{
+		padding-bottom: 10px;
+		color: #952437;
+		border-bottom: 1px solid #952437;
+		transition: .0s;
+	}
+/* Page */
+	#banner h1 span{
+		font-family: "Gotu";
+		color: #952437;
+	}
+	#story{
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+	#story .motif{
+	    position: absolute;
+	    top: -38px;
+	    left: 0;
+	}
+	#venue .image{max-height: 49vh;}
+	#venue .box{
+		margin-top: 10px;
+		padding: 5%;
+		width: 100%;
+		text-align: center;
+	}
+	#venue .box .time{font-weight: bold;}
+	#venue .box p{
+		line-height : 24px;
+		letter-spacing : 0.7px;
+	}
+	#accomodations .boxc{
+		padding: 3% 2% 2%;
+		top: 0;
+		left: 10%;
+		right: unset;
+		transform: unset;
+		width: 26%;
+	}
+	#accomodations .boxc p{font-size: 12px !important;}
+	#accomodations .boxc p b{font-size: 14px !important;}
+	#gallery img{max-height: 49vh;}
+	#gallery .motif{
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 10%;
+	    right: 4%;
+	}
+	#rsvp form label{
+		font-family: "Nunito SemiBold";
+		font-size: 11px !important;
+		line-height: 40px;
+		letter-spacing: 1.1px;
+		text-transform: uppercase;
+		color: #EBD8CF;
+	}
+	#rsvp form .button-default{
+		position: absolute;
+		top: 65%;
+		right: -45%;
+		transform: translateY(-50%);
+	}
+
+@media screen and (max-width: 846px) {
+	/* Default */
+	    h1{font-size: 28px !important;}
+		h2{font-size: 27px !important;}
+		h3{font-size: 26px !important;}
+		h4{font-size: 21px !important;}
+	/* Navbar */
+		nav{padding: 10% 5%;}
+		/* Burger */
+		nav ul.bars{
+			position: absolute;
+			z-index: 1035;
+			margin: 0 auto;
+			padding-left: 0;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			text-align: center;
+			list-style: none;
+		}
+		nav #toggle{
+			margin: 0 auto;
+			width: 28px;
+			height: 23px;
+			cursor: pointer;
+		}
+		nav #toggle div{
+			margin: 4px 0 8px;
+			width: 100%;
+			height: 2px;
+			background: #333333;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+		}
+		/*Slide*/
+		nav .bars{display: block;}
+		nav .bars.active{display: none;}
+		nav .fa-times{display: none;}
+		nav .fa-times.active{
+			display: block;
+			transition: 0.3s;
+		}
+		nav .fa-times{
+			position: fixed;
+			z-index: 1035;
+			padding-left: 0;
+			top: 5%;
+			right: 10%;
+			list-style: none;
+			font-size: 45px;
+			color: #333333;
+			-webkit-text-stroke: 7px #fff;
+		}
+		/*Sidenav*/
+		nav .sidenav{
+			overflow-y: auto;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 100%;
+			background: #fff;
+			transition: 0.3s;
+		}
+		nav .sidenav.slideIn{
+			width: 100%;
+			padding: 10%;
+		}
+		nav .sidenav.slideOut{
+			opacity: 0;
+			padding:0;
+			width: 0%;
+			transition: 0.3s;
+		}
+		nav .slideOut #cssmenu{display: none;}
+		nav .sidenav ul{
+			padding-top: 10%;
+			padding-left: 0;
+			list-style: none;
+			width: 100%;
+			height: 100%;
+			text-align: left;
+			background: #fff;
+		}
+		nav .sidenav ul li{
+			display: block;
+			padding: 0;
+		}
+		nav .sidenav ul li a{
+			position: relative;
+			display: block;
+			padding: 5% 2%;
+			width: 100%;
+			font-size: 13px !important;
+			color: #9b9b9b;
+			text-transform: uppercase;
+			text-decoration: none;
+			outline: none;
+		}
+	/* Page */
+        #banner img,
+        #accomodations img{
+            height: 100vh;
+        	object-fit: cover;
+    	}
+    	#venue .title-def{
+    		margin-bottom: 15% !important;
+    		text-align: center;
+    	}
+    	#venue .title-def h3{margin: 0;}
+    	#venue .box{margin: 5px 0 15%;}
+    	#venue .box p,#venue .box .time{font-size : 12px !important;}
+    	#accomodations .boxc{
+    		padding: 10%;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			width: 80%;
+			background-color: rgba(87, 46, 50, 0.9);
+    	}
+    	#gallery .motif{
+    		position: relative;
+			margin: 0 auto 10%;
+			bottom: unset;
+			right: unset;
+			width: 50%;
+    	}
+    	#gallery .image-item,
+    	#rsvp .title{display: none;}
+    	#gallery .owl-dots .owl-dot.active span{background: #952437 !important;}
+  		#gallery .owl-dots .owl-dot:hover span{background: #952437 !important;}
+  		#rsvp form{text-align: center;}
+  		#rsvp form .form-group{text-align: left;}
+  		#rsvp form .button-default{
+		    position: relative;
+		    margin-top: 10%;
+		    top: 3%;
+		    right: unset;
+		    transform: unset;
+		}
+}
