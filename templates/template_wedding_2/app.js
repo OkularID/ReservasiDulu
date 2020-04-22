@@ -1,4 +1,33 @@
 $(document).ready(function(){
+  $('.nav-wedding-2 .fa-bars').click(function() {
+    $(".side-nav").addClass("active");
+  })
+  $('.close-div .fa-times, .side-nav li.mx-4').click(function() {
+    $(".side-nav").removeClass("active");
+  })
+  $('.carousel-gallery').addClass('owl-carousel owl-theme').owlCarousel({
+    margin: 50,
+    loop: true,
+    responsiveClass: true,
+    responsive:{
+      0: {
+        items: 1,
+        dots: false,
+        nav: true
+      },
+      600: {
+        items: 1,
+        dots: true,
+        nav: false
+      },
+      1000: {
+        items: 2,
+        dots: true,
+        nav: false,
+        stagePadding: 300,
+      }
+    }
+  })
   // Add smooth scrolling to all links
   $(".nav-wedding-2 a").on('click', function(event) {
 
