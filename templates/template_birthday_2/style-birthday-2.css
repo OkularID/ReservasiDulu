@@ -24,6 +24,9 @@
 	.text-light-gray{
 		color: #BFBFBF;
 	}
+	.bg-pink{
+		background-color: #e5d4cc;
+	}
 	.header-section{
 		background-image: url(images/bg-header-06.jpg);
 		background-size: cover;
@@ -53,6 +56,7 @@
 	.nav-birthday-2{
 		position: absolute;
 		padding-top: 0.6em;
+		z-index: 8;
 	}
 	.nav-birthday-2 ul li{
 		display: inline;
@@ -191,6 +195,9 @@
 		p, a, label, th, td, li, input{
 			font-size: 9pt;
 		}
+		.footer .link-footer{
+			font-size: 9px;
+		}
 		.header-section{
 			background-image: url(images/bg-header-mobile-04.jpg);
 			padding-top: 20px;
@@ -243,8 +250,8 @@
 		}
 		.date-section{
 			background-image: url(images/bg-date-section-mobile-04.jpg);
-			padding-top: 40px;
-			padding-bottom: 24px;
+			padding-top: 50px;
+			padding-bottom: 44px;
 		}
 		.date-section h2:first-child{
 			font-size: 50px;
@@ -271,6 +278,7 @@
 		.rsvp-section{
 			background-image: url(images/bg-rsvp-mobile-05.jpg);
 			padding-top: 35px;
+			padding-bottom: 330px;
 		}
 		.rsvp-section h2:first-child{
 			font-size: 50px;
@@ -282,4 +290,79 @@
 		.rsvp-section input{
 			font-size: 9pt;
 		}
+		.home-ornament{
+			margin-top: -130px;
+			width: 12px;
+			margin-bottom: -70px;
+			margin-left: 1.2em;
+		}
+		.about-ornament{
+			margin-bottom: -340px;
+			margin-top: -210px;
+			width: 12px;
+			margin-left: 1.2em;
+		}
+		.date-ornament{
+			margin-bottom: -570px;
+			margin-top: -60px;
+			width: 12px;
+			margin-left: 1.2em;
+		}
+		#form-submit .modal-content, #wishlist-submit .modal-content{
+			padding: 120px 0 80px;
+		}
+		.header-section-wishlist {
+    		background-image: url(images/bg-wishlist-header-mobile-02.jpg);
+    		padding-bottom: 0;
+			padding-top: 60px !important;
+    	}
+    	.header-section-wishlist .img-fluid.float-right{
+    		width: 75%;
+			float: none !important;
+			margin: auto;
+			display: block;
+    	}
+    	.header-section-wishlist h2:first-child{
+    		font-size: 50px;
+    	}
+    	.header-section-wishlist h2:last-child{
+    		font-size: 27px;
+			margin-top: -25px;
+    	}	
+    	.header-section-wishlist .content-title{
+    		margin-top: 5em;
+    	}
+    	.header-section-wishlist ul{
+    		margin-top: 3.5em;
+    		margin-bottom: 3em;
+    	}
+    	.header-section-wishlist ul li{
+    		margin: 0 0px 16px;
+    	}
+    	/* Navianidsnasiod */
+    	.side-nav{
+    		position: fixed;
+			z-index: 9;
+			background: #c5d1dd;
+			top: 0;
+			left: -100%;
+			height: 100vh;
+			width: 100%;
+			transition: all .3s;
+    	}
+    	.nav-birthday-2 ul li{
+    		display: block;
+    		text-align: center;
+    		margin: 1.2em 2.6em;
+    	}
+    	.nav-birthday-2 ul li a{
+    		font-size: 19px;
+    		color: #4f4f4f;
+    	}
+    	.nav-birthday-2 ul{
+    		margin-top: 5em;
+    	}
+    	.side-nav.active{
+    		left: 0;
+    	}
 	}
