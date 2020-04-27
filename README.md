@@ -74,9 +74,7 @@ Todo lists:
 
 
 ---
-
-
-@hanandito @MuhammadFikriGunawan 
+### Project Structure
 
 `main_template`
 - `style.css`
@@ -159,3 +157,59 @@ Setelah itu tunggu hingga terdapat notif button berwarna biru bertuliskan `merge
 
 Jika ada yang tidak dapat diselesaikan, maka sangat dianjurkan untuk membuka issue / discussion pada repository master agar masalah tersebut dapat diselesaikan bersama-sama.
 
+
+# Update Repository With Original Master
+
+```shell
+# Verify current remote repo
+$ git remote -v
+> origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+> origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+
+
+# add remote upstream
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+
+
+# fetching from upstream branch
+$ git fetch upstream
+> remote: Counting objects: 75, done.
+> remote: Compressing objects: 100% (53/53), done.
+> remote: Total 62 (delta 27), reused 44 (delta 9)
+> Unpacking objects: 100% (62/62), done.
+> From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
+>  * [new branch]      master     -> upstream/master
+
+
+# checkout to local master
+$ git checkout master
+> Switched to branch 'master'
+
+# or 
+
+> git checkout master
+M	README.md
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+
+# Merge the change from [upstream/master] into your local [master] branch
+$ git merge upstream/master
+> Updating a422352..5fdff0f
+> Fast-forward
+>  README                    |    9 -------
+>  README.md                 |    7 ++++++
+>  2 files changed, 7 insertions(+), 9 deletions(-)
+>  delete mode 100644 README
+>  create mode 100644 README.md
+
+# or
+
+$ git merge upstream/master
+> Updating 34e91da..16c56ad
+> Fast-forward
+>  README.md                 |    5 +++--
+>  1 file changed, 3 insertions(+), 2 deletions(-)
+```
+
+That's it and you are ready to go!.
