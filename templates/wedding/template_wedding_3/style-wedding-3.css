@@ -112,7 +112,7 @@
 		line-height : 24px;
 		letter-spacing : 0.7px;
 	}
-	#accomodations .boxc{
+	#accommodations .boxc{
 		padding: 3% 2% 2%;
 		top: 0;
 		left: 10%;
@@ -120,8 +120,8 @@
 		transform: unset;
 		width: 26%;
 	}
-	#accomodations .boxc p{font-size: 12px !important;}
-	#accomodations .boxc p b{font-size: 14px !important;}
+	#accommodations .boxc p{font-size: 12px !important;}
+	#accommodations .boxc p b{font-size: 14px !important;}
 	#gallery img{max-height: 49vh;}
 	#gallery .motif{
 	    position: absolute;
@@ -139,6 +139,7 @@
 	}
 	#rsvp form .button-default{
 		position: absolute;
+		z-index: 1;
 		top: 65%;
 		right: -45%;
 		transform: translateY(-50%);
@@ -246,7 +247,7 @@
 		}
 	/* Page */
         #banner img,
-        #accomodations img{
+        #accommodations img{
             height: 100vh;
         	object-fit: cover;
     	}
@@ -257,7 +258,7 @@
     	#venue .title-def h3{margin: 0;}
     	#venue .box{margin: 5px 0 15%;}
     	#venue .box p,#venue .box .time{font-size : 12px !important;}
-    	#accomodations .boxc{
+    	#accommodations .boxc{
     		padding: 10%;
 			top: 50%;
 			left: 0;

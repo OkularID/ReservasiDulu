@@ -1,0 +1,476 @@
+/* Default */
+	@font-face{
+	    font-family: "Pistilli";
+	    src: url(Pistilli-Roman.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Cormorant Medium";
+	    src: url(Cormorant-Medium.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Cormorant Medium Italic";
+	    src: url(Cormorant-MediumItalic.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Cormorant Bold";
+	    src: url(Cormorant-Bold.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Cormorant SemiBoldItalic";
+	    src: url(Cormorant-SemiBoldItalic.otf) format("truetype");
+	}
+	h1, h2, h3, h4, h5, h6, h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+		font-family: "Pistilli";
+		color: #333333;
+	}
+	h1{font-size: 60px !important;}
+	h2{font-size: 50px !important;}
+	h3{font-size: 46px !important;}
+	h4{font-size: 30px !important;}
+	h5{font-size: 26px !important;}
+	h6{font-size: 20px !important;}
+	p,a,label,th,td,li, input{
+		font-family: "Cormorant Medium";
+	  	font-size: 16px !important;
+		line-height : 22px;
+		color : #8F8D91;
+	}
+	.container-fluid{position: relative;}
+	.font-lightpink{color: #f5f5f5 !important;}
+	.font-darkgrey{color: #414042 !important;}
+	.font-grey{color: #7C7A7D !important;}
+	.bg-pink{background: #eed9d9 !important;}
+	.bg-lightpink{background: #f5f5f5 !important;}
+	.line-white{border: 1px solid #fff;}
+	.line-grey{border: 1px solid #7c7a7d;}
+	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
+	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
+	.button-default{
+		font-family: "Cormorant Medium Italic";
+		padding: 3% 5%;
+		font-size: 20px !important;
+		line-height: 21.33px;
+		color: #F5F5F5;
+		background: #7c7a7d;
+		border: 1px solid #7c7a7d;
+	}
+	.button-default:hover{
+		color: #7c7a7d;
+		background: #F5F5F5;
+		border: 1px solid #7c7a7d;
+	}
+/* Navbar */
+	nav{
+		position: absolute;
+		z-index: 2;
+		padding: 1.5% 5%;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	nav ul{
+		margin-bottom: 0;
+		padding: 10px 0;
+		list-style-type: none;
+		text-align: center;
+		justify-content: center;
+	}
+	nav ul li{
+		display: inline;
+		padding: 0 25px;
+	}
+	nav ul li:last-child{
+		padding-right: 0;
+	}
+	nav ul li a{
+	    font-family: "Cormorant Medium";
+		font-size: 22px !important;
+		letter-spacing: 0.96px;
+		text-transform: capitalize;
+  		color: #FFFFFF;
+	}
+	nav ul li a:hover,
+	nav ul li a:active,
+	nav ul li a.active{
+		padding-bottom: 5px;
+		color: #fff;
+		border-bottom: 1px solid #eed9d9;
+		transition: .0s;
+	}
+	nav ul li a.logo{border-bottom: none;}
+	nav ul li a.logo img:hover{border-bottom: 1px solid #eed9d9;}
+	.side-nav{
+		background: #b7a9a9 !important;
+		position: fixed;
+		bottom:-100vh;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		transition: all .3s;
+	}
+	.side-nav.active{bottom: 0;}
+	.side-nav ul{margin: 4.5em 0 0;}
+	.side-nav ul li{
+		display: block;
+		text-align: center;
+		margin: 25px 0;
+	}
+	.side-nav ul li a{color: #F5F5F5;}
+	.side-nav .fa-times{
+		font-size: 40px;
+		color: #F5F5F5;
+	}
+    #mobile-menu{display: none;}
+	@media screen and (max-width: 846px) {
+		nav h3 i,
+		nav .close-div i{cursor: pointer;}
+		nav ul li:last-child{
+			padding-right: 15px;
+		}
+		nav ul li a:hover,
+		nav ul li a:active,
+		nav ul li a.active{
+            color: #F5F5F5;
+			border-bottom: 2px solid #F5F5F5;
+		}
+		#mobile-menu{
+            display: block;
+			position: relative;
+			padding: 5%;
+			text-align: center;
+			background: #b7a9a9;
+			cursor: pointer;
+		}
+		#mobile-menu h4{
+			padding-left: 15%;
+			font-family: "Cormorant Medium Italic";
+			font-size: 26px !important;
+			line-height: 30px;
+			color: #F5F5F5;
+		}
+		/* Burger */
+		#mobile-menu ul.bars{
+			padding-left: 0;
+			top: 45%;
+			right: 25%;
+			width: 15%;
+			text-align: center;
+			list-style: none;
+		}
+		#mobile-menu #toggle{
+			margin: 0 auto;
+			width: 100%;
+			height: 23px;
+			cursor: pointer;
+		}
+		#mobile-menu #toggle div{
+			margin: 10px 0 8px;
+			width: 100%;
+			height: 2px;
+			background: #ffffff;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+		}
+	}
+/* Footer */
+	footer p{
+		margin-bottom: 0;
+        font-family: "Cormorant Medium";
+		font-size: 18px !important;
+		line-height: 14.6px;
+		letter-spacing: 0.9px;
+		color: #7C7A7D;
+	}
+	footer .button-footer{
+		margin-right: 3%;
+		padding: 1.5% 7%;
+		font-family: "Cormorant Medium Italic";
+		font-size: 18px !important;
+		line-height: 14.6px;
+		color: #E1CBCB;
+		border: 1px solid #E1CBCB;
+	}
+	footer .button-footer:hover{
+		color: #fff;
+		background: #E1CBCB;
+	}
+/* Page Home */
+	/* Banner */
+        #banner .one-carousel .owl-dots{
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        #banner .one-carousel .owl-dots .owl-dot span{
+            width: 80px;
+            height: 7px;
+            background: #ffffff !important;
+        }
+        #banner .one-carousel .owl-dots .owl-dot.active span{
+            background: #eec9c9 !important;
+        }
+        #banner .one-carousel .owl-dots .owl-dot:hover span{
+            background: #eec9c9 !important;
+        }
+    /* Our Story */
+        #ourstory .motif{
+            position: absolute;
+            margin: 0 auto;
+            bottom: 0;
+            left: 10%;
+            right: 0;
+        }
+        #ourstory .quote{
+            position: absolute;
+            top: 0;
+            right: 5%;
+            padding: 15px;
+            width: 53%;
+            background: #7c7a7d;
+        }
+        #ourstory .quote .box{
+            padding: 4% 19%;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #bbacac;
+        }
+        #ourstory .quote span{
+            font-family: "Cormorant Bold";
+            font-size: 45px;
+            color : #F5F5F5 !important;
+        }
+        #ourstory .quote h5{
+            margin-bottom: 5%;
+            font-family: "Cormorant Medium Italic";
+            line-height: 30px;
+            color: #F5F5F5 !important;
+        }
+        #ourstory .quote p{
+            font-size : 12px !important;
+            letter-spacing : 1.2px;
+            color : #F5F5F5 !important;
+        }
+        #ourstory .brief i{
+            font-family: "Cormorant Medium Italic";
+            font-size : 20px !important;
+            line-height : 20px;
+            color : #414042;
+        }
+        #ourstory .brief p{color : #7C7A7D;}
+        #ourstory .brief h3{margin: 3% 0 10%;}
+    /* Invitation */
+        #invitation .boxc{
+            width: 60%;
+            text-align: center;
+        }
+        #invitation .boxc .icon,
+        #invitation .boxc .button{
+            position: relative;
+            margin: 8% 0;
+            text-align: center;
+        }
+        #invitation .boxc .icon .line-white,
+        #invitation .boxc .icon .line-grey{width: 40%;}
+        #invitation .boxc .button .line-white,
+        #invitation .boxc .button .line-grey{width: 33%;}
+        #invitation .boxc .icon .boxc.l,
+        #invitation .boxc .button .boxc.l{
+            margin: unset;
+            right: unset;
+        }
+        #invitation .boxc .icon .boxc.r,
+        #invitation .boxc .button .boxc.r{
+            margin: unset;
+            left: unset;
+        }
+        #invitation .boxc.st h2,
+        #invitation .boxc.st h4,
+        #invitation .boxc.st h6{color: #fff !important;}
+        #invitation .boxc.nd h2,
+        #invitation .boxc.nd h4,
+        #invitation .boxc.nd h6{color: #7C7A7D !important;}
+        #invitation .boxc.st h4,
+        #invitation .boxc.nd h4{
+            font-family: "Cormorant Medium Italic";
+            line-height: 30px;
+        }
+        #invitation .boxc.st h6,
+        #invitation .boxc.nd h6{
+            font-family: "Cormorant Medium";
+            line-height: 30px;
+        }
+        #invitation .boxc.st .button-default:hover{border: 1px solid #F5F5F5;}
+    /* Gallery */
+        #gallery .motif{
+            position: absolute;
+            top: 15%;
+            left: -2%;
+            font-family: "Pistilli";
+            font-size: 141px;
+            line-height: 155.77px;
+            color: #E1CBCB;
+            opacity: 0.4;
+            filter: alpha(opacity=40) progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+        }
+        #gallery .motif2{
+            position: absolute;
+            bottom: 0;
+            right: 5%;
+        }
+        #gallery .wrap{
+            position: relative;
+            width: 100%;
+            height: 65vh;
+        }
+        #gallery .wrap .img1{
+            top: 60%;
+            left: 25%;
+            width: 45%;
+        }
+        #gallery .wrap .img2{
+            top: 35%;
+            right: unset;
+            width: 50%;
+        }
+        #gallery .wrap .img3{
+            top: 30%;
+            left: 34%;
+            width: 45%;
+        }
+        #gallery .wrap .img4{
+            top: 71%;
+            right: 41%;
+            width: 25%;
+        }
+        #gallery .wrap .button-default{
+            padding: 3% 5%;
+            right: 10%;
+            width: 30%;
+            text-align: center;
+        }
+    /* RSVP */
+        #rsvp .boxc h2{color: #f5f5f5;}
+        #rsvp form label{
+            padding-left: 10px;
+            font-family: "Cormorant Medium Italic";
+            font-size: 16px !important;
+            color: #414042;
+        }
+        #rsvp form input{
+            margin-bottom: 10px;
+            padding: 4.5% 10px;
+            height: auto;
+            font-family: "Cormorant Medium" !important;
+            border: none;
+            border-radius: 0;
+        }
+        #rsvp form .box input{margin-bottom: 0;}
+        #rsvp form .button-default{padding: 1.5% 7%;}
+        #rsvp form input[type=radio] {
+            margin: -5px 0px;
+            padding: 0.5em;
+            -webkit-appearance: none;
+            border: 1px solid #000;
+        }
+        #rsvp form input[type=radio]:checked{background: #eed9d9;}
+        #rsvp form input[type=radio]:focus{outline-color: transparent;}
+	
+@media screen and (max-width: 846px) {
+	h2{font-size: 38px !important;}
+    h5{font-size: 20px !important;}
+    .mtext-center{text-align: center !important;}
+	.ts{text-shadow: 1px 1px 2px rgba(74,74,74,0.65);}
+	/* Footer */
+		footer p{
+			font-size: 17px !important;
+			line-height: 23.6px;
+			letter-spacing: 0.85px;
+		}
+	/* Page Home */
+		/* Banner */
+            #banner img,
+            #invitation img.bg{
+                height: 100vh;
+                object-fit: cover;
+            }
+            #banner img{height: 90vh;}
+            #banner .one-carousel .owl-dots .owl-dot span{
+                width: 60px;
+                height: 5px;
+            }
+        /* Our Story */
+            #ourstory .row,
+            #invitation .row,
+            #gallery .row{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            #ourstory .quote{
+                position: relative;
+                padding: 10%;
+                right: unset;
+                width: 100%;
+            }
+            #ourstory .quote .box{padding: 4% 5%;}
+            #ourstory .quote h5{
+                margin-top: -15px;
+                margin-bottom: 10%;
+            }
+            #ourstory .brief i{font-size: 15px !important;}
+            #ourstory .motif{
+                left: unset;
+                width: 50%;
+                opacity: 0.7;
+            }
+        /* Invitation */
+            #invitation .boxc{width: 80%;}
+            #invitation .boxc.st h2,
+            #invitation .boxc.nd h2{margin-bottom: 10%;}
+            #invitation .boxc.st h4,
+            #invitation .boxc.nd h4{
+                margin-bottom: 5%;
+                font-size: 25px !important;
+                line-height: 25px;
+            }
+            #invitation .boxc.st h6,
+            #invitation .boxc.nd h6{
+                font-size: 17px !important;
+                line-height: 25px;
+            }
+            #invitation .boxc .icon .line-white,
+            #invitation .boxc .icon .line-grey{width: 35%;}
+            #invitation .boxc .button{margin: 15% 0;}
+            #invitation .boxc .button .line-white,
+            #invitation .boxc .button .line-grey{width: 26%;}
+        /* Gallery */
+            #gallery{
+                overflow: hidden;
+                width: 100%;
+            }
+            #gallery .motif2{
+                bottom: 19%;
+                right: -11%;
+                width: 35%;
+            }
+            #gallery .overlay{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(124, 122, 125, 0.6);
+            }
+            #gallery .overlay a{
+                font-size: 20px !important;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+            }
+        /* RSVP */
+            #rsvp .bg-pink .boxc{position: relative;}
+            #rsvp form input{margin-bottom: 10%;}
+            #rsvp form .button-default{
+                padding: 4.5% 7%;
+                width: 100%;
+            }
+}
