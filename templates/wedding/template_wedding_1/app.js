@@ -13,7 +13,9 @@ $(document).ready(function() {
       0: {
         items: 1,
         dots: true,
-        nav: false
+        nav: false,
+        autoplayTimeout:2500,
+        autoplay:true
       },
       600: {
         items: 1,
@@ -24,7 +26,7 @@ $(document).ready(function() {
         items: 2,
         dots: true,
         nav: false,
-        stagePadding: 300,
+        stagePadding: 300
       }
     }
   })

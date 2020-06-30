@@ -98,6 +98,7 @@
 		transition: .0s;
 	}
 	nav ul li a.logo{border-bottom: none;}
+	nav ul li a.logo img{border-bottom: 1px solid transparent;}
 	nav ul li a.logo img:hover{border-bottom: 1px solid #eed9d9;}
 	.side-nav{
 		background: #b7a9a9 !important;
@@ -175,7 +176,7 @@
 /* Footer */
 	footer p{
 		margin-bottom: 0;
-        font-family: "Cormorant Medium";
+	    font-family: "Cormorant Medium";
 		font-size: 18px !important;
 		line-height: 14.6px;
 		letter-spacing: 0.9px;

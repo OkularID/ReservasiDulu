@@ -12,8 +12,10 @@ $(document).ready(function(){
     responsive:{
       0: {
         items: 1,
-        dots: false,
-        nav: true
+        dots: true,
+        nav: false,
+        autoplayTimeout:2500,
+        autoplay:true
       },
       600: {
         items: 1,

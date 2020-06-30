@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
     <title>Template Wedding | Homepage</title>
     <link rel="shortcut icon" href="images/ico.ico">
-    <!-- Customize css -->
-    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
-    <link rel="stylesheet" type="text/css" href="../../css/default.css">
-    <link rel="stylesheet" type="text/css" href="style-wedding-3.css">
     <!-- Features css -->
     <link rel="stylesheet" href="../../features/animatecss/animate.min.css">
     <!--Node Modules css-->
@@ -17,31 +13,33 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <!-- Customize css -->
+    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <link rel="stylesheet" type="text/css" href="style-wedding-3.css">
 </head>
 <body>
     <div id="homepage">
         <!-- Navbar -->
-        <nav>
-            <div class="container-fluid p-lg-0">
-                <div class="row">
-                    <div class="col-lg-3 d-none d-lg-block">
-                        <div class="logo">L&F</div>
+        <nav class="animated fadeInDown">
+            <div class="container-fluid pos-rel">
+                <div class="row d-none d-lg-block">
+                    <a href="index.html"><div class="logo">L&F</div></a>
+                    <div class="offset-lg-3 col-lg-9 pr-lg-0">
+                        <ul class="menu">
+                            <li><a href="#story">.Our Story</a></li>
+                            <li><a href="#venue">.Venue</a></li>
+                            <li><a href="#accommodations">.Accommodations</a></li>
+                            <li><a href="#gallery">.Gallery</a></li>
+                            <li><a href="#rsvp">.RSVP</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-9 d-none d-lg-block">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#story">.Our Story</a></li>
-                                <li><a href="#venue">.Venue</a></li>
-                                <li><a href="#accommodations">.Accommodations</a></li>
-                                <li><a href="#gallery">.Gallery</a></li>
-                                <li><a href="#rsvp">.RSVP</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="row d-lg-none">
+                    <div class="col-8">
+                        <a href="index.html"><div class="logo">L&F</div></a>
                     </div>
-                    <div class="col-9 d-block d-lg-none">
-                        <div class="logo">L&F</div>
-                    </div>
-                    <div class="col-3 d-block d-lg-none">
+                    <div class="col-4 pr-m-0">
                         <ul class="bars">
                             <div id="toggle">
                                 <div class="one"></div>
@@ -49,13 +47,12 @@
                                 <div class="three"></div>
                             </div>
                         </ul>
-                        <i class="fa fa-times"></i>
                     </div>
-                    <div class="sidenav d-block d-lg-none">
-                        <div class="logo">
-                            <div class="logo">L&F</div>
+                    <div class="side-nav">
+                        <div class="close-div text-right p-3">
+                            <i class="fa fa-times close-icon"></i>
                         </div>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li><a href="#story">.Our Story</a></li>
                             <li><a href="#venue">.Venue</a></li>
                             <li><a href="#accommodations">.Accommodations</a></li>
@@ -73,30 +70,37 @@
                     <div class="col-lg-12 pl-lg-0 pr-lg-0">
                         <img class="img-fluid w-lg-100p" src="images/images-01.png" />
                         <div class="boxc text-center">
-                            <h1>#Newchapterof<span>LiFe</span></h1>
+                            <h1 class="ml3">#NewchapterofLiFe</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Section Story -->
-        <section id="story" style="background: url('images/images-02.png');">
-            <div class="container-fluid pt-m-30p pb-m-30p pt-lg-10p pb-lg-10p pl-lg-10p pr-lg-10p">
+        <section id="story">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 offset-lg-6 pr-m-15 pr-lg-15p">
-                        <img class="motif" src="images/icon.png">
-                        <h3 class="font-maroon mb-lg-10p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</h3>
-                        <div class="mb-lg-15p">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed</p>
+                    <div class="col-lg-6 d-none d-lg-block pt-lg-10p pb-lg-5p pl-lg-5p slideanimLeft">
+                        <img class="img-fluid" src="images/images-02.png" />
+                    </div>
+                    <div class="col-lg-6 pt-m-35p pb-m-10p pl-m-10p pr-m-10p pt-lg-10p pb-lg-5p pr-lg-5p">
+                        <div class="w-m-100p w-lg-70p">
+                            <img class="motif" src="images/icon.png">
+                            <h3 class="font-maroon mb-lg-10p ml4">“True Love is About Growing as a Couple, Learning About Each Other, and Never Giving Up on Each Other”</h3>
                         </div>
-                        <a class="button-default" href="">Are You Attending?</a>
+                        <div class="w-m-100p w-lg-70p slideanim">
+                            <div class="mb-lg-15p">
+                                <p>We are thankful to be united with one another. Liam and Felicia have been friends since they are little kids. And have been in a relationship for over 6 years. We get through so much together. Liam always got Felicia’s back, and Felicia is always walking beside Liam in his life journey. We are going to tied the knot soon. So now, we wanted to invite you to our very special day, and celebrate with us as this is going to be the best night of our lives, and we hope it’s the best day of your life as well.</p>
+                            </div>
+                            <a class="button-default" href="">Are You Attending?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Section Venue -->
         <section id="venue">
-            <div class="container-fluid pt-lg-5p pb-lg-10p pl-lg-10p pr-lg-10p">
+            <div class="container-fluid  pt-m-25p pt-lg-10p pb-lg-10p pl-lg-10p pr-lg-10p">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="title-def pos-rel w-lg-100p mb-lg-35">
@@ -124,14 +128,15 @@
                         <img class="img-fluid image w-lg-100p" src="images/images-04.png" />
                         <div class="box bg-brown">
                             <h3 class="font-grey mb-lg-0">Reception</h3>
-                            <div class="time font-white mb-lg-15">5:00pm – 10:00pm</div>
+                            <div class="time font-white mb-lg-15">6:00pm – 7:00pm</div>
                             <div class="line-brown w-lg-100p mb-lg-15"></div>
                             <div class="font-white">
                                 <p>
-                                    The Monarch<br />
-                                    848 Washington St (at W 13th St)<br />
-                                    New York, NY 10014<br />
-                                    (212) 555–0123
+                                    Great Lincoln Hotel,<br />
+                                    Aurora Ballroom<br />
+                                    124 Colossal St (at Megaliticum St)<br />
+                                    New York, NY 10123<br />
+                                    (214) 565–0923
                                 </p>
                             </div>
                         </div>
@@ -143,7 +148,7 @@
         <section id="accommodations">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 pl-lg-0 pr-lg-0">
+                    <div class="col-lg-12 pt-lg-5p pl-lg-0 pr-lg-0">
                         <img class="img-fluid w-lg-100p" src="images/images-05.png" />
                         <div class="boxc bg-brown font-white text-center">
                             <h4 class="font-white mb-lg-15">Accommodations</h4>
@@ -166,20 +171,20 @@
         <section id="gallery">
             <div class="container-fluid pos-rel pt-lg-10p pb-lg-15p pl-lg-10p pr-lg-10p">
                 <div class="row">
-                    <img class="motif" src="images/motif.png">
-                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item">
+                    <img class="motif slideanimImage6" src="images/motif.png">
+                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item slideanimImage1">
                         <img class="img-fluid w-lg-100p" src="images/images-06.png" />
                     </div>
-                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item">
+                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item slideanimImage2">
                         <img class="img-fluid w-lg-100p" src="images/images-07.png" />
                     </div>
-                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item">
+                    <div class="col-lg-4 mb-lg-20 pl-lg-10 pr-lg-10 image-item slideanimImage3">
                         <img class="img-fluid w-lg-100p" src="images/images-08.png" />
                     </div>
-                    <div class="col-lg-7 mb-lg-20 pl-lg-10 pr-lg-10 image-item">
+                    <div class="col-lg-7 mb-lg-20 pl-lg-10 pr-lg-10 image-item slideanimImage4">
                         <img class="img-fluid w-lg-100p" src="images/images-09.png" />
                     </div>
-                    <div class="col-lg-5 mb-lg-20 pl-lg-10 pr-lg-10 image-item">
+                    <div class="col-lg-5 mb-lg-20 pl-lg-10 pr-lg-10 image-item slideanimImage5">
                         <img class="img-fluid w-lg-100p" src="images/images-10.png" />
                     </div>
                     <!-- Mobile Slider -->
@@ -242,9 +247,14 @@
                             </div>
                             <div class="form-group">
                                 <label for="your-message">message</label>
-                                <textarea class="form-control" id="your-message" name="your-message" rows="3"></textarea>
+                                <textarea class="form-control" id="your-message" name="your-message" rows="5"></textarea>
                             </div>
-                            <button type="submit" class="button-default">RSVP</button>
+                            <!-- <button type="submit" class="button-default">RSVP</button> -->
+                            <button type="submit" class="add-to-cart button-default">
+                                <div class="default">RSVP</div>
+                                <div class="success">RESERVED</div>
+                                <div class="dots-animation"></div>
+                            </button>
                         </form>
                     </div>
                     <div class="col-lg-5 title pt-lg-10p text-center">
@@ -267,6 +277,7 @@
     <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+    <script type="text/javascript" src="anime.min.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
 

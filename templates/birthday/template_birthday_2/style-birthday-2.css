@@ -6,6 +6,9 @@
 	.font-proxima{
 		font-family: "ProximaNova Regular";
 	}
+	.font-proxima-bold{
+		font-family: "Proxima Nova Bold";
+	}
 	.font-allura{
 		font-family: "Allura Regular";
 	}
@@ -53,6 +56,9 @@
 		right: 13%;
 		bottom: 50px;
 	}
+	.header-section .img-desktop{
+		width: 90%;
+	}
 	.nav-birthday-2{
 		position: absolute;
 		padding-top: 0.6em;
@@ -60,7 +66,7 @@
 	}
 	.nav-birthday-2 ul li{
 		display: inline;
-		margin: 0 2.6em;
+		margin: 0 2em;
 	}
 	.nav-birthday-2 ul li a{
 		color: #9C9EA1;
@@ -69,7 +75,7 @@
 		background-image: url(images/bg-gallery-section-05.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		padding-top: 200px;
+		padding-top: 40px;
 		padding-bottom: 156px;
 	}
 	.gallery-section h2:first-child{
@@ -93,7 +99,7 @@
 		background-image: url(images/bg-date-section-08.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		padding-top: 200px;
+		padding-top: 190px;
 		padding-bottom: 100px;
 	}
 	.date-section h2:first-child{
@@ -116,8 +122,8 @@
 		background-image: url(images/bg-rsvp-09.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		padding-top: 200px;
-		padding-bottom: 100px;
+		padding-top: 80px;
+		padding-bottom: 40px;
 	}
 	.rsvp-section h2:first-child{
 		font-size: 90px;
@@ -250,8 +256,9 @@
 		}
 		.date-section{
 			background-image: url(images/bg-date-section-mobile-04.jpg);
-			padding-top: 50px;
-			padding-bottom: 44px;
+			padding-top: 80px;
+			padding-bottom: 0;
+			background-position: right;
 		}
 		.date-section h2:first-child{
 			font-size: 50px;
@@ -298,13 +305,13 @@
 		}
 		.about-ornament{
 			margin-bottom: -340px;
-			margin-top: -210px;
+			margin-top: -50px;
 			width: 12px;
 			margin-left: 1.2em;
 		}
 		.date-ornament{
 			margin-bottom: -570px;
-			margin-top: -60px;
+			margin-top: -45px;
 			width: 12px;
 			margin-left: 1.2em;
 		}
@@ -365,4 +372,7 @@
     	.side-nav.active{
     		left: 0;
     	}
+    	.carousel-gallery .owl-dots .owl-dot:hover span, .carousel-gallery .owl-dots .owl-dot.active span{
+  			background: #62727d !important;
+  		}
 	}

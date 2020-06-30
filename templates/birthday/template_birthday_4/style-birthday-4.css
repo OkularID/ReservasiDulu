@@ -1,0 +1,614 @@
+/* Default */
+	@font-face{
+	    font-family: "Krub Regular";
+	    src: url(Krub-Regular.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Krub Bold";
+	    src: url(Krub-Bold.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "LeckerliOne Regular";
+	    src: url(LeckerliOne-Regular.otf) format("truetype");
+	}
+	h1, h2, h3, h4, h5, h6{
+		font-family: "Krub Bold";
+		color: #042b5b;
+	}
+	span, h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{color: #f56049 !important;}
+	h1{font-size: 75px !important;}
+	h2{font-size: 55px !important;}        
+	h3{font-size: 35px !important;}
+	h4{font-size: 26px !important;}
+	p,a,label,th,td,li, input{
+		font-family: "Krub Regular";
+		font-size: 14px !important;
+		line-height: 20px;
+		color: #333333;
+	}
+	.container-fluid{position: relative;}
+	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
+	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
+	.font-krub-r, .font-krub-r p, .font-krub-r span{font-family: "Krub Regular" !important;}
+	.font-krub-b, .font-krub-b p, .font-krub-b span{font-family: "Krub Bold" !important;}
+	.font-darkblue, .font-darkblue p{color: #042b5b !important;}
+	.font-orange, .font-orange p{color: #f56049 !important;}
+	.font-lightgrey, .font-lightgrey p{color: #a6a6a6 !important;}
+	.bg-lightgreen{background: #b7eee1;}
+	.line-white{border: 1px solid #fff;}
+	.button-default{
+		background: url('images/button.png');
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		padding: 18px 30px;
+		font-family: "Krub Bold";
+		font-size: 20px !important;
+		text-align: center;
+		border: none;
+		color: #fff;
+	}
+/* Navbar */
+	nav{
+		position: absolute;
+		z-index: 1;
+		padding: 3% 5%;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	nav ul{
+		margin-bottom: 0;
+		padding: 10px 0;
+		list-style-type: none;
+		text-align: right;
+	}
+	nav ul li{
+		display: inline;
+		padding: 0 5%;
+	}
+	nav ul li:last-child{
+		padding-right: 0;
+	}
+	nav ul li a{
+        font-family: "Krub Bold";
+		font-size: 18px !important;
+		letter-spacing: 0.96px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	nav ul li a:hover,
+	nav ul li a:active,
+	nav ul li a.active{
+		padding-bottom: 5px;
+		color: #fff;
+		border-bottom: 2px solid #fff;
+		transition: .0s;
+	}
+	.side-nav{
+		background: #b7eee1;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		height: 100vh;
+		width: 100%;
+		transition: all .3s;
+	}
+	.side-nav.active{
+		left: 0;
+	}
+	.side-nav ul{
+		margin: 4.5em 0 0;
+	}
+	.side-nav ul li{
+		display: block;
+		text-align: center;
+		margin: 25px 0;
+	}
+	.side-nav .fa-times{
+		font-size: 40px;
+		color: #042b5b;
+	}
+	@media screen and (max-width: 846px) {
+		nav .logo{width: 30%;}
+		nav h3 i,
+		nav .close-div i{cursor: pointer;}
+		nav ul li:last-child{
+			padding-right: 15px;
+		}
+		nav ul li a{color: #042b5b;}
+		nav ul li a:hover,
+		nav ul li a:active,
+		nav ul li a.active{
+			color: #f56049;
+			border-bottom: 2px solid #f56049;
+		}
+	}
+/* Footer */
+	footer{background: #2bc1b2;}
+	footer p,
+	footer a{
+		margin-bottom: 0;
+		font-size: 18px !important;
+		line-height: 14.6px;
+		letter-spacing: 0.9px;
+		color: #FFFFFF;
+	}
+	footer p span{
+		font-family: "Krub Bold";
+		color: #FFFFFF !important;
+	}
+	footer .button-footer{
+		margin-right: 3%;
+		padding: 1.5% 7%;
+		border-radius: 50px;
+		border: 1px solid #fff;
+	}
+	footer .button-footer:hover{
+		color: #2bc1b2;
+		background: #fff;
+	}
+	footer .mtext-center{text-align: center !important;}
+
+/* Page Home */
+	/* BANNER */
+        #banner .box{
+            position: absolute;
+            top: 30%;
+            right: 12%;
+            text-align: center;
+        }
+        #banner .box .subtitle{
+            font-family: "Krub Regular";
+            font-size: 35px;
+            color: #F4C916;
+        }
+        #banner .box .title{
+            font-family: "Krub Bold";
+            font-size: 60px;
+            color: #fff;
+        }
+        #banner .motif{
+            position: absolute;
+            bottom: -21%;
+            left: 0;
+        }
+    /* ABOUT */
+        #about .gallery{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+        #about .gallery .box{
+            position: relative;
+            padding: 0 5px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+        #about .gallery .box img{
+            margin-bottom: 10px;
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+        #about .gallery .box img.horizontal{
+            height: 60vh;
+        }
+    /* DATE & PLACE */
+        #dateandplace .motif{
+            position: absolute;
+            top: -8%;
+            right: 0;
+        }
+        #dateandplace .motif2{
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #dateandplace .motif3{
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+        #dateandplace .motif4{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -12%;
+        }
+        #dateandplace .motif5{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -12%;
+        }
+        #dateandplace .box{
+            margin: 0 auto;
+            padding: 3% 0;
+            width: 90%;
+        }
+        #dateandplace .box .row{margin: 0;}
+        #dateandplace .box .col-lg-6{
+            border-left: 1px solid #f56049;
+            border-right: 1px solid #f56049;
+        }
+        #dateandplace .box .day{
+            font-family: "LeckerliOne Regular";
+            font-size: 80px;
+            color: #A6CE28;
+        }
+        #dateandplace .box .title{
+            font-family: "Krub Bold";
+            font-size: 35px;
+            color: #F56049;
+        }
+        #dateandplace .box p{
+        	margin-bottom: 0;
+            font-size: 35px !important;
+            line-height: 45px;
+            color: #042B5B;
+        }
+    /* RSVP */
+        #rsvp form{
+            margin: 0 auto;
+            width: 70%;
+        }
+        #rsvp form input[type=text],
+        #rsvp form input[type=email],
+        #rsvp form input[type=number]{
+	    	font-family: "Krub Regular";
+            font-size: 19px !important;
+            line-height: 26px;
+            letter-spacing: 0.38px;
+            color: #f56049;
+            text-align: center;
+            border: 1px solid #79cdd5;
+            border-radius: 0;
+        }
+        ::-webkit-input-placeholder{color: #f56049 !important;}
+        ::-ms-input-placeholder{color: #f56049 !important;}
+        ::placeholder{color: #f56049 !important;}
+        #rsvp form input::-webkit-outer-spin-button,
+        #rsvp form input::-webkit-inner-spin-button{
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #rsvp form input[type=number] {
+            -moz-appearance:textfield; /* Firefox */
+        }
+        #rsvp form .guest input[type=number]{
+            background: transparent;
+            border: none;
+            width: 10%;
+        }
+        #rsvp form .guest a{
+            margin: 0;
+            padding-top: 0;
+            border: none;
+        }
+        #rsvp form button:focus{outline:0;}
+        #rsvp form label{
+            font-size: 20px !important;
+            letter-spacing: 0.5px;
+            color: #042B5B;
+        }
+        #rsvp form label.radio{font-family: "Krub Bold";}
+        #rsvp form label.font-lightgrey{font-size: 15px !important;}
+        #rsvp form .button-form{
+            background: url('images/button.png');
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            padding: 18px 42px;
+            font-family: "Krub Bold";
+            font-size: 20px !important;
+            text-align: center;
+            border: none;
+            color: #fff;
+        }
+        #rsvp a{
+            font-size: 15px !important;
+            color: #042B5B;
+            border-bottom: 2px solid #042B5B;
+        }
+        #rsvp form .button-form,
+        #rsvp a{
+            position: relative;
+            z-index: 2;
+        }
+        #rsvp .modal .motif{ 
+        	position: absolute;
+			bottom: 0;
+			left: 0;
+        }
+        #rsvp .modal .box,
+        #pagewishlist #wish2 .modal .box{
+			position: relative;
+			z-index: 2;
+			margin: 0 auto;
+			padding: 15% 5%;
+			width: 70%;
+        	background: rgba(255,255,255,0.65);
+        }
+        #rsvp .modal .button-default,
+        #pagewishlist #wish2 .modal .button-default{
+        	position: absolute;
+        	opacity: 1;
+			padding: 8px 40px;
+			top: 3%;
+			right: 2%;
+			font-size: 25px !important;
+			color: #fff;
+			border-bottom: unset;
+			cursor: pointer;
+        }
+    /* WISHLIST */
+        #wishlist .motif{
+            position: absolute;
+            top: -60%;
+            left: 0;
+        }
+        #wishlist .motif2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #wishlist .boxc{
+            left: 15%;
+            right: unset;
+            width: 30%;
+        }
+        #wishlist .subtitle{
+            font-family: "Krub Regular";
+            font-size: 35px;
+            line-height: 25px;
+            color: #F4C916;
+        }
+        #wishlist .title{
+            font-family: "Krub Bold";
+            font-size: 55px;
+            color: #FFFFFF;
+        }
+        #wishlist p{
+            font-size: 20px !important;
+            line-height: 28px;
+            color: #fff;
+        }
+/* Page Wishlist */
+	#pagewishlist #banner .box{
+		top: 35%;
+		right: 20%;
+	}
+	#pagewishlist #banner .motif{
+		bottom: -24%;
+	}
+	#pagewishlist #banner .motif2{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#pagewishlist #wish p,
+	#pagewishlist #wish2 p{
+		font-size: 20px !important;
+		line-height: 30px;
+		color: #042B5B;
+	}
+	#pagewishlist #wish2 a{
+		font-family: "Krub Bold";
+		font-size: 30px !important;
+		letter-spacing: 0.75px;
+		color: #F56049;
+		cursor: pointer;
+	}
+	#pagewishlist #wish2 a:hover,
+	#pagewishlist #wish2 a:focus,
+	#pagewishlist #wish2 a:visited{
+		transition: 1s;
+		color : rgb(245, 96, 73, 0.3);
+	}
+	#pagewishlist #wish2 a:hover .line,
+	#pagewishlist #wish2 a:focus .line,
+	#pagewishlist #wish2 a:visited .line{
+		transition: 1s;
+		width: 60%;
+		height: 2px;
+		background: #042B5B;
+		cursor: pointer;
+	}
+	#pagewishlist #wish2 .modal .motif{ 
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#pagewishlist #wish2 .modal .box{
+		padding: 10% 5%;
+		width: 85%;
+	}
+
+@media screen and (max-width: 846px) {
+	h1{font-size: 35px !important;}
+	h2{font-size: 30px !important;}        
+	h3{font-size: 25px !important;}
+	h4{font-size: 26px !important;}
+	p,a,label,th,td,li, input{
+		font-family: "Krub Regular";
+		font-size: 14px !important;
+		line-height: 20px;
+		color: #333333;
+	}
+	.mtext-center{text-align: center !important;}
+	.ts{text-shadow: 1px 1px 2px rgba(74,74,74,0.65);}
+	.button-default{
+		padding: 15px 25px;
+		font-size: 15px !important;
+	}
+	/* Footer */
+		footer p{
+            font-size: 15px !important;
+			line-height: 19.6px;
+			letter-spacing: 0.85px;
+        }
+	/* Page Home */
+		/* BANNER */
+            #banner .box{
+                margin: 0 auto;
+                top: 55%;
+                left: 0;
+                right: 0;
+            }
+            #banner .box .subtitle{
+            	font-size: 25px;
+				line-height: 40px;
+            }
+            #banner .box .title{
+				margin: 0 auto;
+				width: 60%;
+            	font-size: 30px;
+            	line-height: 40px;
+            }
+            #banner .motif{bottom: -7%;}
+        /* ABOUT */
+            #about .gallery{display: none;}
+            #about .mgallery{
+                position: relative;
+                z-index: 0;
+            }
+            #about .mgallery .row{margin: 0;}
+            #about .mgallery .col-6{padding: 0 5px;}
+            #about .mgallery .col-6 img{
+                margin-bottom: 10px;
+                width: 100%;
+                height: 20vh;
+                object-fit: cover;
+            }
+            #about .mgallery .col-6 img.horizontal{height: 40vh;}
+            #about .mgallery .one-carousel .owl-dots .owl-dot span{
+                background: #fff;
+                border: 1px solid #f56049;
+            }
+            #about .mgallery .one-carousel .owl-dots .owl-dot.active span{background: #f56049 !important;}
+            #about .mgallery .one-carousel .owl-dots .owl-dot:hover span{background: #f56049 !important;}
+        /* DATE & PLACE */
+            #dateandplace .motif{
+                top: -3%;
+                width: 50%;
+            }
+            #dateandplace .mmotif1{
+                position: absolute;
+                margin: 0 auto;
+                top: -5%;
+                left: 0;
+                right: 0;
+                width: 95%;
+            }
+            #dateandplace .mmotif2{
+                position: absolute;
+                margin: 0 auto;
+                bottom: -5%;
+                left: 0;
+                right: 0;
+                width: 95%;
+            }
+            #dateandplace .mmotif3{
+                position: absolute;
+                bottom: -8%;
+                left: -15%;
+                width: 38%;
+            }
+            #dateandplace .boxc{
+                position: relative;
+                top: unset;
+                left: unset;
+                right: unset;
+                transform: unset;
+            }
+            #dateandplace .box .row{
+                position: relative;
+                padding: 0 15%;
+            }
+            #dateandplace .box .col-lg-6{
+                border-top: 1px solid #f56049;
+                border-bottom: 1px solid #f56049;
+                border-left: unset;
+                border-right: unset;
+            }
+            #dateandplace .box .day{font-size: 40px;}
+            #dateandplace .box .title{font-size: 16px;}
+            #dateandplace .box p{
+                font-size: 15px !important;
+                line-height: 20px;
+            }
+        /* RSVP */
+            #rsvp form{width: 100%;}
+            #rsvp form label{font-size: 15px !important;}
+            #rsvp form label.font-lightgrey{font-size: 13px !important;}
+            #rsvp form .button-form{
+                padding: 15px 35px;
+                font-size: 15px !important;
+            }
+            #rsvp form .button-form, #rsvp a{z-index: 0;}
+            #rsvp .modal .button-default,
+            #pagewishlist #wish2 .modal .button-default{
+                padding: 6px 27px;
+                font-size: 15px !important;
+            }
+        /* WISHLIST */
+            #wishlist .motif{top: -35%;}
+            #wishlist .motif2{width: 50%;}
+            #wishlist .boxc{
+                top: 40%;
+                left: 0;
+                right: 0;
+                width: 55%;
+            }
+            #wishlist .subtitle{font-size: 25px;}
+            #wishlist .title{font-size: 35px;}
+            #wishlist p{
+                font-size: 15px !important;
+                line-height: 23px;
+            }
+    /* Page Wishlist */
+	    #pagewishlist #banner,
+	    #pagewishlist #wish{background-color: #b7eee1; }
+	    #pagewishlist #banner .mmotif{
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	width: 50%;
+	    }
+	    #pagewishlist #banner .mmotif2{
+	    	position: absolute;
+	    	bottom: -11%;
+	    	left: 0;
+	    }
+	    #pagewishlist #banner .box{
+	    	margin: 0 auto;
+	    	top: 58%;
+	    	left: 0;
+	    	right: 0;
+	    }
+	    #pagewishlist #wish p,
+	    #pagewishlist #wish2 p{
+	    	font-size: 15px !important;
+	    	line-height: 22px !important;
+	    	letter-spacing: 0.38px !important;
+	    }
+	    #pagewishlist #wish2 a{font-size: 16px !important;}
+	    #pagewishlist #wish2 a:hover .line,
+	    #pagewishlist #wish2 a:focus .line,
+	    #pagewishlist #wish2 a:visited .line{width: 80%;}
+	    #pagewishlist #wish2 .modal .mmotif{ 
+	    	position: absolute;
+	    	top: 0;
+	    	right: 0;
+	    	width: 27%;
+	    }
+	    #pagewishlist #wish2 .modal .box{padding: 15% 5%;}
+}
