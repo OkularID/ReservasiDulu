@@ -102,7 +102,7 @@
     	background-size: 10px 20px;
     	display: inline-block;
 	    width: 2px; 
-	    height: 330px;
+	    height: 446px;
 	    position: absolute;
 	    right: 0;
 	    top: 150px;
@@ -112,12 +112,14 @@
 	}
 	.rsvp-section{
 		background-image: url(images/bg-rsvp-12.jpg);
+		background-size: cover;
 		background-position: bottom right;
 		background-repeat: no-repeat;
 		background-color: #f0ece1;
 		-webkit-box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
 		-moz-box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
 		box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.3);
+		padding: 150px 0;
 	}
 	.name-text::after{
 		content: " : ";
@@ -170,6 +172,19 @@
 	#exampleModal .close-button img{
 		width: 60%
 	}
+	.accomodation h3 {
+    	font-size: 2.2rem !important;
+	}
+	.accomodation .button-location{
+		color: #284c5b;
+		font-weight: bold;
+		border-bottom: 2px solid #c7b198;
+	}
+	.accomodation .garis{
+		position: absolute;
+		top: 0;
+		left: 2.2rem;
+	}
 	@media screen and (max-width: 846px) {
 		.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
 			padding-left: 30px !important;
@@ -183,7 +198,7 @@
     		font-size: 45px !important;
     	}
     	p, a, label, th, td, li, input{
-    		font-size: 12pt;
+    		font-size: 11pt;
     		line-height: 30px;
     	}
     	.inseparable-section{
@@ -216,7 +231,7 @@
     		padding-bottom: 0;
     	}
     	.footer p{
-    		font-size: 7pt;
+    		font-size: 8pt;
     	}
     	.nav-wedding-2 img{
     		margin: auto;
@@ -271,5 +286,11 @@
 	  		text-align: center;
 			display: block;
 			margin-top: 10px;
+  		}
+  		.rsvp-section{
+  			padding: 70px 0;
+  		}
+  		.carousel-gallery .owl-dots .owl-dot:hover span, .carousel-gallery .owl-dots .owl-dot.active span{
+  			background: #284c5b !important;
   		}
 	}

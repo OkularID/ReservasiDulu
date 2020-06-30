@@ -1,0 +1,531 @@
+/* Default */
+	@font-face{
+	    font-family: "Roboto Regular";
+	    src: url(Roboto-Regular.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Roboto Light";
+	    src: url(Roboto-Light.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Rajdhani Bold";
+	    src: url(Rajdhani-Bold.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Montserrat Medium";
+	    src: url(Montserrat-Medium.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Nunito Regular";
+	    src: url(Nunito-Regular.ttf) format("truetype");
+	}
+	h1, h2, h3, h4, h5, h6{
+	    font-family: "Rajdhani Bold";
+		color: #1d1d1b;
+	}
+	h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+		color: #1d1d1b;
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #1d1d1b;
+	}
+	h1{
+		font-size: 120px !important;
+		letter-spacing: 1.4px;
+		line-height: 105px !important;
+	}
+	h2{
+		font-size: 71px !important;
+		line-height : 62.99px !important;
+	}
+	h3{font-size: 53px !important;}
+	h5{font-size: 18px !important;}
+	p,a,label,th,td,li, input{
+	    font-family: "Roboto Light";
+		font-size: 15px;
+		line-height: 28px;
+		color : #999898;
+	}
+	.container-fluid{position: relative;}
+	.rlgu{right: unset !important;}
+	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
+	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
+	.line-white{border: 1px solid #fff;}
+	.bg-black{background: #1d1d1b !important;}
+    .font-black{color: #1d1d1b !important;}
+    .font-yellow{color: #decb3d !important;}
+    .h-lg-100vh{height: 100vh !important;}
+	.button-default{
+		padding: 10px 20px;
+	    font-family: "Roboto Regular";
+		font-size: 14px !important;
+		letter-spacing: 1.4px;
+		color: #FFFFFF;
+		background: #ccb425;
+		border: 1px solid #ccb425;
+	}
+	.button-default:hover{color: #fff;}
+/* Navbar */
+	nav{
+		position: absolute;
+		z-index: 1;
+		padding: 2.1% 5%;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	nav ul{
+		margin-bottom: 0;
+		padding: 10px 0;
+		list-style-type: none;
+		text-align: right;
+	}
+	nav ul li{
+		display: inline;
+		padding: 0 25px;
+	}
+	nav ul li a{
+	    font-family: "Roboto Light";
+	  	font-size: 14px !important;
+	  	letter-spacing: 1.4px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	nav ul li a:hover,
+	nav ul li a:active,
+	nav ul li a.active{
+		padding-bottom: 5px;
+		color: #ccb425;
+		border-bottom: 1px solid #ccb425;
+		transition: .0s;
+	}
+	.side-nav{
+		background: #1d1d1b;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		height: 100vh;
+		width: 100%;
+		transition: all .3s;
+	}
+	.side-nav.active{
+		left: 0;
+	}
+	.side-nav ul{
+		margin: 4.5em 0 0;
+	}
+	.side-nav ul li{
+		display: block;
+		text-align: center;
+		margin: 25px 0;
+	}
+	.side-nav .fa-times{
+		font-size: 40px;
+		color: #fff;
+	}
+	@media screen and (max-width: 846px) {
+		nav ul.bars{
+			padding-left: 0;
+			height: 50px;
+		}
+		nav #toggle{
+			float: right;
+			width: 28px;
+			height: 23px;
+			cursor: pointer;
+		}
+		nav #toggle div{
+			margin: 4px 0 8px;
+			width: 100%;
+			height: 2px;
+			background: #fff;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+		}
+		.side-nav .close-div{
+			position: absolute;
+			top: 3%;
+			right: 5%;
+			width: 17%;
+			cursor: pointer;
+		}
+	}
+/* Footer */
+	footer{background: #1d1d1b;}
+	footer p{
+	    font-family: "Montserrat Medium";
+		margin-bottom: 0;
+		font-size: 14px;
+  		line-height: 30px;
+		color: #acacae;
+	}
+	footer p b{color: #fff;}
+	footer .button-footer{
+		margin-right: 3%;
+		padding: 3% 5%;
+	    font-family: "Nunito Regular";
+		font-size: 11px;
+	  	letter-spacing: 2px;
+	  	color: #ACACAE;
+		border-radius: 0;
+		border: 1px solid #ACACAE;
+	}
+	footer .button-footer:hover{
+		color: #1d1d1b;
+		background: #fff;
+	}
+/* Page Home */
+	#homepage{background: #f3f3f3;}
+	/* Banner */
+        #banner .images{
+            position: absolute;
+            top: 15%;
+            right: 0;
+            width: 70%;
+        }
+        #banner .boxc{
+            top: 52%;
+            right: 48%;
+            width: 40%;
+        }
+        #banner .boxc h1{
+            margin-bottom: 5%;
+            color: #fff;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+        }
+        #banner .boxc h5{
+            margin-bottom: 5%;
+            font-family: "Roboto Light";
+            letter-spacing: 2px;
+            color: #decb3d;
+        }
+        #banner .button-default{padding: 10px 60px;}
+    /* About */
+        #about .motif{
+            position: absolute;
+            top: 3%;
+            left: 5%;
+            width: 52%;
+            height: 15vh;
+            background: #e5e5e5;
+        }
+        #about .motif2{
+            position: absolute;
+            bottom: 19.5%;
+            right: 0;
+            width: 66%;
+            height: 36vh;
+            background: #e5e5e5;
+        }
+        #about .images{
+            position: relative;
+            z-index: 1
+        }
+        #about .images2{
+            position: absolute;
+            bottom: 12%;
+            left: 8.5%;
+            width: 37%;
+        }
+        #about .images3{
+            position: absolute;
+            bottom: 28.5%;
+            right: 0;
+            width: 44%;
+        }
+    /* Venue */
+        #venue .boxc{width: 80%;}
+        #venue .boxc h2,#venue .boxc p{color: #fff;}
+        #venue .boxc h3 span{
+            color: #decb3d;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #decb3d;
+        }
+    /* Special Guest */
+        #special-guest .col-lg-12 .row{
+            margin-left: 0;
+            margin-right: 0;
+            padding-bottom: 6%;
+        }
+        #special-guest .motif{
+            position: absolute;
+            top: 28%;
+            right: 0;
+            width: 45%;
+            height: 70vh;
+            background: #e5e5e5;
+        }
+        #special-guest .specialguest-carousel .item .content-box{
+        	display: none;
+        	transition: 0.8s;
+        }
+        #special-guest .specialguest-carousel .center .item .content-box{
+        	display: block;
+        	position: relative;
+        	transition: 0.8s;
+        }
+        #special-guest .specialguest-carousel .images{
+        	width: 90%;
+        	height: 100%;
+        	object-fit: cover;
+        }
+        #special-guest .specialguest-carousel .images2{
+        	width: 82%;
+        	height: 100%;
+        	object-fit: cover;
+        }
+        #special-guest .specialguest-carousel .guest{
+        	position: absolute;
+        	top: 4%;
+        	right: 23%;
+        	font-family: "Roboto Light";
+        	font-size: 14px;
+        	letter-spacing: 1.4px;
+        	color: #FFFFFF;
+        }
+        #special-guest .specialguest-carousel .owl-nav{
+        	position: absolute;
+        	margin: 0 auto;
+        	top: 75%;
+        	left: 9.5%;
+        	right: 0;
+        	transform: translateY(-50%);
+        	width: 7%;
+        }
+        #special-guest .specialguest-carousel .owl-nav img{width: 86%;}
+        #special-guest .specialguest-carousel .owl-nav .owl-prev,
+        #special-guest .specialguest-carousel .owl-nav .owl-next{
+        	position: unset;
+        	margin: unset;
+        	top: unset;
+        	left: unset;
+        	right: unset;
+        	transform: unset;
+        	width: 50%;
+        }
+    /* RSVP */
+        #rsvp .boxc{
+            padding: 5%;
+            top: 0;
+            transform: unset;
+            width: 63%;
+            background: #fff;
+        }
+        #rsvp .boxc .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #rsvp form .radio-toolbar label{margin-left: 5px;}
+        #rsvp form input[type=text],
+        #rsvp form input[type=email],
+        #rsvp form input[type=number]{
+            background: #f3f3f3;
+            border: 1px solid #f3f3f3;
+            border-radius: 0;
+        }
+        ::-webkit-input-placeholder{color: #AEAEAF !important;}
+        ::-ms-input-placeholder{color: #AEAEAF !important;}
+        ::placeholder{color: #AEAEAF !important;}
+        #rsvp form input::-webkit-outer-spin-button,
+        #rsvp form input::-webkit-inner-spin-button{
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #rsvp form input[type=number] {
+            -moz-appearance:textfield; /* Firefox */
+        }
+        #rsvp form .guest{margin-bottom: 3%;}
+        #rsvp form .guest input[type=number]{
+            text-align: center;
+            background: transparent;
+            border: none;
+            width: 10%;
+        }
+        #rsvp form .guest a{
+            margin: 0;
+            padding-top: 0;
+            border: none;
+        }
+        #rsvp form .guest a:first-child{padding-left: 0;}
+        #rsvp form .button-default{
+            padding: 10px 15px;
+            line-height: 17px !important;
+        }
+        #rsvp form .fr{float: right !important;}
+        #rsvp #ebrochure.modal{padding: 0 !important;}
+        #rsvp #ebrochure.modal .modal-dialog{max-width: 100%;}
+        #rsvp #ebrochure.modal .modal-dialog .modal-content{
+        	margin: 0 auto;
+            width: 85%;
+            height: auto;
+            border: unset;
+            border-radius: unset;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .row{
+        	margin-right: -15px;
+			margin-left: -15px;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .close{
+            position: absolute;
+            top: -6%;
+			right: -4%;
+            cursor: pointer;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .close img{width: 80%;}
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc{
+        	z-index: 1;
+        	padding: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 80%;
+        	background: transparent;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc h2{
+        	margin-bottom: 3%;
+        	font-size: 84px !important;
+        	line-height: 80px !important;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .images{
+        	float: right;
+        	width: 40%;
+			height: 75vh;
+        	object-fit: cover;
+        }
+
+@media screen and (max-width: 846px) {
+	h1{
+		font-size: 60px !important;
+		line-height: 52px !important;
+	}
+	h2{
+		font-size: 34px !important;
+		line-height: 35px !important;
+	}
+	h3{font-size: 27px !important;}
+	h5{font-size: 16px !important;}
+	p,a,label,th,td,li, input{
+		font-size: 9px !important;
+		line-height: 17px;
+	}
+	.pt-m-65vh{padding-top: 65vh !important;}
+	.mtext-center{text-align: center !important;}
+	.ts{text-shadow: 1px 1px 2px rgba(74,74,74,0.65);}
+	.button-default{font-size: 11px !important;}
+	/* Footer */
+		footer p{
+			font-size: 11px !important;
+			line-height: 17.6px;
+			letter-spacing: 0.85px;
+		}
+		footer .mtext-center{text-align: center !important;}
+	/* Page Home */            
+		/* Banner */
+			#banner .images{
+				top: unset;
+				bottom: 0;
+				width: 65%;
+				height: 68vh;
+				object-fit: cover;
+			}
+			#banner .boxc{
+				position: relative;
+				padding-top: 13%;
+				top: unset;
+				left: unset;
+				right: unset;
+				transform: unset;
+				width: 100%;
+			}
+			#banner .boxc .logo{
+				margin-bottom: 15%;
+				width: 40%;
+			}
+			#banner .boxc h1{margin-bottom: 7%;}
+			#banner .boxc h5{
+				margin-bottom: 7%;
+				width: 120px;
+			}
+			#banner .button-default{padding: 10px 20px;}
+		/* About */
+			#about .motif{
+				top: -7%;
+				width: 47%;
+				height: 10vh;
+			}
+			#about h2{margin-bottom: 10%;}
+		/* Venue */
+			#venue .images{
+				height: 70vh;
+				object-fit: cover;
+			}
+		/* Special Guest */
+			#special-guest .col-lg-12 .row{padding-bottom: 20%;}
+			#special-guest .motif{
+				top: unset;
+				bottom: 10%;
+				width: 84%;
+				height: 40vh;
+			}
+	        #special-guest .specialguest-carousel .images2{
+	        	float: right;
+				width: 80%;
+	        }
+	        #special-guest .specialguest-carousel .guest{
+	        	right: 14%;
+				font-size: 11px;
+	        }
+	        #special-guest .specialguest-carousel .owl-nav{
+	        	top: unset;
+				bottom: -1%;
+				left: -25%;
+				transform: unset;
+				width: 25%;
+	        }
+		/* RSVP */
+			#rsvp .images{
+				height: 100vh;
+				object-fit: cover;
+			}
+			#rsvp .boxc{
+				padding: 10% 5%;
+				width: 80%;
+			}
+			#rsvp form .button-default{
+				display: block;
+				float: unset !important;
+				margin-bottom: 10%;
+				width: 100%;
+				text-align: center;
+			}
+			#rsvp form a.button-default{
+				margin-bottom: 0;
+				color: #ccb425;
+				background: #fff;
+			}
+	        #rsvp #ebrochure.modal .modal-dialog .modal-content .close{
+	        	top: -4%;
+				right: -12%;
+	        }
+	        #rsvp #ebrochure.modal .modal-dialog .modal-content .close img{width: 60%;}
+	        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc{
+	        	position: relative;
+				padding: 15% 15% 0;
+				top: unset;
+				transform: unset;
+				width: 100%;
+	        }
+	        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc h2{
+	        	margin-bottom: 10%;
+	        	font-size: 32px !important;
+    			line-height: 32px !important;
+	        }
+	        #rsvp #ebrochure.modal .modal-dialog .modal-content .images{
+	        	float: unset;
+				width: 100%;
+				height: 40vh;
+	        }
+}

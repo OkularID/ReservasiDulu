@@ -103,7 +103,7 @@
 		nav h3 i,
 		nav .close-div i{cursor: pointer;}
 		nav ul li:last-child{
-			padding-right: 15px;
+			padding-left: 0;
 		}
 		nav ul li a:hover,
 		nav ul li a:active,
@@ -171,27 +171,27 @@
 		background: #fff;
 	}
 /* Page Home */
-	/* DATE & PLACE */
-        #dateandplace .one-carousel .item img{
+	/* BANNER */
+        #banner .one-carousel .item img{
             height: 100vh;
             object-fit: cover;
         }
-        #dateandplace .one-carousel .owl-dots{
+        #banner .one-carousel .owl-dots{
             position: absolute;
             bottom: 4%;
             left: 0;
             right: 0;
             margin: 0 auto;
         }
-        #dateandplace .one-carousel .owl-dots .owl-dot span{
+        #banner .one-carousel .owl-dots .owl-dot span{
             width: 90px;
             height: 5px;
             border-radius: 0;
             background: #ffffff !important;
         }
-        #dateandplace .one-carousel .owl-dots .owl-dot.active span{background: #819e82 !important;}
-        #dateandplace .one-carousel .owl-dots .owl-dot:hover span{background: #819e82 !important;}
-        #dateandplace .wrap{
+        #banner .one-carousel .owl-dots .owl-dot.active span{background: #819e82 !important;}
+        #banner .one-carousel .owl-dots .owl-dot:hover span{background: #819e82 !important;}
+        #banner .wrap{
             z-index: 2;
             top: 57%;
             padding: 3% 6%;
@@ -199,19 +199,19 @@
             text-align: center;
             background-color: rgb(129,158,130,0.5);
         }
-        #dateandplace .wrap h6{font-family: "Belleza Regular";}
-        #dateandplace .wrap .boxc.l,
-        #dateandplace .wrap .boxc.r{width: 22%;}
-        #dateandplace .wrap .boxc.l{
+        #banner .wrap h6{font-family: "Belleza Regular";}
+        #banner .wrap .boxc.l,
+        #banner .wrap .boxc.r{width: 22%;}
+        #banner .wrap .boxc.l{
             margin: unset;
             right: unset;
         }
-        #dateandplace .wrap .boxc.r{
+        #banner .wrap .boxc.r{
             margin: unset;
             left: unset;
         }
-    /* OUR STORY */
-        #ourstory .date{
+    /* DATE & PLACE */
+        #dateandplace .date{
             margin: 0 auto;
             padding: 4% 5%;
             width: 75%;
@@ -268,6 +268,18 @@
             line-height: 60px;
             color: #FFFFFF;
         }
+        #album .modal .modal-dialog .modal-content{
+            margin: 0 auto;
+            width: auto;
+            border: none;
+        }
+        #album .modal .modal-dialog .modal-content .close{
+            position: absolute;
+            top: 6%;
+            right: 3%;
+        }
+        #album .modal .modal-dialog .modal-content .container-fluid{padding: 0;}
+        #album .modal .modal-dialog .modal-content .close img{width: 70%;}
     /* RSVP */
         #rsvp form table{width: 100%;}
         #rsvp form table tr td{padding-bottom: 3%;}
@@ -320,20 +332,22 @@
             line-height: 23.6px;
             letter-spacing: 0.85px;
         }
+        footer .mtext-center{text-align: center !important;}
 	/* Page Home */
-		/* DATE & PLACE */
-            #dateandplace .wrap{
+		/* BANNER */
+            #banner .wrap{
                 padding: 6%;
                 width: 80%
             }
-            #dateandplace .wrap.active{display: none;}
-            #dateandplace .one-carousel .item img{height: 90vh;}
-            #dateandplace .one-carousel .owl-dots .owl-dot span{
+            #banner .wrap.active{display: none;}
+            #banner .one-carousel .item img{height: 90vh;}
+            #banner .one-carousel .owl-dots .owl-dot span{
                 width: 50px;
                 height: 3px;
             }
-        /* OUR STORY */
-            #ourstory{text-align: center;}
+        /* DATE & PLACE, OUR STORY */
+            #dateandplace,#ourstory{text-align: center;}
+            #dateandplace .boxc,
             #ourstory .boxc{
                 position: relative;
                 margin: 0 auto;
@@ -342,10 +356,11 @@
                 right: unset;
                 transform: unset;
             }
-            #ourstory .date{
+            #dateandplace .date{
                 width: 100%;
                 font-size: 11px;
             }
+            #dateandplace p,
             #ourstory p{
                 font-size: 17px !important;
                 line-height: 30px;
@@ -374,6 +389,7 @@
                 margin-left: 0;
                 margin-right: 0;
             }
+            #album .one-carousel .owl-dots{display: none;}
         /* RSVP */
             #rsvp h2{text-align: center;}
             #rsvp form table{margin-bottom: 10%;}

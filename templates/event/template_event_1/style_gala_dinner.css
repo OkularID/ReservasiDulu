@@ -1,0 +1,251 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: "DMSerifText Regular";
+}
+h1{
+	font-size: 45px !important;
+}
+p,a,label,th,td,li, input{
+    font-family: "Montserrat Regular";
+    font-size :  11pt;
+    line-height : 24px;
+}
+.font-montserrat{
+	font-family: "Montserrat Regular";
+}
+.font-nunito{
+	font-family: "Nunito Regular";
+}
+.font-70-px{
+	font-size: 60px !important;
+}
+.bg-dark-blue{
+	background-color: #0a0f29;
+}
+.bg-blue{
+	background: #182643;
+}
+.nav-wedding{
+	z-index: 9;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.nav-wedding li.mx-4{
+	display: inline;
+}
+.nav-wedding li.mx-4 a{
+	color: #fff;
+}
+.header-home .header-home-content{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 15%;
+}
+.header-home .header-home-content h1{
+	font-size: 70px !important;
+	font-family: "DMSerifText Regular";
+	margin-bottom: -10px;
+}
+.header-home .header-home-content .de-papel{
+	margin-left: 4.2rem;
+}
+.header-home .header-home-content h4{
+	font-family: "Nunito Regular";
+	letter-spacing: 3px;
+}
+.header-home-brief{
+	background-image: url(images/header-brief-03.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.header-home-location .middle-time{
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+.home-location-section iframe{
+	height: 600px;
+}
+.home-location-section .content{
+	background-image: url(images/bg-blue-location-04.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 400px;
+	padding: 70px 45px;
+	right: 4%;
+}
+.home-location-section .content a{
+	border: 2px solid #fff;
+	padding: 10px 25px;
+}
+.home-bottom-content{
+	background-image: url(images/bottom-content-04.jpg);
+	margin-top: -5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 50px;
+}
+.home-bottom-content .hr-rundown{
+	border: 1.5px solid #fff;
+	width: 20%;
+}
+.time-div{
+	width: 9%;
+}
+.home-bottom-content input[type=text], .home-bottom-content input[type=text]:focus{
+	border: 2px solid #fff;
+	background: none;
+	border-radius: 0;
+	height: 30px;
+	color: #fff;
+}
+.home-bottom-content .bottom-line{
+	border-top: 1px solid #6d6d70;
+}
+.save-seat{
+	padding: 150px 100px;
+}
+.submit-dinner{
+	color: #fff;
+	border: 2px solid #fff;
+	background: none;
+	padding: 5px 18px;
+	display: inline-block;
+	margin-top: 0.5em;
+}
+.content-footer .button-bottom{
+	border: 2px solid #fff;
+	padding: 5px 20px;
+	display: inline-block;
+	margin: 15px 0;
+	font-size: 11px;
+}
+.content-footer .location h5{
+	line-height: 30pt;
+}
+.footer .button{
+	border: 2px solid #fff;
+	padding: 5px 20px;
+	color: #fff;
+}
+.modal-submit{
+	background: #182643 !important;
+}
+.modal-submit .close-div{
+	position: absolute;
+	right: 0;
+	top: -32px;
+}
+@media screen and (max-width: 846px) {
+	.side-menu{
+		width: 100%;
+		height: 100vh;
+		background-image: url(images/side-menu-bg-04.jpg);
+		background-size: cover;
+		position: fixed;
+		left: -100%;
+		transition: all .3s;
+	}
+	.side-menu.active{
+		left: 0;
+	}
+	.side-menu ul{
+		margin-top: 130px;
+	}
+	.nav-wedding li.mx-4{
+		display: block;
+		margin-top: 15px;
+	}
+	.nav-wedding li.mx-4 a{
+		font-size: 16px;
+	}
+	p, a, label, th, td, li, input{
+		font-size: 9pt;
+	}
+	h1 {
+    font-size: 30px !important;
+	}
+	.header-home .header-home-content h1 {
+	    font-size: 45px !important;
+	}
+	.header-home .header-home-content{
+		width: 68%;
+		bottom: auto;
+		top: 38%;
+	}
+	.header-home .header-home-content h4{
+		font-size: 1rem;
+	}
+	.header-home .anchor{
+		margin-top: 150px;
+	}
+	.header-home-brief p.title{
+		width: 50%;
+		margin: auto;
+	}
+	.header-home-brief{
+		background-image: url(images/header-brief-mobile-07.jpg);
+	}
+	.header-home-brief hr.hr{
+		background: #6d6d70;
+		width: 35%;
+		margin: 50px auto;
+	}
+	.header-home-location .middle-time{
+		border: none;
+	}
+	.header-home-location{
+		padding-bottom: 6rem;
+	}
+	.home-location-section p, .home-location-section a{
+		font-size: 8pt;
+	}
+	.time-div{
+		width: 12%;
+		margin-left: 4%;
+	}
+	.owl-theme .owl-dots .owl-dot span{
+		background: #0a102a !important;
+		border: 1px solid #fff;
+	}
+	.carousel-gallery .owl-dots .owl-dot:hover span, .carousel-gallery .owl-dots .owl-dot.active span {
+    	background: #fff !important;
+	}
+	.home-bottom-content{
+		padding-bottom: 20px;
+	}
+	.content-footer{
+		padding-bottom: 50px !important;
+	}
+	.content-footer .location h5 {
+    	font-size: 18px;
+	}
+	.home-bottom-content .bottom-line{
+		width: 85%;
+	}
+	.content-footer .location{
+		border-right: 1px solid #6d6d70;
+	}
+	.content-footer p, .content-footer a{
+		font-size: 7pt;
+	}
+	.content-footer .button-bottom{
+		padding: 5px 5px;
+		font-size: 7pt !important;
+		margin-top: 20px;
+	}
+	.footer p, .footer a{
+		font-size: 7px !important;
+	}
+	.footer .button{
+		padding: 5px 3px;
+	}
+	#form-submit{
+		padding: 40px 20px;
+	}
+	.font-70-px {
+    	font-size: 30px !important;
+	}
+}

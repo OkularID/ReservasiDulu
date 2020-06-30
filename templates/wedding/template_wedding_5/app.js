@@ -5,7 +5,7 @@ $(document).ready(function() {
         hour = minute * 60,
         day = hour * 24;
 
-  let countDown = new Date('May 27, 2020 00:00:00').getTime(),
+  let countDown = new Date('May 27, 2021 00:00:00').getTime(),
       x = setInterval(function() {    
         let now = new Date().getTime(),
         distance = countDown - now;
@@ -30,17 +30,17 @@ $(document).ready(function() {
     $("#dateandplace-wrap").removeClass("active");
   })
   // Add smooth scrolling to all links
-  // $("nav a").on('click', function(event) {
-  //   if (this.hash !== "") {
-  //     event.preventDefault();
-  //     var hash = this.hash;
-  //     $('html, body').animate({
-  //       scrollTop: $(hash).offset().top
-  //     }, 1000, function(){
-  //       window.location.hash = hash;
-  //     });
-  //   }
-  // });
+  $("nav a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
 });
 // ============Carousel===============
 $(document).ready(function() {

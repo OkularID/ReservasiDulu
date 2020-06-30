@@ -1,0 +1,311 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: "Oswald Regular";
+}
+p,a,label,th,td,li, input{
+    font-family: "OpenSans Regular";
+    font-size :  11pt;
+    line-height : 24px;
+}
+strong, .font-weight-bold, .nav-opening .menu a, h1, h2, h3, h4, h5, h6{
+	letter-spacing: 1px;
+}
+.img-full{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.border-white{
+	border: 2px solid #fff;
+}
+.bg-coral{
+	background-color: #e07566;
+}
+.bg-yellow{
+	background-color: #d1b320;
+}
+.bg-blue{
+	background-color: #54b1cb;
+}
+.font-opensans{
+	font-family: "opensans Regular";
+}
+.font-oswald{
+	font-family: "Oswald Regular";
+}
+.font-110-px{
+	font-size: 110px !important;
+}
+.font-50-px{
+	font-size: 47px !important;
+}
+.font-27-px{
+	font-size: 27px !important;
+}
+.text-yellow{
+	color: #efd226;
+}
+.nav-opening{
+	background-color: #f1f0f2;
+	padding: 25px 10px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.14);
+	z-index: 3;
+	position: fixed;
+	width: 92%;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.nav-opening ul{
+	margin-bottom: 0;
+}
+.nav-opening li.mx-4, .nav-opening li{
+	display: inline;
+	z-index: 3;
+}
+.nav-opening .menu a{
+	color: #54b1cb;
+	font-weight: bold;
+}
+.nav-opening .links a{
+	color: #727272;
+}
+.header .logo{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.header-right{
+	background-image: url(images/header-bg-right-03.jpg);
+	background-size: cover;
+}
+.header .text-yellow{
+	border-top: 2px solid #efd226;
+	border-bottom: 2px solid #efd226;
+	width: 65%;
+	padding-bottom: 12px;
+}
+.header .text-yellow span{
+	vertical-align: middle;
+}
+.header .text-yellow span.middle{
+	font-size: 20px;
+}
+.brief .brief-left{
+	background-image: url(images/brief-bg-left-04.jpg);
+}
+.brief .brief-left .content{
+	position: absolute;
+	left: 50%;
+	top: 31%;
+	transform: translate(-50%);
+	width: 76%;
+}
+.counting .right-content .content{
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.venue iframe{
+	height: 500px;
+}
+.venue .right-content{
+	background-image: url(images/venue-bg-coral-10.jpg);
+	background-size: cover;
+	padding-top: 50px;
+	padding-left: 80px;
+}
+.venue .right-content h1.text-white{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	width: 90%;
+	padding-bottom: 12px;
+}
+.venue .right-content .text-white span{
+	vertical-align: middle;
+}
+.venue .right-content .text-white span.middle{
+	font-size: 20px;
+	vertical-align: middle;
+}
+.menus .bg-coral{
+	padding: 33px 20px;
+}
+.menus .bg-yellow{
+	padding: 100px 80px;
+}
+.menus .bg-yellow .border-content{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 25px 0;
+	margin: 50px 0;
+}
+.menus .bg-yellow .tab-content{
+	height: 220px;
+	overflow-y: scroll;
+}
+.menus .bg-yellow .tab-content::-webkit-scrollbar {
+    width: 5px;
+}
+.menus .bg-yellow .tab-content::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
+    border-radius: 10px;*/
+}
+.menus .bg-yellow .tab-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#fff;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.7);*/
+}
+.menus .bg-yellow .nav-pills .nav-link{
+	color: #fff;
+	padding: 5px 36px;
+	border: 2px solid #fff;
+	margin: 0 7px;
+}
+.menus .bg-yellow .nav-pills .nav-link.active,.menus .bg-yellow .nav-pills .show > .nav-link{
+	color: #d1b320;
+	background-color: #fff;
+	font-weight: bold;
+}
+.special-performance .content{
+	background-image: url(images/special-performance-content-bg-16.jpg);
+	background-size: cover;
+	width: 400px;
+	height: 420px;
+	padding: 80px 70px;
+	position: absolute;
+	right: 9%;
+	top: 20%;
+}
+.special-performance .owl-nav{
+	position: absolute;
+	position: absolute;
+	right: 23.6%;
+	top: 450px;
+	transform: translate(-50%);
+}
+.special-performance .owl-nav .owl-prev, .special-performance .owl-nav .owl-next{
+	position: relative;
+	left: auto;
+	right: auto;
+}
+.rsvp .bg-coral{
+	padding: 4em;
+}
+.modal-submit .modal-content{
+	background-image: url(images/bg-popup-20.jpg);
+	background-size: cover;
+}
+.modal-submit .times{
+	text-align: right;
+	margin-right: -50px;
+
+}
+  @media screen and (max-width: 846px) {
+  	p, a, label, th, td, li, input{
+  		font-size: 8pt;
+  	}
+  	h1{
+  		font-size: 29px !important;
+  	}
+  	.font-110-px{
+  		font-size: 52px !important;
+  	}
+  	.font-50-px{
+  		font-size: 33px !important;
+  	}
+  	.header .logo {
+	    position: absolute;
+	    top: 5%;
+	    left: 5%;
+	    z-index: 9;
+	}
+  	.header .logo img{
+  		width: 70%;
+  	}
+  	.header .img-fluid.w-100{
+  		height: 70vh;
+  		object-fit: cover;
+  	}
+  	.nav-opening{
+  		background: none;
+		right: 3%;
+		top: -28px;
+		bottom: auto;
+		width: 100%;
+		box-shadow: none;
+		position: absolute;
+  	}
+  	.nav-opening .side-menu{
+  		position: fixed;
+  		background-image: url(images/menu-mobile-bg-02.jpg);
+  		background-size: cover;
+  		width: 100%;
+  		height: 100vh;
+  		left: -100%;
+		top: 0;
+		padding-top: 30px;
+		transition: all .3s;
+  	}
+  	.side-menu.active{
+  		left: 0;
+  	}
+  	.nav-opening .side-menu ul{
+  		margin-top: 100px;
+  	}
+  	.nav-opening .side-menu ul li{
+  		display: block;
+  		margin: 20px 0;
+  	}
+  	.nav-opening .side-menu ul li a{
+  		color: #54b1cb;
+  		font-weight: bold;
+  	}
+  	.brief .brief-left{
+  		height: 450px;
+		background-size: cover;
+  	}
+  	.brief .brief-left .content{
+  		top: 18%;
+  		width: 80%;
+  	}
+  	.brief .bg-coral{
+  		background-color: #53b1cb;
+  	}
+  	.counting .right-content .content{
+  		width: 70px;
+		height: 70px;
+  	}
+  	.venue .right-content{
+  		padding-top: 0px;
+		padding-left: 30px;
+  	}
+  	.menus .bg-yellow {
+    	padding: 50px 30px;
+	}
+	.special-performance .content{
+		position: relative;
+		right: auto;
+		top: auto;
+		height: 190px;
+		width: 100%;
+		padding: 60px 30px;
+		background-position: 100%;
+	}
+	.special-performance .owl-nav .owl-prev, .special-performance .owl-nav .owl-next{
+		display: block !important;
+		transform: none !important;
+		font-size: 0px !important;
+	}
+	.special-performance .owl-nav{
+		right: 5%;
+		top: 260px;
+	}
+	.rsvp .bg-coral {
+    	padding: 2em;
+	}
+	.footer .col-lg-8, .footer .col-lg-4{
+		text-align: center !important;
+	}
+  }

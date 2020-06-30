@@ -1,0 +1,328 @@
+body {
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Baloo Medium";
+}
+p,a,label,th,td,li, input{
+    font-family: "Baloo Medium";
+    font-size :  14pt;
+    line-height : 24px;
+}
+.font-baloo{
+	font-family: "Baloo Medium";
+}
+.font-baloo-semibold{
+	font-family: "Baloo SemiBold";
+}
+.font-gochihand{
+	font-family: "GochiHand Regular";
+}
+.font-permanentmarker{
+	font-family: "PermanentMarker Regular";
+}
+.font-30-px{
+	font-size: 30px;
+}
+.font-40-px{
+	font-size: 40px;
+}
+.font-50-px{
+	font-size: 50px;
+}
+.font-60-px{
+	font-size: 60px;
+}
+.font-100-px{
+	font-size: 100px;
+}
+.font-130-px{
+	font-size: 130px;
+}
+/* Color */
+.text-dark-blue{
+	color: #283a56;
+}
+.text-blue{
+	color: #a3cedc;
+}
+/* Background */
+.bg-blue{
+	background-color: #a3cedc;
+}
+/* Border */
+.border-white{
+	border: 2px solid #fff;
+}
+/* Navbar */
+.nav-event{
+	position: absolute;
+	z-index: 9;
+}
+.nav-event ul{
+	display: inline-flex;
+}
+.nav-event ul li a{
+	color: #283a56;
+}
+.nav-event ul li a:hover{
+	color: #f5ca4d;
+}
+/* Header*/
+.header{
+	background-image: url(images/header-bg-03.jpg);
+	background-size: cover;
+	height: 1360px;
+}
+.header .content-left{
+	-ms-transform: rotate(-10deg); /* IE 9 */
+  	transform: rotate(-10deg);
+  	position: absolute;
+	top: 170px;
+	left: 4%;
+}
+.header .content-left .title{
+	position: absolute;
+	bottom: -30px;
+	left: 45%;
+}
+.header .content-left .title h1{
+	text-shadow: 3px 4px 0px rgba(255, 255, 255, 1);
+}
+.header .content-right{
+	-ms-transform: rotate(-10deg); /* IE 9 */
+  	transform: rotate(-10deg);
+  	position: absolute;
+	right: 5.5%;
+	top: 170px;
+	text-align: right;
+}
+.header .content-right .title{
+	text-shadow: 5px 7px 0px rgb(255, 255, 255);
+}
+.header .bottom-content{
+	position: absolute;
+	bottom: 410px;
+	right: 20%;
+}
+.date{
+	background-image: url(images/date-bg-05.jpg);
+	background-size: cover;
+	background-position: 100% 100%;
+	height: 726px;
+}
+.place{
+	background-image: url(images/place-bg-05.jpg);
+	background-size: cover;
+	height: 744px;
+}
+.date .date-title{
+	margin-top: 10rem;
+}
+.date .date-title h1, .place .date-title h1, .rsvp .rsvp-title h1{
+	text-shadow: 5px 7px 0px rgb(255, 255, 255);
+	font-size: 135px;
+}
+.date .date-title h1:nth-child(2){
+	margin-left: 6rem;
+}
+.date .day{
+	margin-top: 12rem;
+}
+.date .day .line-margin{
+	margin-top: -30px;
+}
+.place .date-title{
+	margin-top: 5rem;
+}
+.place .day{
+	margin-top: 7rem;
+}
+.rundown{
+	background-image: url(images/rundown-bg-09.jpg);
+	background-size: cover;
+	height: 796px;
+}
+.rundown .content{
+	margin-top: 11rem;
+}
+.rsvp{
+	background-image: url(images/rsvp-bg-09.jpg);
+	background-size: cover;
+	background-position: 100%;
+	height: 1090px;
+}
+.rsvp .rsvp-title{
+	margin-top: 15rem;
+}
+.rsvp .rsvp-title h1:nth-child(2){
+	margin-left: 6rem;
+}
+.rsvp input{
+	border: 1px solid #7fb9d0;
+	border-radius: 0;
+	color: #7fb9d0;
+	text-align: center;
+}
+.rsvp .form-rsvp{
+	margin-top: 15rem;
+}
+.thank-you{
+	background-image: url(images/thank-you-bg-01.jpg);
+	background-size: cover;
+	height: 540px;
+}
+@media screen and (max-width: 846px) {
+	h1, h2, h3, h4, h5, h6{
+		line-height: 0.9 !important;
+	}
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px !important;
+	}
+	h3{
+		font-size: 17px;
+	}
+	p, a, label, th, td, li, input{
+		font-size: 10pt;
+	}
+	.font-40-px{
+		font-size: 30px;
+	}
+	.font-50-px{
+		font-size: 30px;
+	}
+	.font-60-px{
+		font-size: 40px;
+	}
+	.font-100-px {
+    	font-size: 60px;
+	}
+	.font-130-px {
+    	font-size: 75px;
+	}
+	.nav-event ul{
+		display: block;
+	}
+	.side-menu{
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100vw;
+		height: 100vh;
+		background-color: #fff;
+		transition: all .5s;
+	}
+	.side-menu.active{
+		left: 0;
+	}
+	.header{
+		background-image: url(images/bg-header-mobile-04.jpg);
+		background-size: contain;
+		background-position: center;
+		height: 800px;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.header img{
+		display: block;
+		width: 96%;
+	}
+	.header .content-right{
+		right: auto;
+		top: 90px;
+		text-align: left;
+		left: 13%;
+	}
+	.header .content-left .title{
+		bottom: -18px;
+		left: 17%;
+	}
+	.header .content-left{
+		top: 230px;
+		width: 100%;
+		left: 0;
+	}
+	.header .content-right span{
+		margin-left: 6rem;
+	}
+	.header .bottom-content{
+		bottom: 176px;
+		right: 8%;
+	}
+	.date .date-title h1, .place .date-title h1, .rsvp .rsvp-title h1 {
+	    font-size: 60px;
+	    text-align: center;
+	}
+	.date {
+    	background-image: url(images/bg-date-mobile-03.jpg);
+    	height: 596px;
+	}
+	.date .date-title {
+    	margin-top: 7rem;
+	}
+	.date .day {
+    	margin-top: 5rem;
+	}
+	.date .day .line-margin{
+		margin-top: -25px;
+	}
+	.date h2{
+		font-size: 25px !important;
+	}
+	.day h1:first-child{
+		font-size: 25px !important;
+	}
+	.place{
+		background-image: url(images/bg-place-mobile-03.jpg);
+		background-position: center;
+	}
+	.place .day {
+    	margin-top: 17rem;
+	}
+	.place .day h2{
+		line-height: 25px !important;
+	}
+	.rundown{
+		background-image: url(images/bg-rundown-mobile-03.jpg);
+		background-position: center;
+		height: 706px;
+	}
+	.rundown .content {
+	    margin-top: 10rem;
+	    margin-left: 5.3rem;
+	}
+	.rundown .content h1{
+		margin-bottom: 0;
+	}
+	.rundown .content img{
+		width: 56%;
+	}
+	.rundown .col-lg-3{
+		padding-left: 1.7rem;
+	}
+	.rsvp{
+		background-image: url(images/bg-rsvp-mobile-03.jpg);
+		background-position: center;
+		height: 953px;
+	}
+	.rsvp .rsvp-title {
+    	margin-top: 9rem;
+	}
+	.rsvp .form-rsvp {
+    	margin-top: 8rem;
+	}
+	.form-rsvp a img:nth-child(1){
+		width: 35%;
+		margin: 10px 0;
+	}
+	.thank-you{
+		background-image: url(images/bg-thank-you-mobile-01.jpg);
+		height: 372px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}

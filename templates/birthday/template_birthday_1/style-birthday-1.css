@@ -472,6 +472,7 @@
 			font-size: 12px !important;
 			text-align: center;
 		}
+		footer .button-trans{padding: 2.5% 5%;}
 	/* Page Home */
 		/* BANNER */
             #banner .logo{top: 30%;}

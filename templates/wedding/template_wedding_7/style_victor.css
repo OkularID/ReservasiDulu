@@ -1,0 +1,376 @@
+body {
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Palatino";
+}
+p,a,label,th,td,li, input{
+    font-family: "Avenir";
+    font-size :  11pt;
+    line-height : 24px;
+}
+.font-palatino{
+	font-family: "Palatino";
+}
+.font-avenir{
+	font-family: "Avenir";
+}
+.text-dgray{
+	color: #58595b;
+}
+.text-brown{
+	color: #ceb49b !important;
+}
+.text-lgray{
+	color: #d6cfc9;
+}
+.text-dgreen{
+	color: #657565;
+}
+.font-90-px{
+	font-size: 90px !important;
+}
+.nav-victor{
+	position: fixed;
+	padding-top: 0.6em;
+	z-index: 8;
+	width: 20%;
+	bottom: 40px;
+}
+.nav-victor ul li{
+	margin: 15px 0;
+}
+.nav-victor ul li a{
+	font-family: "Palatino";
+  	filter: invert(1) grayscale(1) opacity(0.6);
+	-webkit-filter: invert(1) grayscale(1) opacity(0.6);
+  	font-size: 20px;
+}
+.nav-victor li a:hover, .nav-victor li a.active {
+	font-weight: bold;
+	filter: invert(1) grayscale(1) opacity(1);
+	-webkit-filter: invert(1) grayscale(1) opacity(1);
+	color: #0056b3;
+}
+.side-menu{
+	position: fixed;
+	top: 0;
+	left: -100%;
+	height: 100vh;
+	width: 100%;
+	background-color: #f5f4f2;
+	transition: all .3s;
+}
+.side-menu.active{
+	left: 0;
+}
+.logo{
+	position: fixed;
+	top: 5%;
+	left: 3%;
+	z-index: 6;
+}
+.logo img{
+	filter: invert(1) grayscale(1) opacity(1);
+	-webkit-filter: invert(1) grayscale(1) opacity(1);
+}
+/* Setup Fixed Ornament */
+.line-wrap img{
+	position: fixed;
+	right: 5%;
+	transform: translateX(50%);
+	z-index: 1;
+}
+.line-wrap .panah{
+	bottom: 50px;
+}
+.header{
+	background-image: url(images/header-desktop-10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+}
+.header .content{
+	position: absolute;
+	right: 25%;
+	bottom: 100px;
+}
+.brief{
+	background-image: url(images/brief-desktop-11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 765.4px;
+	position: relative;
+}
+.gallery{
+	background-image: url(images/gallery-desktop-12.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+}
+.gallery .image-gallery{
+	position: absolute;
+	right: 0;
+	transform: translateY(-50%);
+	top: 50%;
+	z-index: 2;
+}
+.gallery-number{
+	position: absolute;
+	right: 29%;
+	top: 40%;
+	z-index: 3;
+}
+.gallery-number h1{
+	font-size: 100px;
+}
+#galleryModal .modal-content{
+	background: none;
+	border: none;
+}
+#galleryModal .close{
+	opacity: 1;
+}
+#galleryModal .carousel-control-next {
+    right: -130px;
+    z-index: 3;
+}
+#galleryModal .carousel-control-prev {
+    left: -130px;
+    z-index: 3;
+}
+.gallery-content-section{
+	opacity: 0;
+	transition: all .9s;
+}
+.gallery-content-section.show{
+	opacity: 1;
+}
+.gallery-number.hide{
+	display: none;
+}
+.image-gallery.hide{
+	display: none;
+}
+.view-click{
+	position: absolute;
+	left: 34%;
+	transform: translateX(-50%);
+	bottom: 80px;
+	z-index: 3;
+}
+.view-click.hide{
+	display: none;
+}
+.venue{
+	position: relative;
+}
+.venue .div-nav-venue{
+	position: absolute;
+	bottom: -420px;
+	z-index: 3;
+}
+.venue #pills-home .row{
+	background-image: url(images/venue-bg-tab-24.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 769px;
+	width: 100%;
+}
+.venue #pills-profile .row{
+	background-image: url(images/venue-bg-tab-05.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 766px;
+	width: 100%;
+}
+.venue #pills-contact .row{
+	background-image: url(images/venue-bg-tab-06.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 766px;
+	width: 100%;
+}
+.venue .nav-pills .nav-link{
+	color: #ceb49b;
+	border-radius: 0;
+	border-bottom: 2px solid #eae3dc;
+}
+.venue .nav-pills .nav-link.active, .venue .nav-pills .show > .nav-link{
+	color: #ceb49b;
+	background: none;
+	border-bottom: 2px solid #aba298;
+	border-radius: 0;
+}
+.venue-number{
+	position: absolute;
+	bottom: 0;
+	right: 13%;
+	opacity: 0.4;
+}
+.venue-number h1{
+	font-size: 270px;
+}
+.contact{
+	background-image: url(images/contact-desktop-10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 767px;
+	z-index: 2;
+	position: relative;
+}
+.contact .form-control{
+	border: none;
+	border-bottom: 2px solid #d6cfc9;
+	border-radius: 0;
+	background: none;
+	color: #d6cfc9 !important;
+}
+.contact .form-control:focus{
+	background: none;
+	color: #d6cfc9 !important;
+}
+.form-control::placeholder{
+	color: #d6cfc9 !important;
+	opacity: 0.4;
+}
+.contact .submit-btn{
+	border-bottom: 2px solid;
+}
+.footer{
+	background-color: #d6cfc9;
+	z-index: 2;
+	position: relative;
+}
+.footer .button{
+	border: 2px solid #58595b;
+	padding: 5px 20px;
+	color: #58595b;
+}
+.thank-you{
+	background-image: url(images/bg-form-submit-04.jpg);
+}
+.contact .line-wrap img{
+	position: absolute;
+	z-index: 3;
+}
+@media screen and (max-width: 846px) {
+	p, a, label, th, td, li, input{
+		font-size: 10pt;
+	}
+	.logo{
+		top: 3%;
+		left: 5%;
+	}
+	.header{
+		background-image: url(images/header-mobile-14.jpg);
+	}
+	.header .content{
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.gallery-content-section.show{
+		padding-top: 200px;
+	}
+	.font-90-px {
+    	font-size: 70px !important;
+	}
+	.header p.text-brown.font-palatino{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	#days, #hours, #minutes{
+		margin-right: 50px;
+		text-align: right;
+	}
+	.brief{
+		background-image: url(images/brief-mobile-15.jpg);
+		height: 900px;
+	}
+	.gallery{
+		background-image: url(images/gallery-mobile-16.jpg);
+		height: 628px;
+	}
+	.gallery-number{
+		top: auto;
+		bottom: 25%;
+		right: 25%;
+	}
+	.gallery-number h1{
+		font-size: 80px;
+	}
+	.view-click{
+		bottom: 0;
+		border-bottom: 2px solid;
+		width: 80%;
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+	.mobile-venue .text-brown{
+		border-bottom: 2px solid;
+	}
+	.mobile-venue .slide-1{
+		background-image: url(images/accomodation-mobile-18.jpg);
+		background-size: cover;
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
+	.mobile-venue .slide-2{
+		background-image: url(images/accomodation-mobile-2-18.jpg);
+		background-size: cover;
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
+	.mobile-venue .slide-3{
+		background-image: url(images/accomodation-mobile-3-18.jpg);
+		background-size: cover;
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
+	.mobile-venue .owl-dots{
+		position: absolute;
+		bottom: 50px;
+		right: 60px;
+	}
+	.mobile-venue .owl-nav{
+		margin-top: 0 !important;
+		position: absolute;
+		bottom: 8px;
+		right: 10%;
+	}
+	.mobile-venue .owl-next,.mobile-venue .owl-prev{
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		font-size: 40px !important;
+		color: #ceb49b !important;
+	}
+	.mobile-venue .owl-next{
+		margin-left: 70px !important;
+	}
+	.mobile-venue .owl-dots .owl-dot:hover span, .mobile-venue .owl-dots .owl-dot.active span{
+		background: #d0b49b !important;
+	}
+	.contact{
+		background-color: #6a6c63;
+		background-image: none;
+		height: 840px;
+	}
+	.footer .order-1{
+		text-align: center;
+	}
+	.footer .order-2{
+		text-align: center;
+		padding-top: 20px;
+	}
+	.thank-you .font-90-px {
+    	font-size: 40px !important;
+	}
+}
