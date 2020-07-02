@@ -1,0 +1,441 @@
+body {
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Montserrat Regular";
+}
+p,a,label,th,td,li, input{
+    font-family: "Karla Regular";
+    font-size :  12pt;
+    line-height : 20px;
+}
+/* Background and Colors */
+.text-blue{
+	color: #010fe0;
+}
+.text-gray{
+	color: #808285;
+}
+.text-light-gray{
+	color: #a7a9ac;
+}
+.text-light-blue{
+	color: #00d6c2;
+}
+.bg-light-cream{
+	background-color: #f9f8ca;
+}
+.bg-blue{
+	background-color: #010fe0;
+}
+.bg-black{
+	background-color: #000;
+}
+/* Border */
+.border-bottom-white{
+	border-bottom: 1px solid #fff;
+}
+.border-white{
+	border: 2px solid #fff;
+}
+.rounded-button{
+	border-radius: 0.8em;
+}
+.border-light-blue{
+	border: 2px solid #00d6c2;
+}
+/* Fonts */
+.font-23-px{
+	font-size: 23px;
+}
+.font-40-px{
+	font-size: 40px;
+}
+.font-50-px{
+	font-size: 50px;
+}
+.font-55-px{
+	font-size: 55px;
+}
+.font-60-px{
+	font-size: 60px;
+}
+.font-montserrat-semibold{
+	font-family: "Montserrat SemiBold";
+}
+.font-russo{
+	font-family: "RussoOne";
+}
+/* Nav Event */
+.nav-event{
+	position: absolute;
+	z-index: 9;
+}
+.nav-event ul{
+	display: inline-flex;
+}
+.nav-event ul li a{
+	color: #fff;
+	font-family: "BebasNeue Regular";
+	font-size: 22px;
+}
+/* Content Header */
+.header{
+	background-image: url(images/desktop-header-02.jpg);
+	background-size: cover;
+	background-position: 100%;
+}
+.header .content-header{
+	height: 806px;
+}
+.header .content-header .content{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.videos .wrap-videos{
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+.videos .wrap-videos .container-videos{
+	padding-top: 100px;
+}
+.videos .content{
+	position: absolute;
+	right: 10%;
+	top: 0;
+}
+.line-up{
+	background-image: url(images/bg-line-up-desktop-07.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 1240px;
+}
+.line-up .title{
+	background-color: transparent;
+	background-image: url(images/title-blue-bg-06.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 420px;
+	height: 72px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -2.2rem;
+}
+.line-up .title h1, .tickets .title h1,.updates .title h1, .about .title h1, .sponsors .title h1 {
+	letter-spacing: 6px;
+}
+.line-up .carousel-lineup{
+	margin-top: 12rem;
+}
+.line-up .carousel-lineup .item {
+	-webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+    transition: all 0.3s ease-in-out;
+}
+.line-up .carousel-lineup  .owl-item.active.center .item {
+	-webkit-transform: scale3d(1.0, 1.0, 1);
+	transform: scale3d(1.0, 1.0, 1);
+}
+.line-up .carousel-lineup .owl-prev, .line-up .carousel-lineup .owl-next{
+	top: auto;
+}
+.line-up .carousel-lineup .owl-item h1{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.line-up .carousel-lineup .owl-item h1{
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.line-up .carousel-lineup .owl-item.active.center .item h1{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+.tickets .title{
+	background-color: transparent;
+	background-image: url(images/title-tickets-bg-13.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 743px;
+	height: 72px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -2.3rem;
+}
+.tickets .price .value{
+	border: 3px solid #010fe0;
+	padding: 2px;
+}
+.tickets .price sup{
+	font-size: 30px;
+}
+.updates{
+	background-image: url(images/update-bg-15.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+}
+.updates .title{
+	background-color: transparent;
+	background-image: url(images/title-updates-bg-14.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 420px;
+	height: 72px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -2.2rem;
+}
+.updates .row-content{
+	padding: 100px 0;
+}
+.venue{
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.venue .title{
+	background-image: url(images/venue-bg-title-16.jpg);
+	background-size: contain;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.venue .title h1{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%);
+}
+.venue iframe{
+	height: 500px;
+}
+.about{
+	background-image: url(images/abou-bg-02.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.about .title{
+	background-color: transparent;
+	background-image: url(images/title-about-bg-02.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 950px;
+	height: 96px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -3rem;
+}
+.about .left-content{
+	padding-top: 11rem;
+	padding-left: 5rem;
+}
+.sponsors{
+	background-image: url(images/bg-sponsors-04.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 200px;
+	padding-bottom: 150px;
+}
+.sponsors .box-logo{
+	height: 200px;
+}
+.sponsors .img-logos{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 30%;
+	max-width: 100%;
+}
+.sponsors .title h1{
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 2em;
+	left: -1.5em;
+}
+.footer hr{
+	border-top: 1px solid #fff;
+	width: 90%;
+}
+@media screen and (max-width: 846px) {
+	p, a, label, th, td, li, input{
+		font-size: 8pt;
+		line-height: 16px;
+	}
+	.font-60-px{
+		font-size: 45px;
+	}
+	.font-55-px{
+		font-size: 40px;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h3{
+		font-size: 22px;
+	}
+	h4{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 14px;
+	}
+	/* Nav */
+	.nav-event ul{
+		display: inline-block;
+	}
+	.nav-event .menu-icon{
+		z-index: 9;
+		position: relative;
+	}
+	.side-menu{
+		background-color: #010fe0;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		z-index: 9;
+		left: -100%;
+		top: 0;
+		transition: all .3s;
+	}
+	.side-menu h1{
+		font-size: 50px;
+	}
+	.side-menu.active{
+		left: 0;
+	}
+	/* Pages */
+	.header{
+		background-image: url(images/mobile-header-02.jpg);
+		background-position: center;
+	}
+	.header .content-header{
+		height: 735px;
+	}
+	.header .content-header .content{
+		top: 41%;
+	}
+	.header .logo-ismaya{
+		width: 100px;
+	}
+	.header .logo-sountopia{
+		width: 250px;
+	}
+	.videos .content {
+	    position: relative;
+	    right: auto;
+	    top: auto;
+	}
+	.videos .wrap-videos .container-videos{
+		padding-top: 0;
+	}
+	.line-up{
+		height: 520px;
+	}
+	.line-up .title{
+		width: 240px;
+		height: 48px;
+		margin-top: -1.4rem;
+	}
+	.line-up .carousel-lineup {
+    	margin-top: 9rem;
+	}
+	.carousel-lineup .owl-prev img, .carousel-lineup .owl-next img{
+		width: 45px;
+	}
+	.line-up .carousel-lineup .owl-item h1{
+		bottom: 7%;
+		font-size: 15px;
+	}
+	.tickets .title{
+		background-image: url(images/title-tickets-bg-mobile-03.png);
+		background-position: right;
+		width: 293px;
+		height: 47px;
+		margin-top: -1.5rem;
+	}
+	.price .value .font-55-px{
+		font-size: 33px;
+	}
+	.tickets .price sup{
+		font-size: 20px;
+	}
+	.updates .title{
+		width: 290px;
+		height: 53px;
+		margin-top: -1.6rem;
+	}
+	.updates .title h1{
+		text-align: right;
+	}
+	.updates .row-content h1{
+		font-size: 19px;
+	}
+	.updates .row-content .border-bottom-white{
+		border: none;
+	}
+	.updates{
+		background-image: url(images/updates-bg-mobile-04.jpg);
+	}
+	.venue{
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+	.venue .title h1{
+		left: 27%;
+	}
+	.venue iframe{
+		height: 300px;
+		margin-bottom: -10px;
+	}
+	.about{
+		background-image: url(images/about-bg-mobile-06.jpg);
+	}
+	.about .title{
+		background-image: url(images/title-about-mobile-05.png);
+		width: 280px;
+		height: 56px;
+		margin-top: 4.5px;
+	}
+	.about .left-content {
+	    padding-top: 4rem;
+	    padding-left: 2rem;
+	}
+	.sponsors{
+		position: relative;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.sponsors .title-mobile{
+		transform: rotate(-90deg);
+		position: absolute;
+		top: 7em;
+		left: auto;
+		right: -3em;
+	}
+	.sponsors .title-mobile h1{
+		font-size: 30px;
+		letter-spacing: 3px;
+	}
+	.sponsors .box-logo h6{
+		font-size: 9px;
+	}
+	.footer{
+		text-align: center;
+	}
+	.footer p{
+		font-size: 7pt;
+	}
+}

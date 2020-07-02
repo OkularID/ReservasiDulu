@@ -51,6 +51,110 @@
     font-family: "Overpass Bold";
     src: url(../fonts/Overpass-Bold.ttf) format("truetype");
   }
+  @font-face {
+    font-family: "ProximaNova Regular";
+    src: url(../fonts/ProximaNova-Regular.otf) format("truetype");
+  }
+  @font-face {
+    font-family: "Proxima Nova Bold";
+    src: url(../fonts/Proxima-Nova-Bold.otf) format("truetype");
+  }
+  @font-face {
+    font-family: "Allura Regular";
+    src: url(../fonts/Allura-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "PlayfairDisplay Regular";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "DMSerifText Regular";
+    src: url(../fonts/DMSerifText-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Nunito Regular";
+    src: url(../fonts/Nunito-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "MyriadPro Regular";
+    src: url(../fonts/MyriadPro-Regular.otf) format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Oswald Regular";
+    src: url(../fonts/Oswald-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Avenir";
+    src: url(../fonts/Avenir.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Palatino";
+    src: url(../fonts/Palatino.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Worksans Light";
+    src: url(../fonts/WorkSans-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Worksans ExtraBold";
+    src: url(../fonts/WorkSans-ExtraBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Baloo Medium";
+    src: url(../fonts/BalooBhaina2-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Baloo SemiBold";
+    src: url(../fonts/BalooBhaina2-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "GochiHand Regular";
+    src: url(../fonts/GochiHand-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "PermanentMarker Regular";
+    src: url(../fonts/PermanentMarker-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Jost Regular";
+    src: url(../fonts/Jost-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Jost Light";
+    src: url(../fonts/Jost-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Merriweather Regular";
+    src: url(../fonts/Merriweather-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Merriweather Bold";
+    src: url(../fonts/Merriweather-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "BebasNeue Regular";
+    src: url(../fonts/BebasNeue-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Karla Regular";
+    src: url(../fonts/Karla-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Raleway ExtraBold";
+    src: url(../fonts/Raleway-Extrabold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Raleway Medium";
+    src: url(../fonts/Raleway-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "RussoOne";
+    src: url(../fonts/RussoOne.ttf) format("truetype");
+  }
   /* Link Setup */
   a{transition: all .3s;}
   a:hover{text-decoration: none !important;}
@@ -349,7 +453,6 @@
     .ml-lg-90p{margin-left: 90% !important;}
     .ml-lg-95p{margin-left: 95% !important;}
     .ml-lg-100p{margin-left: 100% !important;}
-    .ml-lg-5{margin-left: 5px !important;}
     .ml-lg-8{margin-left: 8px !important;}
     .ml-lg-10{margin-left: 10px !important;}
     .ml-lg-15{margin-left: 15px !important;}
@@ -816,7 +919,6 @@
     .pl-lg-90p{padding-left: 90% !important;}
     .pl-lg-95p{padding-left: 95% !important;}
     .pl-lg-100p{padding-left: 100% !important;}
-    .pl-lg-5{padding-left: 5px !important;}
     .pl-lg-8{padding-left: 8px !important;}
     .pl-lg-10{padding-left: 10px !important;}
     .pl-lg-15{padding-left: 15px !important;}
