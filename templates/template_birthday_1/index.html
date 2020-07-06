@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
     <title>Template Birthday | Homepage</title>
     <link rel="shortcut icon" href="images/ico.ico">
-    <!-- Customize css -->
-    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
-    <link rel="stylesheet" type="text/css" href="../../css/default.css">
-    <link rel="stylesheet" type="text/css" href="style-birthday-1.css">
     <!-- Features css -->
     <link rel="stylesheet" href="../../features/animatecss/animate.min.css">
     <!--Node Modules css-->
@@ -17,6 +13,10 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <!-- Customize css -->
+    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <link rel="stylesheet" type="text/css" href="style-birthday-1.css">
 </head>
 <body>
     <div id="homepage">
@@ -263,9 +263,9 @@
                                 <tr>
                                     <td><label>Are you attending? *</label></td>
                                     <td>
-                                        <input type="radio" id="yes" name="gender" value="yes">
+                                        <input type="radio" id="yes" name="your-attending" value="yes">
                                         <label class="radio" for="yes">Yes</label>
-                                        <input type="radio" id="no" name="gender" value="no">
+                                        <input type="radio" id="no" name="your-attending" value="no">
                                         <label class="radio" for="no">No</label>
                                     </td>
                                 </tr>
@@ -285,7 +285,7 @@
                                     <td><label>Additional guest *</label></td>
                                     <td>
                                         <div class="guest">
-                                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" min="0" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                                             <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
                                                 <img class="img-fluid" src="images/arrow-down.png" />
                                             </a>
@@ -301,7 +301,7 @@
                                     <a href="wishlist.html" class="button-default bs pl-lg-30 pr-lg-30">SEE WISHLIST</a>
                                 </div>
                                 <div class="order-1 order-lg-3 col-lg-3 pl-lg-0 pr-lg-0 mtext-center text-right">
-                                    <input type="submit" class="button-pink bs ma-m" data-toggle="modal" data-target="#ebrochure" value="SUBMIT" />
+                                    <input type="submit" value="SUBMIT" class="button-pink bs ma-m" data-toggle="modal" data-target="#ebrochure" />
                                 </div>
                             </div>
                         </form>

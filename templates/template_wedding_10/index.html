@@ -482,22 +482,27 @@
                             <p>We are thrilled to welcome you to be our guest at the most unforgettable celebration of our life!</p>
                         </div>
                         <form>
-                            <label for="your-firstname">FULL NAME*</label>
-                            <input type="text" class="form-control" id="your-firstname" name="your-firstname" placeholder="Type here" required>
-                            <label>YOUR RESPONSE*</label>
+                            <label for="your-name">FULL NAME*</label>
+                            <input type="text" name="your-name" class="form-control" placeholder="Type here" required>
+                            <label for="your-attending">YOUR RESPONSE*</label>
                             <div class="radio-toolbar">
-                                <input type="radio" id="radioYES" name="attending" value="yes">
-                                <label for="radioYES" class="mr-lg-2p">Attending</label>
-                                <input type="radio" id="radioNO" name="attending" value="no">
-                                <label for="radioNO">Not Attending</label>
+                                <input type="radio" id="yes" name="your-attending" value="yes">
+                                <label for="yes" class="mr-lg-2p">Attending</label>
+                                <input type="radio" id="no" name="your-attending" value="no">
+                                <label for="no">Not Attending</label>
                             </div>
                             <label for="your-email">EMAIL*</label>
-                            <input type="email" class="form-control" id="your-email" name="your-email" placeholder="Type here" required>
+                            <input type="email" name="your-email" class="form-control" placeholder="Type here" required>
                             <label for="your-phone">PHONE NUMBER*</label>
-                            <input type="text" class="form-control" id="your-phone" name="your-phone" placeholder="Type here" required>
+                            <input type="text" name="your-phone" class="form-control" placeholder="Type here" required>
                             <label for="your-guest">ADDITIONAL GUEST*</label>
-                            <input type="number" class="form-control" id="your-guest" name="your-guest" placeholder="Type here" required>
-                            <button type="submit" class="button-default" data-toggle="modal" data-target="#ebrochure">SUBMIT</button>
+                            <div class="guest form-control w-lg-100p mb-lg-4p">
+                                <input type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                                    <img class="img-fluid" src="images/arrow-down.png" />
+                                </a>
+                            </div>
+                            <input type="submit" value="SUBMIT" class="button-default" data-toggle="modal" data-target="#ebrochure" />
                             <div class="modal fade" id="ebrochure">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
