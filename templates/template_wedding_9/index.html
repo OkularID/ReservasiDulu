@@ -398,36 +398,36 @@
                                     <form>
                                         <table>
                                             <tr>
-                                                <td><label>Are you attending?</label></td>
+                                                <td><label for="your-attending">Are you attending?</label></td>
                                                 <td>
                                                     <div class="radio-toolbar">
-                                                        <input type="radio" id="radioYES" name="attending" value="yes">
-                                                        <label for="radioYES">Yes</label>
-                                                        <input type="radio" id="radioNO" name="attending" value="no">
-                                                        <label for="radioNO">No</label>
+                                                        <input type="radio" id="yes" name="your-attending" value="yes">
+                                                        <label for="yes">Yes</label>
+                                                        <input type="radio" id="no" name="your-attending" value="no">
+                                                        <label for="no">No</label>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><label>Full Name</label></td>
+                                                <td><label for="your-name">Full Name</label></td>
                                                 <td>:<input type="text" name="your-name" class="form-control" required /></td>
                                             </tr>
                                             <tr>
-                                                <td><label>Email</label></td>
+                                                <td><label for="your-email">Email</label></td>
                                                 <td>:<input type="email" name="your-email" class="form-control" required /></td>
                                             </tr>
                                             <tr>
-                                                <td><label>Phone No.</label></td>
+                                                <td><label for="your-phone">Phone No.</label></td>
                                                 <td>:<input type="text" name="your-phone" class="form-control" required /></td>
                                             </tr>
                                             <tr>
-                                                <td><label>Additional Guest</label></td>
+                                                <td><label for="your-guest">Additional Guest</label></td>
                                                 <td>
                                                     <div class="guest">
                                                         <a role="button" id="step-decrement" class="btn btn-default" aria-label="remove 1" aria-labelledby="step-decrement label-text">
                                                             <img class="img-fluid" src="images/form-01.png" />
                                                         </a>
-                                                        <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                                        <input type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                                                         <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
                                                             <img class="img-fluid" src="images/form-02.png" />
                                                         </a>
@@ -437,12 +437,12 @@
                                         </table>
                                         <div class="col-lg-12 pl-lg-0 pr-lg-0">
                                             <div class="button-wrap d-block d-lg-none">
-                                                <input type="submit" class="button-default" data-toggle="modal" data-target="#ebrochure" value="SUBMIT" />
+                                                <input type="submit" value="SUBMIT" class="button-default" data-toggle="modal" data-target="#ebrochure" />
                                                 <img class="img-fluid" src="images/arrow-02.png" />
                                             </div>
                                             <a class="button-default" href="">DOWNLOAD INVITATION <img class="img-fluid" src="images/form-03.png" /></a>
                                             <div class="button-wrap d-none d-lg-block">
-                                                <input type="submit" class="button-default" data-toggle="modal" data-target="#ebrochure" value="SUBMIT" />
+                                                <input type="submit" value="SUBMIT" class="button-default" data-toggle="modal" data-target="#ebrochure" />
                                                 <img class="img-fluid" src="images/arrow-02.png" />
                                             </div>
                                                 <div class="modal fade" id="ebrochure">

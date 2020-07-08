@@ -485,7 +485,8 @@
 			line-height: 38px !important;
 			letter-spacing: 1.4px;
 		}
-		#rsvp form input{
+		#rsvp form input,
+		#rsvp form .guest{
 			margin-bottom: 5%;
 			padding: 7% 5%;
 			font-family: "Avenir Medium";
@@ -533,7 +534,33 @@
 			background-color: #fec2b2;
 		}
 		#rsvp form input[type=radio]:focus{outline-color: transparent;}
-		#rsvp form .button-default{width: 100%;}
+        #rsvp form .guest{
+        	padding: 7px 15px;
+        	height: auto;
+        }
+        #rsvp form .guest input[type=number]{
+            margin: 0;
+            padding: 0;
+            width: 85%;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+        }
+        #rsvp form .guest a{
+            margin: 0;
+            padding: 0 0 3px 30px;
+            border: none;
+        }
+		#rsvp form .button-default{
+			margin-top: 5%;
+			padding: 1% 5%;
+			font-family: "Avenir Black";
+			font-size: 14px !important;
+			line-height: 38px !important;
+			letter-spacing: 1.4px;
+			color: #fff !important;
+			width: 100%;
+		}
 		#rsvp #ebrochure.modal{padding: 0 !important;}
 		#rsvp #ebrochure.modal .modal-dialog{max-width: 100%;}
 		#rsvp #ebrochure.modal .modal-dialog .modal-content{
@@ -775,6 +802,8 @@
 				line-height: 20px !important;
 			}
 			#rsvp form input{font-size: 11px !important;}
+            #rsvp form .guest input[type=number]{width: 80%;}
+            #rsvp form .guest a{padding: 0 0 3px 15px;}
 			#rsvp #ebrochure.modal .modal-dialog .modal-content{width: 80%;}
 			#rsvp #ebrochure.modal .modal-dialog .modal-content .close{
 				z-index: 1;
