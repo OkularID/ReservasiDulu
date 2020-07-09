@@ -55,6 +55,128 @@ $('#chevron-down').click(function(){
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 1500);
 });
+
+//  ============Animation============
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimX").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideX");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimLeft").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideLeft");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimLeftTour").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideLeftTour");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimImage1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideImage1");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimImage2").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideImage2");
+        }
+    });
+  });
+  $(window).scroll(function() {
+    $(".slideanimImage3").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slideImage3");
+        }
+    });
+  });
+
+
+
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    windowTop = $(window).scrollTop();
+    $('.move-right').css({
+      'transform':'translateX('+(windowTop) * 0.1  +'px)'
+    });
+    $('.move-right-fast').css({
+      'transform':'translateX('+(windowTop) * 0.4  +'px)'
+    });
+    $('.move-left').css({
+      'transform':'translateX('+(windowTop) * -0.1 +'px)'
+    });
+    $('.move-left-fast').css({
+      'transform':'translateX('+(windowTop) * -0.7 +'px)'
+    });
+    $('.move-up').css({
+      'transform':'translateY('+(windowTop) * -0.15 +'px)'
+    });
+    $('.move-up-slow').css({
+      'transform':'translateY('+(windowTop) * -0.1 +'px)'
+    });
+    $('.move-up-fast').css({
+      'transform':'translateY('+(windowTop) * -0.4 +'px)'
+    });
+    $('.move-down').css({
+      'transform':'translateY('+(windowTop) * 0.1 +'px)'
+    });
+    $('.move-down-fast').css({
+      'transform':'translateY('+(windowTop) * 0.4 +'px)'
+    });
+  });
+});
+
+
+
+
 // ============Navbar Mobile===============
 $(document).ready(function() {
   $('nav .fa-bars').click(function() {

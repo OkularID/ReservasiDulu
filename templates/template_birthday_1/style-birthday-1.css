@@ -60,6 +60,7 @@
 		color: #a3d7e3;
 		background: #fff;
 		border: 1px solid #a3d7e3;
+        transition: .5s;
 	}
 	.button-pink{
 		padding: 4% 10%;
@@ -73,6 +74,7 @@
 		color: #ff92a7;
 		background: #fff;
 		border: 1px solid #ff92a7;
+        transition: .5s;
 	}
 	.button-trans{
 		padding: 4% 10%;
@@ -82,6 +84,11 @@
 		border-radius: 50px;
 		border: 1px solid #fff;
 	}
+    .button-trans:hover{
+        background: #fff;
+        color: #a7dee9;
+        transition: .5s;
+    }
 /* Navbar */
 	nav{
 		position: absolute;
@@ -144,6 +151,10 @@
 		color: #58595b;
 	}
 	@media screen and (max-width: 846px) {
+        nav .container-fluid{
+            -webkit-animation-name: unset;
+            animation-name: unset;
+        }
 		nav h3 i,
 		nav .close-div i{cursor: pointer;}
 		nav ul li:last-child{
@@ -168,14 +179,39 @@
 	}
 /* Page Home */
 	/* BANNER */
+        #banner{overflow: hidden;}
         #banner .logo{
+            z-index: 2;
             top: 57%;
             width: 100%;
         }
         #banner .motif{
-            top: 54%;
+            z-index: 3;
+            top: 14%;
             left: 42%;
             width: 40%;
+            transform: translateY(0);
+        }
+        #banner .ornament-01{
+            position: absolute;
+            z-index: 1;
+            top: -6%;
+            left: -9%;
+            width: 26%;
+        }
+        #banner .ornament-02{
+            position: absolute;
+            z-index: 1;
+            top: 16%;
+            right: 6%;
+            width: 18%;
+        }
+        #banner .ornament-03{
+            position: absolute;
+            z-index: 1;
+            bottom: -5%;
+            left: 2%;
+            width: 45%;
         }
         #banner .icon{
             top: 90%;
@@ -184,17 +220,29 @@
         }
     /* ABOUT */
         #about .motif1{
-            top: 10%;
+            top: 20%;
             left: 7%;
             right: unset;
             transform: unset;
             width: 10%;
         }
+        #about .motif2{
+            top: 0;
+            transform: unset;
+        }
+        #about .motif3{
+            top: 42%;
+            width: 20%;
+        }
+        #about .images{
+            position: absolute;
+            top: 20%;
+        }
     /* DATE & PLACE */
         #dateandplace .bg{top: 60%;}
         #dateandplace .motif1{
             margin: unset;
-            top: -15%;
+            top: 5%;
             transform: unset;
             left: unset;
             right: 25%;
@@ -202,7 +250,7 @@
         }
         #dateandplace .motif2{
             margin: unset;
-            top: -12%;
+            top: 0;
             transform: unset;
             left: unset;
             right: 3%;
@@ -309,6 +357,11 @@
             -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
             max-width: 33.333333%;
+            overflow: hidden;
+        }
+        #gallery #js-gallery .gallery__thumbs a:hover img, #gallery .ov:hover{
+            transform: scale(1.1);
+            transition: 1s;
         }
         #gallery #js-gallery .gallery__thumbs a.is-active .ov{background-color: unset;}
     /* RSVP */
@@ -340,7 +393,7 @@
             width: 80%;
             font-size : 15px !important;
             letter-spacing : 0.38px;
-            color : #BCBEC0;
+            color : #58595B;
             border: none;
             border-radius: 0;
             border-bottom: 2px solid #00704b;
@@ -396,6 +449,15 @@
             cursor: pointer;
         }
     /* THANKS */
+        #thanks .bg{
+            background: url('images/ornament-thanks-01.png');
+            background-size: 100% 100% !important;
+            background-repeat: no-repeat !important;
+            background-attachment: fixed !important;
+            background-position: center !important;
+            width: 100%;
+            height: 50vh;
+        }
         #thanks .desc{
             top: 80%;
             left: 24%;
@@ -477,9 +539,23 @@
 		/* BANNER */
             #banner .logo{top: 30%;}
             #banner .motif{
-                top: 73%;
+                top: 50%;
                 left: 0;
                 width: 85%;
+            }
+            #banner .ornament-01{
+                top: 0;
+                left: -12%;
+                width: 54%;
+            }
+            #banner .ornament-02{
+                top: 36%;
+                right: 0;
+                width: 38%;
+            }
+            #banner .ornament-03{
+                left: -50%;
+                width: 100%;
             }
             #banner .icon{
                 top: 93%;
@@ -487,21 +563,40 @@
                 width: 18%;
             }
         /* ABOUT */
+            #about .wrap{
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            #about .motif1{
+                top: 55%;
+                left: 18%;
+                width: 20%;
+            }
             #about .motif2{
                 top: 22%;
                 transform: unset;
             }
+            #about .motif3{
+                z-index: -1;
+                top: 20%;
+                left: 100%;
+                width: 27%;
+            }
         /* DATE & PLACE */
             #dateandplace .motif1{
                 margin: 0 auto;
-                top: -4%;
+                top: 11%;
                 left: 0;
-                right: 10%;
+                right: 19%;
                 width: 30%;
             }
             #dateandplace .motif2{
                 margin: 0 auto;
-                top: -2.5%;
+                top: 6%;
                 left: 50%;
                 right: 0;
                 width: 50%;
@@ -525,6 +620,7 @@
                 padding-bottom: 10%;
             }
         /* GALLERY */
+            #gallery .one-carousel{z-index: 0;}
             #gallery .one-carousel .owl-dots .owl-dot span{
                 width: 25px;
                 height: 5px;
@@ -549,7 +645,7 @@
                 width: 100%;
                 font-size : 15px !important;
                 letter-spacing : 0.38px;
-                color : #BCBEC0;
+                color : #58595B;
                 border: none;
                 border-radius: 0;
                 border-bottom: 1px solid #00704b;
@@ -564,10 +660,22 @@
             #rsvp form .order-2{margin-bottom: 15%;}
             #rsvp form .button-default,
             #rsvp form .button-pink{display: block;}
+            #rsvp form .button-pink{
+                padding: 15px 30px !important;
+                width: 100%;
+            }
         /* THANKS */
+            #thanks .bg{
+                background: url('images/mobile-ornament-thanks-01.png');
+                height: 30vh;
+            }
+            #thanks .ornament{
+                right: 10%;
+                width: 50%;
+            }
             #thanks .desc{
+                left: 50%;
                 width: 45%;
-                left: 40%;
             }
             #thanks .desc p{font-size: 12px !important;}
     /* Page Wishlist*/
@@ -592,3 +700,121 @@
 			letter-spacing: 0.6px;
 	    }
 }
+/* Animation */
+    /*Slide From Left*/
+    .slideanimLeft {visibility:hidden;}
+    .slideLeft{
+        animation-name: slideLeft;
+        -webkit-animation-name: slideLeft;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        visibility: visible;
+    }
+    @keyframes slideLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+    }
+    @-webkit-keyframes slideLeft {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-50%);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateX(0%);
+        }
+    }
+    /*Image 1*/
+    .slideanimImage1 {visibility:hidden;}
+    .slideImage1 {
+        animation-name: slideImage1;
+        -webkit-animation-name: slideImage1;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+    @keyframes slideImage1 {
+        0% {
+          opacity: 0;
+          transform: translateY(50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slideImage1 {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(50%);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+    }
+    /*Image 2*/
+    .slideanimImage2 {visibility:hidden;}
+    .slideImage2 {
+        animation-name: slideImage2;
+        -webkit-animation-name: slideImage2;
+        animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        visibility: visible;
+    }
+    @keyframes slideImage2 {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slideImage2 {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+    }
+
+    /*Image 3*/
+    .slideanimImage3 {visibility:hidden;}
+    .slideImage3 {
+        animation-name: slideImage3;
+        -webkit-animation-name: slideImage3;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        visibility: visible;
+    }
+    @keyframes slideImage3 {
+        0% {
+          opacity: 0;
+          transform: translateY(150%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slideImage3 {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(150%);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+    }
