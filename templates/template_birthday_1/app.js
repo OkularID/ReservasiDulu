@@ -242,9 +242,6 @@ $(document).ready(function(){
     $('.move-down-fast').css({
       'transform':'translateY('+(windowTop) * 0.4 +'px)'
     });
-    $('.move-scale').css({
-      'transform':'scale('+(windowTop) * 0.01 +')'
-    });
   });
 });
 
