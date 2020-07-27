@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#navbar-example" data-offset="1">
         <div class="nav-event container-fluid py-4">
-            <div class="row d-none d-lg-inline-flex float-right mr-5">
+            <div data-aos="fade-down" class="row d-none d-lg-inline-flex float-right mr-5">
                     <ul class="list-unstyled">
                         <li class="mx-4">
                             <a href="#about" class="nav-link active">
@@ -82,14 +83,15 @@
     <div class="container-fluid header position-relative" id="about">
         <div class="row">
                 <div class="content-left">
-                    <img src="images/header-image-content-04-04-04.png">
+                    <img data-aos="zoom-out" src="images/header-image-content-04-04-04.png">
                     <div class="title">
-                        <h1 class="text-dark-blue font-permanentmarker font-60-px">
-                            hawkins high
-                        </h1>
+                            <h1 data-aos="fade-down" data-aos-offset=-200 class="text-dark-blue font-permanentmarker font-60-px">
+                                hawkins high
+                            </h1>
                     </div>
                 </div>
                 <div class="content-right">
+                    <div data-aos="fade-left">
                     <h1 class="text-white font-gochihand font-40-px">
                         # 10 Year Reunion
                     </h1>
@@ -97,18 +99,21 @@
                         Class Of<br>
                         <span class="font-130-px">2018</span>
                     </h1>
+                    </div>
                 </div>
                 <div class="bottom-content">
+                    <div data-aos="zoom-out">
                     <h1 class="text-dark-blue font-gochihand font-50-px">
                         # Let’s walk down<br>
                         the memory lane
                     </h1>
+                    </div>
                 </div>
         </div>
     </div>
     <div class="container-fluid date" id="date">
         <div class="row">
-            <div class="col-lg-5 offset-lg-1 pt-lg-5">
+            <div data-aos="fade-left" class="col-lg-5 offset-lg-1 pt-lg-5">
                 <div class="date-title">
                     <h1 class="text-dark-blue font-permanentmarker">
                         DATE &<br>
@@ -157,7 +162,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="col-lg-5 pt-lg-5 order-lg-2 order-1">
+            <div data-aos="fade-left" class="col-lg-5 pt-lg-5 order-lg-2 order-1">
                 <div class="date-title">
                     <h1 class="text-dark-blue font-permanentmarker">
                         PLACE<br>
@@ -168,7 +173,7 @@
     </div>
     <div class="container-fluid rundown" id="rundown">
         <div class="row">
-            <div class="col-lg-5 offset-lg-1 pl-lg-5">
+            <div data-aos="fade-right" class="col-lg-5 offset-lg-1 pl-lg-5">
                 <div class="content">
                     <h1 class="text-dark-blue font-gochihand font-60-px">
                         # Rundown
@@ -288,7 +293,7 @@
     </div>
     <div class="container-fluid rsvp" id="rsvp">
         <div class="row">
-            <div class="col-lg-5 offset-lg-1 pt-lg-5">
+            <div data-aos="fade-left" class="col-lg-5 offset-lg-1 pt-lg-5">
                 <div class="rsvp-title">
                     <h1 class="text-dark-blue font-permanentmarker">
                         ROLL<br>
@@ -302,7 +307,16 @@
                 <p class="text-blue">
                     Are you attending?
                 </p>
-                <span class="text-blue mx-5">o Yes</span> <span class="text-blue mx-5">o No</span>
+                <div class="position-relative">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label text-blue" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label text-blue" for="inlineRadio2">No</label>
+                    </div>
+                </div>
                 <p class="text-blue my-3">
                     Fill your full name and contact lists
                 </p> 
@@ -321,14 +335,19 @@
                 <p class="text-blue">
                     Will you bring additional guest(s)?
                 </p>
-                <p class="text-blue">
-                    0
-                </p>
-                <a href="#" data-toggle="modal" data-target="#form-submit">
+                <div class="position-relative">
+                    <input class="form-control w-50 mx-auto" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                    <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                        <h6 class="text-blue">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h6>
+                    </a>
+                </div>
+                <a class="d-inline-block mt-5 mb-4" href="#" data-toggle="modal" data-target="#form-submit">
                     <img src="images/button-11.png">
                 </a>
                 <br>
-                <a href="#">
+                <a  class="d-inline-block" href="#">
                     <img src="images/button-12.png">
                 </a>
             </div>
@@ -386,5 +405,6 @@
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

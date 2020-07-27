@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Merriweather Regular";
@@ -8,6 +9,16 @@ p,a,label,th,td,li, input{
     font-family: "Jost Light";
     font-size :  13pt;
     line-height : 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 /* Fonts */
 .font-jost{
@@ -77,11 +88,15 @@ p,a,label,th,td,li, input{
 	transform: translate(-50%);
 	left: 50%;
 }
+.carousel-header .banner-desktop{
+	height: 100vh;
+	object-fit: cover;
+}
 .about{
 	padding-top: 200px;
-	padding-bottom: 150px;
+	background-image: url(images/bg-purple-about-04.jpg);
 }
-.about .content-left img{
+.about .content-left .image-position{
 	position: absolute;
 	z-index: 2;
 	bottom: -70px;
@@ -92,6 +107,9 @@ p,a,label,th,td,li, input{
 }
 .about .content-right img.content{
 	margin-top: -100px;
+}
+.date{
+	margin-top: 150px;
 }
 .content-date .box-yellow h1{
 	position: absolute;
@@ -123,6 +141,11 @@ p,a,label,th,td,li, input{
 	border: 2px solid #fff;
 	color: #fff;
 }
+#step-increment{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 @media screen and (max-width: 846px) {
 	h1{
 		font-size: 30px;

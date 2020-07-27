@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 h1, h2, h3, h4, h5, h6{
 	font-family: "DMSerifText Regular";
 }
@@ -8,6 +11,16 @@ p,a,label,th,td,li, input{
     font-family: "Montserrat Regular";
     font-size :  11pt;
     line-height : 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 .font-montserrat{
 	font-family: "Montserrat Regular";
@@ -66,15 +79,17 @@ p,a,label,th,td,li, input{
 .home-location-section iframe{
 	height: 600px;
 }
-.home-location-section .content{
-	background-image: url(images/bg-blue-location-04.jpg);
-	background-size: cover;
+.home-location-section .position-content{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	right: 4%;
+}
+.home-location-section .content{
+	background-image: url(images/bg-blue-location-04.jpg);
+	background-size: cover;
 	width: 400px;
 	padding: 70px 45px;
-	right: 4%;
 }
 .home-location-section .content a{
 	border: 2px solid #fff;
@@ -94,7 +109,7 @@ p,a,label,th,td,li, input{
 .time-div{
 	width: 9%;
 }
-.home-bottom-content input[type=text], .home-bottom-content input[type=text]:focus{
+.home-bottom-content input[type=text], .home-bottom-content input[type=text]:focus,.home-bottom-content input[type=number], .home-bottom-content input[type=number]:focus{
 	border: 2px solid #fff;
 	background: none;
 	border-radius: 0;
@@ -137,6 +152,11 @@ p,a,label,th,td,li, input{
 	position: absolute;
 	right: 0;
 	top: -32px;
+}
+#step-increment{
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 @media screen and (max-width: 846px) {
 	.side-menu{

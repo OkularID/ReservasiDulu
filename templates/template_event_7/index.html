@@ -210,10 +210,10 @@
                                     <div class="col-lg-12 mb-lg-5p">
                                         <label>Are you attending the Christmas gathering?</label>
                                         <div class="radio-toolbar">
-                                            <input type="radio" id="yes" name="your-attending" value="yes">
-                                            <label for="yes" class="mr-lg-5p">Yes</label>
-                                            <input type="radio" id="no" name="your-attending" value="no">
-                                            <label for="no">No</label>
+                                            <input type="radio" id="radioYES" name="attending" value="yes">
+                                            <label for="radioYES" class="mr-lg-5p">Yes</label>
+                                            <input type="radio" id="radioNO" name="attending" value="no">
+                                            <label for="radioNO">No</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 mb-lg-5p">
@@ -222,7 +222,7 @@
                                             <a role="button" id="step-decrement" class="btn btn-default" aria-label="remove 1" aria-labelledby="step-decrement label-text">
                                                 <img class="img-fluid" src="images/form-arrow-left.png" />
                                             </a>
-                                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" min="0" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                                             <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
                                                 <img class="img-fluid" src="images/form-arrow-right.png" />
                                             </a>
@@ -235,10 +235,10 @@
                                         <label>Email</label>
                                         <input type="email" name="your-email" class="form-control mb-lg-3p" required />
                                         <label>Telephone</label>
-                                        <input type="text" name="your-phone" class="form-control mb-lg-3p" required />
+                                        <input type="text" name="your-name" class="form-control mb-lg-3p" required />
                                     </div>
                                     <div class="col-lg-12">
-                                        <input type="submit" value="SUBMIT" class="button-form" data-toggle="modal" data-target="#ebrochure" />
+                                        <input type="submit" class="button-form" data-toggle="modal" data-target="#ebrochure" value="SUBMIT" />
                                         <a class="button-download fr" target="_blank" href="invitation.pdf">Download Invitation</a>
                                         <div class="modal fade" id="ebrochure">
                                             <div class="modal-dialog modal-dialog-centered">

@@ -490,8 +490,7 @@
         }
         #rsvp form input[type=text],
         #rsvp form input[type=email],
-        #rsvp form input[type=number],
-        #rsvp form .guest{
+        #rsvp form input[type=number]{
             margin-bottom: 3%;
             padding: 10px 15px;
             height: auto;
@@ -544,20 +543,6 @@
         #rsvp form .radio-toolbar input[type="radio"]:focus + label{
             font-weight: bold;
             border-bottom: 1px solid #a06444;
-        }
-        #rsvp form .guest{padding: 7px 15px;}
-        #rsvp form .guest input[type=number]{
-            margin: 0;
-            padding: 0;
-            width: 85%;
-            background: transparent;
-            border: none;
-            border-radius: 0;
-        }
-        #rsvp form .guest a{
-            margin: 0;
-            padding: 0 0 3px 30px;
-            border: none;
         }
         #rsvp form .button-cream,
         #rsvp form .button-lightbrown{
@@ -768,15 +753,8 @@
                 display: block;
                 margin: 0;
             }
-            #rsvp form .radio-toolbar label{
-                padding: 0 0 10px;
-                margin: 0;
-                width: 49%;
-                text-align: center;
-            }
+            #rsvp form .radio-toolbar label{padding: 10px 25px;}
             #rsvp form .radio-toolbar .line{top: 4px;}
-            #rsvp form .guest input[type=number]{width: 80%;}
-            #rsvp form .guest a{padding: 0 0 3px 20px;}
             #rsvp form .button-cream,
             #rsvp form .button-lightbrown{padding: 10px 15px}
 	        #rsvp #ebrochure.modal .modal-dialog .modal-content{

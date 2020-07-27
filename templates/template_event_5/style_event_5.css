@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Baloo Medium";
@@ -8,6 +9,16 @@ p,a,label,th,td,li, input{
     font-family: "Baloo Medium";
     font-size :  14pt;
     line-height : 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 .font-baloo{
 	font-family: "Baloo Medium";
@@ -171,6 +182,11 @@ p,a,label,th,td,li, input{
 	background-image: url(images/thank-you-bg-01.jpg);
 	background-size: cover;
 	height: 540px;
+}
+#step-increment{
+	position: absolute;
+	right: 25%;
+	top: .1em;
 }
 @media screen and (max-width: 846px) {
 	h1, h2, h3, h4, h5, h6{

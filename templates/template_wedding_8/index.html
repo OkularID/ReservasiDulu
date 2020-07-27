@@ -210,34 +210,29 @@
                                 <div class="form-group col-lg-6 mb-lg-0 pr-m-5 pr-lg-5p">
                                     <label for="your-attending">Are You Attending ?</label>
                                     <div class="box mb-m-10p pt-m-10p pb-m-10p pl-m-10p pr-m-10p mb-lg-30 pt-lg-5p pb-lg-5p pl-lg-5p pr-lg-5p">
-                                        <input type="radio" id="yes" name="your-attending" value="yes">
+                                        <input type="radio" id="yes" name="gender" value="yes">
                                         <label class="radio mb-m-10p" for="yes">Yes, I will be there</label><br />
-                                        <input type="radio" id="no" name="your-attending" value="no">
+                                        <input type="radio" id="no" name="gender" value="no">
                                         <label class="radio mb-m-0" for="no">Sorry, I can’t come</label>
                                     </div>
                                 </div>
                                 <div class="form-group col-12 mb-m-0 pr-m-5 d-block d-lg-none">
-                                    <label for="your-name">Full Name*</label>
-                                    <input type="text" name="your-name" class="form-control" required>
+                                    <label for="your-firstname">Full Name*</label>
+                                    <input type="text" class="form-control" id="your-firstname" name="your-firstname" required>
                                 </div>
                                 <div class="form-group col-lg-6 mb-lg-0 pl-m-5 pl-lg-5p">
                                     <label for="your-phone">Phone Number*</label>
-                                    <input type="text" name="your-phone" class="form-control" required>
+                                    <input type="text" class="form-control" id="your-phone" name="your-phone" required>
                                     <label for="your-email">Email*</label>
-                                    <input type="email" name="your-email" class="form-control" required>
+                                    <input type="email" class="form-control" id="your-email" name="your-email" required>
                                 </div>
                                 <div class="form-group col-lg-6 mb-lg-0 pr-m-5 pr-lg-5p d-none d-lg-block">
-                                    <label for="your-name">Full Name*</label>
-                                    <input type="text" name="your-name" class="form-control" required>
+                                    <label for="your-firstname">Full Name*</label>
+                                    <input type="text" class="form-control" id="your-firstname" name="your-firstname" required>
                                 </div>
                                 <div class="form-group col-lg-6 mb-lg-0 pl-m-5 pl-lg-5p">
                                     <label for="your-guest">Number of Guest</label>
-                                    <div class="guest form-control w-lg-100p mb-lg-4p">
-                                        <input type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
-                                        <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
-                                            <img class="img-fluid" src="images/arrow-down.png" />
-                                        </a>
-                                    </div>
+                                    <input type="text" class="form-control" id="your-guest" name="your-guest" required>
                                 </div>
                                 <div class="form-group col-lg-12 pt-m-10p mb-m-0 pt-lg-5p text-right">
                                     <button type="submit" class="button-default">Submit</button>

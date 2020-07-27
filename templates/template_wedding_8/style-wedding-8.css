@@ -417,8 +417,7 @@
             font-size: 24px !important;
             color: #414042;
         }
-        #rsvp form input,
-        #rsvp form .guest{
+        #rsvp form input{
             margin-bottom: 10px;
             padding: 10px;
             height: auto;
@@ -439,29 +438,6 @@
         }
         #rsvp form input[type=radio]:checked{background: #cdae8a;}
         #rsvp form input[type=radio]:focus{outline-color: transparent;}
-        #rsvp form input::-webkit-outer-spin-button,
-        #rsvp form input::-webkit-inner-spin-button{
-            /* display: none; <- Crashes Chrome on hover */
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        #rsvp form input[type=number] {
-            -moz-appearance:textfield; /* Firefox */
-        }
-        #rsvp form .guest{padding: 7px 15px;}
-        #rsvp form .guest input[type=number]{
-            margin: 0;
-            padding: 0;
-            width: 85%;
-            background: transparent;
-            border: none;
-            border-radius: 0;
-        }
-        #rsvp form .guest a{
-            margin: 0;
-            padding: 0 0 3px 30px;
-            border: none;
-        }
         #rsvp form .button-default{
             padding: 10px 50px;
             font-family: "EBGaramond Italic";
@@ -614,8 +590,6 @@
 	        #rsvp form{padding: 5% 0 2%;}
 	        #rsvp form label,
 	        #rsvp form input{font-size: 17px !important;}
-	        #rsvp form .guest input[type=number]{width: 80%;}
-            #rsvp form .guest a{padding: 0 0 3px 20px;}
 	        #rsvp form .button-default{
 	        	width: 100%;
 	        	font-size: 17px !important;

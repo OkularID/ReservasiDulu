@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
     <title>Template Wedding | Homepage</title>
     <link rel="shortcut icon" href="images/ico.ico">
+    <!-- Customize css -->
+    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <link rel="stylesheet" type="text/css" href="style-wedding-6.css">
     <!-- Features css -->
     <link rel="stylesheet" href="../../features/animatecss/animate.min.css">
     <!--Node Modules css-->
@@ -13,10 +17,6 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <!-- Customize css -->
-    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
-    <link rel="stylesheet" type="text/css" href="../../css/default.css">
-    <link rel="stylesheet" type="text/css" href="style-wedding-6.css">
 </head>
 <body>
     <div id="homepage">
@@ -585,11 +585,11 @@
                                             <div class="col-lg-12 mb-lg-2p">
                                                 <label>ARE YOU ATTENDING ?</label>
                                                 <div class="radio-toolbar">
-                                                    <input type="radio" id="yes" name="your-attending" value="yes">
-                                                    <label for="yes">YES</label>
+                                                    <input type="radio" id="radioYES" name="attending" value="yes">
+                                                    <label for="radioYES">YES</label>
                                                     <div class="line"></div>
-                                                    <input type="radio" id="no" name="your-attending" value="no">
-                                                    <label for="no">NO</label>
+                                                    <input type="radio" id="radioNO" name="attending" value="no">
+                                                    <label for="radioNO">NO</label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -606,17 +606,12 @@
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="font-lightgrey">ADDITIONAL GUEST</label>
-                                                <div class="guest form-control w-lg-100p mb-lg-4p">
-                                                    <input type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
-                                                    <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
-                                                        <img class="img-fluid" src="images/arrow-down-02.png" />
-                                                    </a>
-                                                </div>
+                                                <input type="number" name="your-guest" class="form-control" min="0" required />
                                             </div>
                                             <div class="col-12 offset-lg-6 col-lg-6 pt-lg-5p pb-lg-5p">
                                                 <a class="button-cream" target="_blank" href="invitation.pdf">DOWNLOAD INVITATION</a>
                                                 <!-- <a class="button-lightbrown" target="_blank" href="">SUBMIT</a> -->
-                                                <input type="submit" value="SUBMIT !" class="button-lightbrown" data-toggle="modal" data-target="#ebrochure" />
+                                                <input type="submit" class="button-lightbrown" data-toggle="modal" data-target="#ebrochure" value="SUBMIT !" />
                                                 <div class="modal fade" id="ebrochure">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">

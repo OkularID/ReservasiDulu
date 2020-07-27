@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 h1, h2, h3, h4, h5, h6{
 	font-family: "Oswald Regular";
 }
@@ -8,6 +11,16 @@ p,a,label,th,td,li, input{
 }
 strong, .font-weight-bold, .nav-opening .menu a, h1, h2, h3, h4, h5, h6{
 	letter-spacing: 1px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 .img-full{
 	object-fit: cover;
@@ -73,6 +86,7 @@ strong, .font-weight-bold, .nav-opening .menu a, h1, h2, h3, h4, h5, h6{
 	position: absolute;
 	top: 5%;
 	left: 5%;
+	z-index: 9;
 }
 .header-right{
 	background-image: url(images/header-bg-right-03.jpg);
@@ -201,6 +215,11 @@ strong, .font-weight-bold, .nav-opening .menu a, h1, h2, h3, h4, h5, h6{
 	text-align: right;
 	margin-right: -50px;
 
+}
+#step-increment{
+	position: absolute;
+	right: 0;
+	top: 0;
 }
   @media screen and (max-width: 846px) {
   	p, a, label, th, td, li, input{
