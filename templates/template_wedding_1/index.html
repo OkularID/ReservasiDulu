@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav-wedding position-absolute">
         <div class="container-fluid py-lg-5">
             <div class="row d-none d-lg-block">
-                <div class="col-lg-12 text-center">
+                <div data-aos="fade-down" class="col-lg-12 text-center">
                     <ul class="list-unstyled">
                         <li class="mx-4">
                             <a href="#our-story">
@@ -89,7 +90,7 @@
                             </a>
                         </li>
                         <li class="mx-4">
-                            <a href="#accomodation">
+                            <a href="#accommodation">
                                 ACCOMMODATION
                             </a>
                         </li>
@@ -115,7 +116,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 px-0 pb-lg-5">
-                <img class="img-fluid w-100 d-none d-lg-block" src="images/banner-home-03.jpg">
+                <div data-aos="zoom-out" class="header d-none d-lg-block" style="background-image: url(images/banner-home-03.jpg); "></div>
                 <img class="img-fluid w-100 d-lg-none" src="images/banner-home-mobile-03.jpg">
             </div>
         </div>
@@ -123,16 +124,18 @@
     <div id="our-story" class="container-fluid our-story py-5 mb-5">
         <div class="row">
             <div class="col-lg-3 offset-lg-1 px-lg-0">
+                <div data-aos="fade-up">
                 <h3 class="text-dgreen ml-0 d-none d-lg-block">
                     OUR STORY<br>
                     BEGINS
                 </h3>
-                <img class="img-fluid image-title d-none d-lg-block" src="images/brief-home-14.jpg">
+                </div>
+                <img  data-aos="fade-up" class="img-fluid image-title d-none d-lg-block" src="images/brief-home-14.jpg">
             </div>
             <div class="col-lg-4 px-4 px-lg-2">
-                <img class="img-fluid ml-lg-4" src="images/brief-home-15.jpg">
+                <img data-aos="zoom-in-up" class="img-fluid ml-lg-4" src="images/brief-home-15.jpg">
             </div>
-            <div class="col-lg-4 pr-lg-0 content-right">
+            <div data-aos="fade-left" class="col-lg-4 pr-lg-0 content-right">
                 <div class="vertical-center w-100">
                     <h3 class="text-dgreen ml-4 d-lg-none mt-5">
                         OUR STORY<br>
@@ -158,7 +161,7 @@
                         <p class="text-gray font-weight-bold pl-lg-5 ml-lg-5 ml-4">
                             ABOUT THE GROOM
                         </p>
-                        <h1 class="text-yellow title pl-lg-5 ml-lg-5 ml-4">
+                        <h1 data-aos="zoom-in-left" class="text-yellow title pl-lg-5 ml-lg-5 ml-4">
                             BRUCE<br>
                             WAYNE
                         </h1>
@@ -170,7 +173,7 @@
                             forever as life goes on.
                         </p>
                     </div>
-                    <div class="col-lg-7 pr-lg-0 order-lg-2 order-1 pl-4 pl-lg-2">
+                    <div data-aos="fade-left" class="col-lg-7 pr-lg-0 order-lg-2 order-1 pl-4 pl-lg-2">
                         <img class="img-fluid d-none d-lg-block w-100" src="images/about-us-bruce-18.png">
                         <img class="img-fluid d-lg-none" src="images/about-us-bruce-09.png">
                     </div>
@@ -219,13 +222,13 @@
     </div>
     <div id="come" class="container-fluid when-section">
         <div class="row d-none d-lg-flex">
-            <div class="col-lg-1 px-lg-0">
+            <div data-aos="fade-right" class="col-lg-1 px-lg-0">
                 <p class="text-white title-1">
                     WHEN
                 </p>
             </div>
             <div class="col-lg-5 px-lg-5 content">
-                <img class="img-fluid image-left" src="images/when-and-where-08.jpg">
+                <img data-aos="fade-down" class="img-fluid image-left" src="images/when-and-where-08.jpg">
                 <h3 class="text-dgreen mt-lg-5 mb-lg-4">
                     CATHEDRAL CHURCH
                 </h3>
@@ -265,9 +268,9 @@
                     SEE LOCATION
                 </a>
                 </div>
-                <img class="img-fluid image-right" src="images/when-and-where-09.jpg">
+                <img data-aos="fade-up" class="img-fluid image-right" src="images/when-and-where-09.jpg">
             </div>
-            <div class="col-lg-1 px-lg-0 overflow-hidden">
+            <div data-aos="fade-left" class="col-lg-1 px-lg-0 overflow-hidden">
                 <p class="text-white title-2">
                     WHERE
                 </p>
@@ -332,9 +335,9 @@
     <div id="accommodation" class="container-fluid accomodation">
         <div class="row d-none d-lg-flex">
             <div class="col-lg-5 pl-lg-0">
-                <img class="img-fluid ml-lg-5 pl-lg-5" src="images/accomodation-images-05.png">
+                <img data-aos="flip-up" class="img-fluid ml-lg-5 pl-lg-5" src="images/accomodation-images-05.png">
             </div>
-            <div class="col-lg-6 offset-lg-1 pr-lg-0 text-right">
+            <div data-aos="slide-left" class="col-lg-6 offset-lg-1 pr-lg-0 text-right">
                 <p class="text-gray font-weight-bold mr-lg-5 pr-lg-5">
                     ABOUT THE<br>
                     ACCOMMODATION
@@ -384,7 +387,7 @@
             </div>
         </div>
     </div>
-    <div id="gallery" class="container-fluid our-gallery">
+    <div data-aos="fade-up" id="gallery" class="container-fluid our-gallery">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3 class="text-dgreen my-lg-5 mb-5">
@@ -417,6 +420,7 @@
                 </h4>
             </div>
             <div class="col-lg-12 pb-3 pb-lg-0">
+                <div data-aos="fade-up" data-aos-offset="-1050">
                 <div class="row">
                     <div class="text-white col-lg-2 col-3 offset-lg-2 text-center">
                         <p class="count font-oswald-extralight" id="days"></p>
@@ -447,6 +451,7 @@
                         </p>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-lg-12 text-center py-lg-5 pb-5  mb-lg-0 mb-5">
                 <h4 class="text-white font-gilroy my-lg-5 mt-4 mb-5">
@@ -466,7 +471,17 @@
             <div class="col-lg-5 my-lg-5 px-lg-2 px-4">
                 <form>
                     <div class="form-group mb-lg-3 mb-5">
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ARE YOU ATTENDING">
+                        <p class="text-gray">
+                            ARE YOU ATTENDING
+                        </p>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label text-gray" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label text-gray" for="inlineRadio2">No</label>
+                        </div>
                     </div>
                     <div class="form-group mb-lg-3 mb-5">
                         <p class="text-gray mb-0">
@@ -478,7 +493,7 @@
                         <p class="text-gray mb-0">
                             EMAIL
                         </p>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="john@mail.com">
+                        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="john@mail.com">
                     </div>
                     <div class="form-group mb-lg-3 mb-5">
                         <p class="text-gray mb-0">
@@ -486,17 +501,22 @@
                         </p>
                         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+62 1234 56">
                     </div>
-                    <div class="form-group mb-lg-3 mb-5">
+                    <div class="form-group mb-lg-3 mb-5 position-relative">
                         <p class="text-gray mb-0">
                            ADDITIONAL GUEST
                         </p>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0">
+                        <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                        <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                            <h3 class="text-dgreen">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </h3>
+                        </a>
                     </div>
-                </form>
                 <div class="text-center w-50 float-right">
-                    <a href="#"  data-toggle="modal" data-target="#exampleModal" class="button-cyan d-block">SUBMIT</a><br>
+                    <input type="submit" class="button-cyan d-block w-100" data-toggle="modal" data-target="#exampleModal" value="SUBMIT"><br>
                     <a href="wedding-1-einvitation-02.jpg" class="button-cyan d-block">DOWNLOAD INVITATION</a>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -547,6 +567,7 @@
     <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="app.js"></script>
 
 </body>

@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#navbar-example" data-offset="1">
-        <div class="nav-event container-fluid py-4">
+        <div class="nav-event container-fluid py-4" data-aos="fade-down">
             <div class="row d-none d-lg-flex">
                 <div class="col-lg-2 pl-lg-5 text-right">
                     <img class="d-block ml-lg-3" src="images/logo-04.png">
@@ -107,11 +108,11 @@
                 </div>
             </div>
         </div>
-    <div class="container-fluid header" id="home">
+    <div class="container-fluid header" id="home"  data-aos="zoom-out">
         <div class="row">
             <div class="col-lg-12">
                 <div class="content">
-                    <h1 class="text-white font-80-px">
+                    <h1 data-aos="fade-up" class="text-white font-80-px">
                         <span class="font-montserrat-extrabold">Improve</span> Your<br>
                         Skill And<br>
                         <span class="font-montserrat-extrabold">Create</span> More
@@ -124,7 +125,9 @@
                     </p>
                 </div>
                 <div class="bottom-arrow">
-                    <img src="images/arrow-down-04.png"/>
+                    <div data-aos="fade-down" data-aos-offset="-900">
+                        <img src="images/arrow-down-04.png"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -260,7 +263,7 @@
                 </div>
             </div>
         </div>
-        <div class="row my-lg-5 py-5 d-flex">
+        <div class="row my-lg-5 py-5 d-flex" data-aos="fade-up">
             <div class="col-lg-4 col-12 text-center">
                 <h1 class="text-white font-80-px font-montserrat-extrabold">
                     500+
@@ -293,10 +296,10 @@
                     Our  <span class="font-montserrat-extrabold">Gallery</span>
                 </h2>
                 <div class="carousel-gallery owl-theme px-4">
-                    <div class="item">
+                    <div data-aos="fade-up" class="item">
                         <img src="images/our-gallery-image-05.png">
                     </div>
-                    <div class="item">
+                    <div data-aos="fade-up" class="item">
                         <img src="images/our-gallery-image-05.png">
                     </div>
                 </div>
@@ -308,13 +311,13 @@
                     Our <span class="font-montserrat-extrabold">Gallery</span>
                 </h2>
                 <div class="carousel-gallery owl-theme px-4">
-                    <div class="item">
+                    <div data-aos="fade-up" class="item">
                         <img src="images/gallery-mobile-03.jpg">
                     </div>
-                    <div class="item">
+                    <div data-aos="fade-up" class="item">
                         <img src="images/gallery-mobile-04.jpg">
                     </div>
-                    <div class="item">
+                    <div data-aos="fade-up" class="item">
                         <img src="images/gallery-mobile-05.jpg">
                     </div>
                 </div>
@@ -322,6 +325,7 @@
         </div>
     </div>
     <div class="container-fluid speakers py-5" id="speakers">
+        <div data-aos="fade-left">
         <div class="row mt-5">
             <div class="col-lg-12 pl-lg-5 pl-4 pr-0 pt-lg-5">
                 <h1 class="text-white ml-3 font-50-px">
@@ -329,7 +333,8 @@
                 </h1>
             </div>
         </div>
-        <div class="row p-5 my-5 d-none d-lg-flex">
+        </div>
+        <div class="row p-5 my-5 d-none d-lg-flex" data-aos="fade-up">
             <div class="col-lg-7 px-5">
                 <img class="img-fluid" src="images/speakers-image-09.jpg">
             </div>
@@ -368,7 +373,7 @@
                 </p>
             </div>
         </div>
-        <div class="row p-5 my-5 d-none d-lg-flex">
+        <div class="row p-5 my-5 d-none d-lg-flex" data-aos="fade-up">
             <div class="col-lg-5 text-right">
                 <h2 class="text-white">
                     <span class="font-montserrat-extrabold text-orange">Vico Winarto</span><br>
@@ -498,13 +503,13 @@
     </div>
     <div class="container-fluid schedule py-5" id="schedule">
         <div class="row">
-            <div class="col-lg-12 pl-lg-5 pl-3 pr-0">
+            <div class="col-lg-12 pl-lg-5 pl-3 pr-0" data-aos="fade-left">
                 <h1 class="text-white ml-3 font-50-px font-montserrat-extrabold ml-2 my-5">
                     Schedule
                 </h1>
             </div>
         </div>
-        <div class="row d-none d-lg-flex">
+        <div data-aos="fade-up" class="row d-none d-lg-flex">
             <div class="col-lg-12 pl-5">
                 <ul class="nav nav-pills mx-3 text-center bg-orange rounded-pill py-2 mb-5 mt-2" id="pills-tab" role="tablist">
                   <li class="nav-item">
@@ -519,7 +524,7 @@
                 </ul>
             </div>
         </div>
-        <div class="tab-content d-none d-lg-flex" id="pills-tabContent">
+        <div data-aos="fade-up" class="tab-content d-none d-lg-flex" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="row m-5 py-3">
                   <div class="col-lg-4">
@@ -904,7 +909,7 @@
     </div>
     <div class="container-fluid locations" id="location">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4" data-aos="fade-right">
                 <div class="row">
                     <div class="col-lg-12 bg-orange p-5">
                         <h2 class="text-white ml-3">
@@ -922,14 +927,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 px-0">
+            <div data-aos="fade-up" class="col-lg-8 px-0">
                 <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.0718547148!2d106.8204412!3d-6.1951801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccfcc89b95aaf1ae!2sGrand%20Indonesia!5e0!3m2!1sen!2sid!4v1592276232037!5m2!1sen!2sid" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
     <div class="container-fluid sponsors py-5">
         <div class="row">
-            <div class="col-lg-12 pl-lg-5 pl-4 pr-0">
+            <div data-aos="fade-left" class="col-lg-12 pl-lg-5 pl-4 pr-0">
                 <h1 class="text-dark-blue ml-lg-4 ml-1 my-5 title">
                     Our <span class="font-montserrat-extrabold ml-lg-3 ml-2">Sponsors</span>
                 </h1>
@@ -937,28 +942,28 @@
         </div>
         <div class="row mb-5">
             <div class="col-lg-12 px-lg-5">
-                <div class="carousel-sponsors owl-theme d-none d-lg-block">
-                    <div class="item px-3">
+                <div  class="carousel-sponsors owl-theme d-none d-lg-block">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/our-sponsors-logo-12.png">
                     </div>
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/our-sponsors-logo-13.png">
                     </div>
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/our-sponsors-logo-14.png">
                     </div>
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/our-sponsors-logo-15.png">
                     </div>
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/our-sponsors-logo-15.png">
                     </div>
                 </div>
                 <div class="carousel-sponsors owl-theme d-lg-none">
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/sponsors-logo-07.png">
                     </div>
-                    <div class="item px-3">
+                    <div data-aos="fade-up" class="item px-3">
                         <img src="images/sponsors-logo-07.png">
                     </div>
                 </div>
@@ -967,7 +972,7 @@
     </div>
     <div class="container-fluid py-5 pl-lg-5 px-5 rsvp bg-orange" id="rsvp">
         <div class="row mt-5">
-            <div class="col-lg-12 pl-lg-5 pl-0 pr-0">
+            <div class="col-lg-12 pl-lg-5 pl-0 pr-0" data-aos="fade-left">
                 <h2 class="text-dark-blue title mb-0">
                     What Are You<br>
                 </h2>
@@ -976,7 +981,7 @@
                 </h2>
             </div>
         </div>
-        <div class="row my-5">
+        <div data-aos="fade-up" class="row my-5">
             <div class="col-lg-2 pl-lg-5 px-3">
                 <p class="text-white font-montserrat-extrabold">
                     ARE YOU<br>
@@ -1010,13 +1015,20 @@
                 <p class="text-white font-montserrat-extrabold">
                     EXTRA GUEST
                 </p>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0">
+                <div class="position-relative">
+                    <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                    <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                        <h6 class="text-white">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h6>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row text-right px-1 py-4">
             <div class="col-lg-12 text-right px-lg-5">
-                <a href="#" class="bg-white px-lg-3 px-3 py-2 mx-lg-1 text-dark-blue rounded-pill font-worksans-extrabold">DOWNLOAD INVITATION</a>
-                <a href="#" class="bg-white px-lg-3 px-3 py-2 mx-lg-1 text-dark-blue rounded-pill font-worksans-extrabold" data-toggle="modal" data-target="#form-submit">SUBMIT</a>
+                <a href="#" class="bg-white px-lg-3 px-3 py-2 mx-lg-1 text-dark-blue rounded-pill font-worksans-extrabold d-inline-block my-lg-0 my-3">DOWNLOAD INVITATION</a>
+                <a href="#" class="bg-white px-lg-3 px-3 py-2 mx-lg-1 text-dark-blue rounded-pill font-worksans-extrabold d-inline-block" data-toggle="modal" data-target="#form-submit">SUBMIT</a>
             </div>
         </div>
     </div>
@@ -1077,5 +1089,6 @@
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

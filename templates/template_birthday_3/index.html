@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
     <title>Template Birthday | Homepage</title>
     <link rel="shortcut icon" href="images/ico.ico">
+    <!-- Customize css -->
+    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <link rel="stylesheet" type="text/css" href="style-birthday-3.css">
     <!-- Features css -->
     <link rel="stylesheet" href="../../features/animatecss/animate.min.css">
     <!--Node Modules css-->
@@ -13,10 +17,6 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <!-- Customize css -->
-    <link rel="stylesheet" type="text/css" href="../../css/animation.css" >    
-    <link rel="stylesheet" type="text/css" href="../../css/default.css">
-    <link rel="stylesheet" type="text/css" href="style-birthday-3.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -173,9 +173,9 @@
                     <form>
                         <label class="d-block mb-lg-2p">Are you attending the party?</label>
                         <div class="mb-m-5p mb-lg-4p">
-                            <input type="radio" id="yes" name="your-attending" value="yes">
+                            <input type="radio" id="yes" name="gender" value="yes">
                             <label class="radio mb-lg-0 mr-lg-10" for="yes">Yes</label>
-                            <input type="radio" id="no" name="your-attending" value="no">
+                            <input type="radio" id="no" name="gender" value="no">
                             <label class="radio mb-lg-0" for="no">No</label>
                         </div>
                         <label class="d-block">Fill in your full name and contact lists</label>
@@ -198,12 +198,12 @@
                             <a role="button" id="step-decrement" class="btn btn-default" aria-label="remove 1" aria-labelledby="step-decrement label-text">
                                 <img class="img-fluid" src="images/arrow-left.png" />
                             </a>
-                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" min="0" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                            <input disabled type="number" name="your-guest" id="spinner" value="1" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                             <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
                                 <img class="img-fluid" src="images/arrow-right.png" />
                             </a>
                         </div>
-                        <input type="submit" value="Submit" class="button-bluesky mb-lg-4p" data-toggle="modal" data-target="#ebrochure" />
+                        <input type="submit" class="button-bluesky mb-lg-4p" data-toggle="modal" data-target="#ebrochure" value="Submit" />
                     </form>
                     <div class="modal fade" id="ebrochure">
                         <div class="modal-dialog modal-dialog-centered modal-lg">

@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Montserrat Regular";
@@ -8,6 +9,15 @@ p,a,label,th,td,li, input{
     font-family: "Worksans Light";
     font-size :  11pt;
     line-height : 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 .font-worksans{
 	font-family: "Worksans Light";
@@ -191,6 +201,11 @@ p,a,label,th,td,li, input{
 	background-image: url(images/thank-you-bg-16.jpg);
 	background-size: cover;
 	background-position: 100% 100%;
+}
+#step-increment{
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 @media screen and (max-width: 846px) {
 	.font-80-px {

@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navbar-example" data-offset="1">
+<body data-spy="scroll" data-target="#navbar-example">
         <div class="nav-event container-fluid">
-            <div class="row d-none d-lg-block mr-5">
+            <div data-aos="fade-up" data-aos-start-event="DOMContentLoaded" class="row d-none d-lg-block mr-5">
                 <div class="col-lg-12 text-center">
                     <ul class="list-unstyled">
                         <li class="mx-5">
@@ -91,14 +92,14 @@
         </div>
     <div class="container-fluid header">
         <div class="row">
-            <div class="col-lg-12 px-0">
+            <div class="col-lg-12 px-0" data-aos="zoom-out">
                 <div class="carousel-header owl-theme">
                     <div class="item">
-                        <img class="d-none d-lg-block" src="images/desktop-header-04.jpg">
+                        <img class="d-none d-lg-block banner-desktop" src="images/desktop-header-04.jpg">
                         <img class="d-lg-none" src="images/mobile-header-04.jpg">
                     </div>
                     <div class="item">
-                        <img class="d-none d-lg-block" src="images/desktop-header-04.jpg">
+                        <img class="d-none d-lg-block banner-desktop" src="images/desktop-header-04.jpg">
                         <img class="d-lg-none" src="images/mobile-header-04.jpg">
                     </div>
                 </div>
@@ -106,38 +107,44 @@
         </div>
     </div>
     <div class="container-fluid about" id="about">
-        <div class="row bg-purple">
-            <div class="col-lg-5 pl-lg-5 content-left order-2 order-lg-1">
-                <img class="ml-lg-3 img-fluid" src="images/brief-image-content-05.jpg">
-            </div>
-            <div class="col-lg-6 offset-lg-1 col-11 offset-1 content-right pr-0 pb-5 order-1 order-lg-2">
-                <img class="img-fluid w-100 content pl-lg-0 pl-5" src="images/brief-image-content-06.jpg">
-                <h1 class="text-white mt-5 ml-lg-5 ml-3">
-                    Hawkins High
-                </h1>
-                <h3 class="text-pink ml-lg-5 ml-3 font-jost-light">
-                    Class of 1995
-                </h3>
-                <img src="images/about-line-07.png" class="line my-4">
-                <p class="text-white ml-lg-5 ml-3 mb-5">
-                    It’s hard to believe it’s been 20 years!<br>
-                    Come and reminisce with the class, join us<br>
-                    for a night full of cherished memories.
-                </p>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                <div class="col-lg-5 pl-lg-5 content-left order-2 order-lg-1">
+                    <div class="image-position">
+                        <img data-aos="fade-up" data-aos-offset="-500" data-aos-anchor-placement=".about" class="ml-lg-3 img-fluid" src="images/brief-image-content-05.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-11 offset-1 content-right pr-0 pb-5 order-1 order-lg-2">
+                    <img data-aos="fade-left" data-aos-offset="-500" data-aos-anchor-placement=".about" class="img-fluid w-100 content pl-lg-0 pl-5" src="images/brief-image-content-06.jpg">
+                    <h1 class="text-white mt-5 ml-lg-5 ml-3">
+                        Hawkins High
+                    </h1>
+                    <h3 class="text-pink ml-lg-5 ml-3 font-jost-light">
+                        Class of 1995
+                    </h3>
+                    <img src="images/about-line-07.png" class="line my-4">
+                    <p class="text-white ml-lg-5 ml-3 mb-5">
+                        It’s hard to believe it’s been 20 years!<br>
+                        Come and reminisce with the class, join us<br>
+                        for a night full of cherished memories.
+                    </p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid date bg-blue py-5" id="date">
         <div class="row mt-5">
             <div class="col-lg-12 text-center">
-                <h1 class="text-yellow d-none d-lg-block">
+                <h1 data-aos="fade-up" data-aos-offset="-400" class="text-yellow d-none d-lg-block">
                     Cheers to the Old Times
                 </h1>
                 <h1 class="text-yellow d-lg-none">
                     Cheers to<br>
                     the Old Times
                 </h1>
-                <h3 class="text-pink font-jost-light">
+                <h3 data-aos="fade-down" data-aos-offset="-400" class="text-pink font-jost-light">
                     Date, Time & Place
                 </h3>
                 <img class="my-5" src="images/date-line-08.png">
@@ -168,44 +175,44 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="row">
-                    <div class="col-6 px-0">
+                    <div data-aos="fade-down" data-aos-offset="-350" class="col-6 px-0">
                         <img class="img-fluid w-100" src="images/date-image-content-09.jpg">
                     </div>
-                    <div class="col-6 bg-yellow box-yellow">
+                    <div data-aos="fade-up" data-aos-offset="-350" class="col-6 bg-yellow box-yellow">
                         <h1 class="text-white">
                             Hey!
                         </h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 bg-yellow box-yellow">
+                    <div  data-aos="fade-up" data-aos-offset="-350" class="col-6 bg-yellow box-yellow">
                         <h1 class="text-white">
                             1995
                         </h1>
                     </div>
-                    <div class="col-6 px-0">
+                    <div data-aos="fade-down" data-aos-offset="-350" class="col-6 px-0">
                         <img class="img-fluid w-100" src="images/date-image-content-10.jpg">
                     </div>
                 </div>
             </div>
             <div class="col-12  col-lg-6">
                 <div class="row">
-                    <div class="col-6 px-0">
+                    <div data-aos="fade-down" data-aos-offset="-350" class="col-6 px-0">
                         <img class="img-fluid w-100" src="images/date-image-content-11.jpg">
                     </div>
-                    <div class="col-6 bg-yellow box-yellow">
+                    <div  data-aos="fade-up" data-aos-offset="-400" class="col-6 bg-yellow box-yellow">
                         <h1 class="text-white">
                             2020
                         </h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 bg-yellow box-yellow">
+                    <div  data-aos="fade-up" data-aos-offset="-400" class="col-6 bg-yellow box-yellow">
                         <h1 class="text-white">
                             Hello
                         </h1>
                     </div>
-                    <div class="col-6 px-0">
+                    <div data-aos="fade-down" data-aos-offset="-350" class="col-6 px-0">
                         <img class="img-fluid w-100" src="images/date-image-content-12.jpg">
                     </div>
                 </div>
@@ -214,7 +221,7 @@
     </div>
     <div class="container-fluid rundown" id="rundown">
         <div class="row">
-            <div class="col-9 offset-1 pl-lg-2 pl-4">
+            <div data-aos="fade-right" data-aos-offset="-350" class="col-9 offset-1 pl-lg-2 pl-4">
                 <h1 class="text-white">
                     Rundown
                 </h1>
@@ -224,7 +231,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 py-4 pl-lg-5 pl-0">
+            <div data-aos="fade-right" data-aos-offset="-350" class="col-lg-6 py-4 pl-lg-5 pl-0">
                 <img class="ml-lg-4" src="images/rundown-line-14.png">
             </div>
         </div>
@@ -332,7 +339,7 @@
     <div class="container-fluid rsvp" id="rsvp">
         <div class="row bg-blue">
             <div class="col-10 offset-1">
-                    <div class="row wrap-rsvp">
+                    <div  data-aos="fade-right" data-aos-offset="-350" class="row wrap-rsvp">
                         <div class="col-lg-11 offset-lg-1">
                         <h1 class="text-dark-blue">
                             Join Us for<br>
@@ -346,9 +353,14 @@
                             <p class="text-dark-blue">
                                 Are you attending?
                             </p>
-                            <p class="text-dark-blue">
-                                Yes / No
-                            </p>
+                                <div class="form-check form-check-inline mb-4">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label text-dark-blue" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-4">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label text-dark-blue" for="inlineRadio2">No</label>
+                                </div>
                             <p class="text-dark-blue">
                                 Fill your full name and contact lists
                             </p>
@@ -366,10 +378,17 @@
                             </p>
                         </div>
                         <div class="col-lg-4 offset-lg-1 content-right">
-                            <p class="text-dark-blue mb-lg-5 mb-3">
-                                Will you bring additional guest(s)?<br>
-                                < 0 >
+                            <p class="text-dark-blue mb-lg-3 mb-3">
+                                Will you bring additional guest(s)?
                             </p>
+                            <div class="form-group position-relative">
+                                <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                                    <h5 class="text-dark-blue">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </h5>
+                                </a>
+                            </div>
                             <br>
                             <a href="#" class="bg-purple rounded-pill px-4 py-1 text-white"  data-toggle="modal" data-target="#form-submit">Submit</a>
                         </div>
@@ -446,5 +465,6 @@
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

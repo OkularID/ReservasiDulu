@@ -377,33 +377,6 @@
         }
         #rsvp form input[type=radio]:checked{background: #eed9d9;}
         #rsvp form input[type=radio]:focus{outline-color: transparent;}
-        #rsvp form input::-webkit-outer-spin-button,
-        #rsvp form input::-webkit-inner-spin-button{
-            /* display: none; <- Crashes Chrome on hover */
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        #rsvp form input[type=number] {
-            -moz-appearance:textfield; /* Firefox */
-        }
-        #rsvp form .guest{
-            padding: 3.5% 10px;
-            height: auto;
-            border: none;
-            border-radius: 0;
-        }
-        #rsvp form .guest input[type=number]{
-            margin: 0;
-            padding: 0;
-            width: 85%;
-            background: transparent;
-            border: none;
-        }
-        #rsvp form .guest a{
-            margin: 0;
-            padding: 0 0 3px 10px;
-            border: none;
-        }
 	
 @media screen and (max-width: 846px) {
 	h2{font-size: 38px !important;}
@@ -416,7 +389,6 @@
 			line-height: 23.6px;
 			letter-spacing: 0.85px;
 		}
-        footer .mtext-center{text-align: center !important;}
 	/* Page Home */
 		/* Banner */
             #banner img,

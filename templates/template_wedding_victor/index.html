@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#navbar-example" data-offset="1">
     <div class="line d-none d-lg-block">
@@ -27,13 +28,13 @@
             </a>
         </div>
     </div>
-    <div class="logo">
+    <div data-aos="fade-down" class="logo">
         <img src="images/logo-12.png">
     </div>
     <div class="nav-victor">
         <div class="container-fluid">
             <div class="row d-none d-lg-flex">
-                <nav class="w-100 text-left menu" id="navbar-example">
+                <nav data-aos="fade-right" class="w-100 text-left menu" id="navbar-example">
                     <ul class="list-unstyled">
                         <li class="mx-4">
                             <a href="#invite" class="nav-link active">
@@ -102,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid header" id="invite">
+    <div data-aos="zoom-out" class="container-fluid header" id="invite">
         <div class="row">
             <div class="content">
                     <p class="text-dgray">
@@ -140,7 +141,7 @@
                 </div>
         </div>
     </div>
-    <div class="container-fluid brief pt-5" id="story">
+    <div data-aos="fade-up" class="container-fluid brief pt-5" id="story">
         <div class="row pt-5">
             <div class="col-lg-12 pt-5">
                 <p class="d-lg-none text-white mx-auto d-block px-5 text-center mt-5">
@@ -149,7 +150,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid gallery" id="gallery">
+    <div  class="container-fluid gallery" id="gallery">
         <div class="row">
             <div class="col-lg-12 px-0">
             </div>
@@ -157,8 +158,12 @@
         <div class="gallery-number">
             <h1 class="text-white">03</h1>
         </div>
-        <img class="image-gallery d-none d-lg-block" src="images/gallery-image-14.png">
-        <img class="image-gallery d-lg-none" src="images/gallery-image-mobile-16.png">
+        <div class="d-none d-lg-block">
+            <img class="image-gallery" src="images/gallery-image-14.png">
+        </div>
+        <div class="d-lg-none">
+            <img class="image-gallery" src="images/gallery-image-mobile-16.png">
+        </div>
         <a class="text-brown view-click">
             View Gallery >
         </a>
@@ -256,7 +261,7 @@
     </div>
   </div>
 </div>
-    <div class="container-fluid venue px-0 d-none d-lg-block" id="venue">
+    <div data-aos="fade-up" class="container-fluid venue px-0 d-none d-lg-block" id="venue">
         <div class="venue-number">
             <h1 class="text-dgreen">
                 04
@@ -476,13 +481,42 @@
                                 </p>
                             </label>
                             <div class="col-6">
-                                <input type="text" class="form-control">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label text-lgray" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label text-lgray" for="inlineRadio2">No</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row py-3">
                             <label class="col-6 col-form-label">
                                 <p class="text-lgray font-weight-bold">
-                                    First Name*
+                                    Full Name*
+                                </p>
+                            </label>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <label class="col-6 col-form-label">
+                                <p class="text-lgray font-weight-bold">
+                                    Email Address*
+                                </p>
+                            </label>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Type here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row py-3">
+                            <label class="col-6 col-form-label">
+                                <p class="text-lgray font-weight-bold">
+                                    Phone Number*
                                 </p>
                             </label>
                             <div class="col-6">
@@ -496,36 +530,17 @@
                                 </p>
                             </label>
                             <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Type here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
-                                <p class="text-lgray font-weight-bold">
-                                    Email Address*
-                                </p>
-                            </label>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Type here">
-                            </div>
-                        </div>
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
-                                <p class="text-lgray font-weight-bold">
-                                    Last Name*
-                                </p>
-                            </label>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Type here">
+                                <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                <a role="button" id="step-increment" class="btn btn-default pt-0" aria-label="add 1" aria-labelledby="step-increment label-text">
+                                    <h6 class="text-lgray mb-0">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </h6>
+                                </a>
                             </div>
                         </div>
                         <div class="row py-3">
                             <div class="col-lg-6 offset-lg-6 text-right pt-3">
-                                <a href="#" class="text-white submit-btn"  data-toggle="modal" data-target="#form-submit">
-                                    Submit >
-                                </a>
+                                <input type="submit" value="Submit >" class="text-white submit-btn"  data-toggle="modal" data-target="#form-submit">
                             </div>
                         </div>
                     </div>
@@ -586,5 +601,6 @@
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Montserrat Regular";
@@ -105,6 +106,10 @@ p,a,label,th,td,li, input{
 	position: absolute;
 	right: 10%;
 	top: 0;
+	z-index: 9;
+}
+.videos img{
+	z-index: 1;
 }
 .line-up{
 	background-image: url(images/bg-line-up-desktop-07.jpg);

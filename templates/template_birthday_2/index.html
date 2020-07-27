@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid nav-birthday-2">
-        <div class="row d-none d-lg-flex">
+        <div data-aos="fade-down" class="row d-none d-lg-flex">
             <div class="col-lg-5">
                 
             </div>
@@ -98,7 +99,7 @@
     <div class="container-fluid header-section py-lg-5">
         <div class="row">
             <div class="col-12 pr-0 pt-5">
-                <div class="content-header">
+                <div class="content-header" data-aos="fade-down">
                     <h2 class="text-white font-allura">
                         Anastasia’s
                     </h2>
@@ -114,8 +115,8 @@
                   and you are cordially invited.
                   </p>
                 </div>
-                <img class="img-fluid img-desktop float-right d-none d-lg-block" src="images/image-header-05.jpg">
-                <img class="img-fluid float-right d-lg-none" src="images/image-header-mobile-03.jpg">
+                <img data-aos="fade-left" class="img-fluid img-desktop float-right d-none d-lg-block" src="images/image-header-05.jpg">
+                <img data-aos="fade-left" class="img-fluid float-right d-lg-none" src="images/image-header-mobile-03.jpg">
             </div>
         </div>
     </div>
@@ -128,7 +129,7 @@
     </div>
     <div id="gallery" class="container-fluid gallery-section">
       <div class="row py-lg-5">
-        <div class="col-lg-4 offset-lg-1 pl-lg-5">
+        <div data-aos="fade-left" class="col-lg-4 offset-lg-1 pl-lg-5">
           <div class="title-gallery">
             <h2 class="text-light-gray font-allura">
                 It’s a
@@ -139,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div data-aos="fade-down" class="row">
         <div class="offset-lg-1 pl-lg-5 col-lg-9">
           <div class="carousel-gallery owl-theme">
               <div class="item">
@@ -168,12 +169,14 @@
     <div id="date" class="container-fluid date-section">
       <div class="row">
         <div class="col-lg-4 offset-lg-1 pl-lg-5 offset-2 mb-5 mb-lg-0">
+          <div data-aos="fade-left" data-aos-offset="-900">
             <h2 class="text-white font-allura">
                 Save
             </h2>
             <h2 class="text-grayish-blue font-playfair">
                 The Date
             </h2>
+          </div>
         </div>
         <div class="col-lg-2 col-6 pr-lg-5 text-center date-content">
             <p class="text-alexa-grey font-proxima mb-0">
@@ -207,9 +210,9 @@
         </div>
       </div>
     </div>
-    <div id="rsvp-section" class="container-fluid rsvp-section">
+    <div data-aos="zoom-out" data-aos-offset="-900" id="rsvp-section" class="container-fluid rsvp-section">
       <div class="row">
-        <div class="col-lg-5 offset-lg-1 pl-lg-5 offset-2">
+        <div data-aos="fade-left" data-aos-offset="-900" class="col-lg-5 offset-lg-1 pl-lg-5 offset-2">
             <h2 class="text-white font-allura">
                 Let us Know
             </h2>
@@ -241,15 +244,21 @@
           <p class="text-gray mb-0">Full Name
           <input type="text" class="form-control w-lg-90p mb-4">
           <p class="text-gray mb-0">Email Address</p>
-          <input type="text" class="form-control w-lg-90p mb-4">
+          <input type="email" class="form-control w-lg-90p mb-4">
           <p class="text-gray mb-0">Phone</p>
           <input type="text" class="form-control w-lg-90p mb-4">
           <p class="text-gray pt-lg-3">
             Will you bring additional guest(s) along with you?
           </p>
-          <p class="text-gray">
-            0
-          </p>
+          <div class="position-relative">
+            <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+            <a role="button" id="step-increment" class="btn btn-default pt-1 pt-lg-2" aria-label="add 1" aria-labelledby="step-increment label-text">
+                <h5 class="text-gray">
+                    <i class="fa fa-chevron-down"></i>
+                </h5>
+            </a>
+          </div>
+          <br>
           <a href="#" class="button-submit" data-toggle="modal" data-target="#form-submit">Submit</a><br><br>
           <a class="link-rsvp text-gray" href="#">Download Invitation</a> <a class="ml-5 link-rsvp text-gray" href="wishlist.html">View Wishlist Idea</a>
         </div>
@@ -305,6 +314,6 @@
     <script type="text/javascript" src="../../node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <!-- Custom JS -->
     <script type="text/javascript" src="app.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

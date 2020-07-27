@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: "Palatino";
@@ -8,6 +9,15 @@ p,a,label,th,td,li, input{
     font-family: "Avenir";
     font-size :  11pt;
     line-height : 24px;
+}
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }
 .font-palatino{
 	font-family: "Palatino";
@@ -237,7 +247,9 @@ p,a,label,th,td,li, input{
 	opacity: 0.4;
 }
 .contact .submit-btn{
+	border: none;
 	border-bottom: 2px solid;
+	background: none;
 }
 .footer{
 	background-color: #d6cfc9;
@@ -255,6 +267,11 @@ p,a,label,th,td,li, input{
 .contact .line-wrap img{
 	position: absolute;
 	z-index: 3;
+}
+#step-increment{
+  position: absolute;
+  right: 0;
+  top: .5em;
 }
 @media screen and (max-width: 846px) {
 	p, a, label, th, td, li, input{

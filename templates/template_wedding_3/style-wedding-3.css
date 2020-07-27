@@ -507,54 +507,6 @@
 		transform: translateY(-50%);
 		outline: none;
 	}
-	#rsvp form .radio-toolbar{
-		display: inline;
-		margin: 10px;
-	}
-	#rsvp form .radio-toolbar input[type="radio"]{
-		opacity: 0;
-		position: fixed;
-		width: 0;
-	}
-	#rsvp form .radio-toolbar label{
-		display: inline-block;
-		margin-right: 2%;
-		padding: 10px 35px;
-		font-family: "Nunito SemiBold";
-		font-size: 14px !important;
-		color: #ebd8cf !important;
-		background-color: transparent;
-		border: 1px solid #ebd8cf;
-		border-radius: 50px;
-	}
-	#rsvp form .radio-toolbar label:hover,
-	#rsvp form .radio-toolbar input[type="radio"]:checked + label,
-	#rsvp form .radio-toolbar input[type="radio"]:focus + label{
-		color: #333333 !important;
-		background-color: #ebd8cf;
-		box-shadow: unset;
-	}
-	#rsvp form input::-webkit-outer-spin-button,
-	#rsvp form input::-webkit-inner-spin-button{
-		/* display: none; <- Crashes Chrome on hover */
-		-webkit-appearance: none;
-		margin: 0;
-	}
-	#rsvp form input[type=number] {
-		-moz-appearance:textfield; /* Firefox */
-	}
-	#rsvp form .guest{height: auto;}
-	#rsvp form .guest input[type=number]{
-		padding: 10px 0;
-		width: 90%;
-		background: transparent;
-		border: none;
-	}
-	#rsvp form .guest a{
-		margin: 0;
-		padding: 0 0 3px 20px;
-		border: none;
-	}
 	#rsvp form .add-to-cart{
       	--color: #333333;
       	--icon: var(--color);
@@ -799,8 +751,6 @@
   		#gallery .owl-dots .owl-dot:hover span{background: #952437 !important;}
   		#rsvp form{text-align: center;}
   		#rsvp form .form-group{text-align: left;}
-  		#rsvp form .radio-toolbar{display: block;}
-  		#rsvp form .guest input[type=number]{width: 80%;}
   		#rsvp form .button-default{
 		    position: relative !important;
 		    margin-top: 10%;
