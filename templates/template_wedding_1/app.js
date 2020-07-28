@@ -8,10 +8,6 @@ $(document).ready(function() {
   $('.close-div .fa-times, .side-nav li.mx-4').click(function() {
     $(".side-nav").removeClass("active");
   })
-   $('.header').animate({
-      backgroundSize: '100%',
-    });
-
   $('.carousel-gallery').addClass('owl-carousel owl-theme').owlCarousel({
     margin: 50,
     loop: true,
