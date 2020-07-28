@@ -89,7 +89,7 @@
     height: 768px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: cover;
   }
   .about-us p.text-gray.font-weight-bold.pl-lg-5.ml-lg-5{
     letter-spacing: 1.5px;
