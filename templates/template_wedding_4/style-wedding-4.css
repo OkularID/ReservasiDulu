@@ -1,3 +1,6 @@
+    body{
+        overflow-x: hidden;
+    }
 /* Default */
 	@font-face{
 	    font-family: "Pistilli";
@@ -59,6 +62,13 @@
 		background: #F5F5F5;
 		border: 1px solid #7c7a7d;
 	}
+    /* Z Index */
+    .z-index-1{
+        z-index: 1;
+    }
+    .z-index-2{
+        z-index: 2;
+    }
 /* Navbar */
 	nav{
 		position: absolute;
