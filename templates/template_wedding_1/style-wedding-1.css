@@ -147,6 +147,7 @@
   .when-section{
     background-color: #EFCC60;
     overflow: visible !important;
+    margin-bottom: 130px;
   }
   .when-section p.title-1{
     font-family: "Oswald Medium";
@@ -280,7 +281,7 @@
     background-repeat: no-repeat;
   }
   .accomodation{
-    padding-top: 230px;
+    padding-top: 100px;
   }
   .accomodation h1.title{
     font-size: 85px;
