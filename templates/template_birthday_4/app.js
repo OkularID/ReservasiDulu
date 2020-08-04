@@ -1,5 +1,8 @@
 // ============Navbar Mobile===============
 $(document).ready(function() {
+  AOS.init({
+       duration: 1200
+      });
   $('nav .fa-bars').click(function() {
     $(".side-nav").addClass("active");
   })

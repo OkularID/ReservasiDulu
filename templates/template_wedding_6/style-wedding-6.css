@@ -1,3 +1,6 @@
+    body{
+        overflow-x: hidden;
+    }
 /* Default */
 	@font-face{
 	    font-family: "Barlow Regular";

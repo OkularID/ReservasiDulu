@@ -1,3 +1,8 @@
+$(document).ready(function() {
+AOS.init({
+       duration: 1200
+      });
+})
 //  ============Galley============
 var App = (function () {
   //=== Use Strict ===//

@@ -1,5 +1,8 @@
 // ============COUNTDOWN===============
 $(document).ready(function() {
+   AOS.init({
+       duration: 1200
+      });
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
