@@ -50,7 +50,7 @@
 	.bg-aqua{background-color: #a7dee9;}
 	.button-default{
 		padding: 4% 10%;
-		letter-spacing: 2.8px;
+		letter-spacing: 0;
 		color: #fff;
 		background: #a3d7e3;
 		border-radius: 50px;
