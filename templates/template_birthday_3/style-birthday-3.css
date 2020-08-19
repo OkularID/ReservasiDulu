@@ -1,6 +1,13 @@
 	body{
 		overflow-x: hidden;
 	}
+	input[type="checkbox"], input[type="radio"] {
+		box-sizing: border-box;
+		padding: 0;
+		-ms-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
 /* Default */
 	@font-face{
 	    font-family: "Sacramento";
@@ -35,7 +42,7 @@
 	.pt-lg-6p{padding-top: 6% !important;}
 	.pb-lg-6p{padding-bottom: 6% !important;}
 	.font-gold,.font-gold p{color: #f6c834 !important;}
-	.font-grey,.font-grey p{color: #79797A;}
+	.font-grey,.font-grey p{color: #3C3C3C;}
 	.font-lightgrey,.font-lightgrey p{color: #AEAEAF !important;}
 	.font-bluesky,.font-bluesky p{color: #79cdd5;}
 	.bg-bluesky{background: #79cdd5;}
