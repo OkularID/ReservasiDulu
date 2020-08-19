@@ -45,22 +45,25 @@ input[type=number] {
 	padding-top: 0.6em;
 	z-index: 8;
 	width: 20%;
-	bottom: 40px;
+	bottom: 75px;
 }
 .nav-victor ul li{
 	margin: 15px 0;
 }
 .nav-victor ul li a{
 	font-family: "Palatino";
-  	filter: invert(1) grayscale(1) opacity(0.6);
-	-webkit-filter: invert(1) grayscale(1) opacity(0.6);
-  	font-size: 20px;
+  	filter: invert(1) grayscale(1) opacity(1);
+	-webkit-filter: invert(1) grayscale(1) opacity(1);
+	  font-size: 20px;
+	  width: 70%;
 }
 .nav-victor li a:hover, .nav-victor li a.active {
 	font-weight: bold;
 	filter: invert(1) grayscale(1) opacity(1);
 	-webkit-filter: invert(1) grayscale(1) opacity(1);
 	color: #0056b3;
+	color: #0056b3;
+	border-bottom: 1px solid #0056b3;
 }
 .side-menu{
 	position: fixed;
@@ -154,6 +157,7 @@ input[type=number] {
 .gallery-content-section{
 	opacity: 0;
 	transition: all .9s;
+	padding: 5rem 0;
 }
 .gallery-content-section.show{
 	opacity: 1;
@@ -168,10 +172,19 @@ input[type=number] {
 	position: absolute;
 	left: 34%;
 	transform: translateX(-50%);
-	bottom: 80px;
+	bottom: 180px;
 	z-index: 3;
 }
 .view-click.hide{
+	display: none;
+}
+.view-close{
+	position: absolute;
+	right: 8rem;
+	top: 1rem;
+	z-index: 9;
+}
+.view-close.hide{
 	display: none;
 }
 .venue{
@@ -227,7 +240,7 @@ input[type=number] {
 	background-image: url(images/contact-desktop-10.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 767px;
+	height: 650px;
 	z-index: 2;
 	position: relative;
 }
@@ -272,6 +285,13 @@ input[type=number] {
   position: absolute;
   right: 0;
   top: .5em;
+}
+.button-download{
+	color: #ceb49b;
+	border-bottom: 2px solid;
+}
+.button-download:hover{
+	color: #ceb49b;
 }
 @media screen and (max-width: 846px) {
 	p, a, label, th, td, li, input{

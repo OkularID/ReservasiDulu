@@ -167,6 +167,11 @@
         <a class="text-brown view-click">
             View Gallery >
         </a>
+        <a class="text-brown view-close hide">
+            <h2>
+                <i class="fa fa-times"></i>
+            </h2>
+        </a>
         <div class="row gallery-content-section" id="gallery" data-toggle="modal" data-target="#galleryModal">
             <div class="col-lg-3 offset-lg-2 col-4">
                 <div class="row">
@@ -276,7 +281,7 @@
                 <div class="div-nav-venue">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Accomodation</a>
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Accommodation</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Reception</a>
@@ -464,7 +469,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <div class="row mb-lg-5 pb-lg-5">
+                <div class="row">
                     <div class="col-lg-12 pb-lg-5">
                         <h1 class="font-90-px text-white mb-5 mt-lg-5">
                             RSVP
@@ -478,13 +483,13 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-lg-6">
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
+                        <div class="row py-1">
+                            <label class="col-6 col-lg-5 col-form-label">
                                 <p class="text-lgray font-weight-bold">
-                                    Are youu attending?*
+                                    Are you attending?*
                                 </p>
                             </label>
-                            <div class="col-6">
+                            <div class="col-6 col-lg-5">
                                 <div class="form-check form-check-inline">
                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                   <label class="form-check-label text-lgray" for="inlineRadio1">Yes</label>
@@ -495,45 +500,45 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
+                        <div class="row py-1">
+                            <label class="col-6 col-lg-5 col-form-label">
                                 <p class="text-lgray font-weight-bold">
                                     Full Name*
                                 </p>
                             </label>
-                            <div class="col-6">
+                            <div class="col-6 col-lg-5">
                                 <input type="text" class="form-control" placeholder="Type here">
                             </div>
                         </div>
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
+                        <div class="row py-1">
+                            <label class="col-6 col-lg-5 col-form-label">
                                 <p class="text-lgray font-weight-bold">
                                     Email Address*
                                 </p>
                             </label>
-                            <div class="col-6">
+                            <div class="col-6 col-lg-5">
                                 <input type="text" class="form-control" placeholder="Type here">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
+                        <div class="row py-1">
+                            <label class="col-6 col-lg-5 col-form-label">
                                 <p class="text-lgray font-weight-bold">
                                     Phone Number*
                                 </p>
                             </label>
-                            <div class="col-6">
+                            <div class="col-6 col-lg-5">
                                 <input type="text" class="form-control" placeholder="Type here">
                             </div>
                         </div>
-                        <div class="row py-3">
-                            <label class="col-6 col-form-label">
+                        <div class="row py-1">
+                            <label class="col-6 col-lg-5 col-form-label">
                                 <p class="text-lgray font-weight-bold">
                                     Additional Guest*
                                 </p>
                             </label>
-                            <div class="col-6">
+                            <div class="col-6 col-lg-5">
                                 <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                                 <a role="button" id="step-increment" class="btn btn-default pt-0" aria-label="add 1" aria-labelledby="step-increment label-text">
                                     <h6 class="text-lgray mb-0">
@@ -542,8 +547,11 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row py-3">
-                            <div class="col-lg-6 offset-lg-6 text-right pt-3">
+                        <div class="row py-1">
+                            <div class="col-lg-10 text-right pt-3">
+                                <a target="__blank" href="invitation.pdf" class="button-download mx-3">
+                                    Download invitation
+                                </a>
                                 <input type="submit" value="Submit >" class="text-white submit-btn"  data-toggle="modal" data-target="#form-submit">
                             </div>
                         </div>

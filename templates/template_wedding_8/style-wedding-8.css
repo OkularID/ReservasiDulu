@@ -65,6 +65,21 @@
 		color: #cdae8a;
 		background: #fff;
 	}
+	.button-download{
+		padding: 11px 20px;
+	    font-family: "EBGaramond Italic";
+		font-size: 25px !important;
+	  	line-height: 45px !important;
+	  	letter-spacing: 1px;
+	  	color: #cdae8a;
+		background: #fff;
+		border: 1px solid #fff;
+        box-shadow: 6px 6px 9px rgba(74,74,74,0.65);
+	}
+	.button-download:hover{
+		color: #fff;
+		background: #cdae8a;
+	}
 
 /* Navbar */
 	nav{
@@ -94,6 +109,10 @@
 		color : #FFFFFF;
 		text-decoration: none;
 		outline: none;
+	}
+	ul.menu li a:hover{
+		border-bottom: 1px solid;
+		font-weight: bold;
 	}
 	@media screen and (max-width: 846px) {
 		nav{
@@ -417,7 +436,7 @@
         #rsvp form label{
             padding-left: 10px;
             font-family: "EBGaramond Italic";
-            font-size: 24px !important;
+            font-size: 18px !important;
             color: #414042;
         }
         #rsvp form input{
@@ -425,7 +444,7 @@
             padding: 10px;
             height: auto;
             font-family: "EBGaramond Italic";
-            font-size: 24px !important;
+            font-size: 18px !important;
             color: #414042;
             background: transparent;
             border: 1px solid #075561;
@@ -448,7 +467,7 @@
             line-height: 34px !important;
             letter-spacing: 1px;
             text-transform: capitalize;
-        }
+		}
 	
 
 @media screen and (max-width: 846px) {

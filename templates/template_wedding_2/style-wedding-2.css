@@ -49,7 +49,13 @@
 	}
 	.nav-wedding-2 ul li{
     	display: inline;
-  	}
+	}
+	.nav-wedding-2 ul li:hover{
+		border-bottom: 2px solid #596E79;
+	}
+	.nav-wedding-2 ul li:hover a{
+		font-weight: bold;
+	}   
   	.nav-wedding-2 ul li a{
   		color: #596E79;
   	}
@@ -68,9 +74,13 @@
 	    font-weight: bold;
 	    padding: 5px 20px;
 	    border-radius: 25px;
-	    letter-spacing: 0.8px;
+		letter-spacing: 0.8px;
+		transition: all .3s;
   	}
-  	
+  	.button-border-white:hover{
+		background-color: #fff;
+		color: #596e79;
+	  }
   	.content-header-home{
   		position: absolute;
 		transform: translateX(-50%);

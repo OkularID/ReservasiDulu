@@ -58,6 +58,10 @@
 		border: 1px solid #808285;
 		border-radius: 50px;
 	}
+	.button-default:hover{
+		background-color: #808285;
+		color: #fff !important;
+	}
 	.button-default img{
 		position: absolute;
 		top: 40%;
@@ -112,7 +116,7 @@
 		padding-right: 0;
 	}
 	nav ul li a{
-		font-size: 13px !important;
+		font-size: 15px !important;
 		letter-spacing: 0.96px;
 		color: #808285;
 	}
@@ -241,7 +245,7 @@
         #home .link-rsvp{
             position: absolute;
             padding: 2% 3% 2% 5%;
-            bottom: 10%;
+            bottom: 30.6%;
             left: 0;
             width: 25%;
             border-top: 1px solid #808285;
@@ -261,7 +265,7 @@
         }
         #home .link-gallery{
             position: absolute;
-            bottom: 13.3%;
+            bottom: 34%;
             right: 7%;
             width: 20%;
         }
@@ -443,7 +447,11 @@
         }
         #gallery .three-carousel .owl-prev{left: -7%;}
         #gallery .three-carousel .owl-next{right: -7%;}
-        #gallery .three-carousel .item{padding: 2%;}
+		#gallery .three-carousel .item{padding: 2%;}
+		.gallery-close{
+			position: absolute;
+			right: -60px;
+		}
     /* Countdown */
         #countdown .motif{
             position: absolute;
@@ -470,7 +478,7 @@
         }
         #countdown .desc{
             font-family: "TitilliumWeb SemiBold";
-            font-size: 36px;
+            font-size: 27px;
             color: #FFFFFF;
         }
     /* RSVP */
@@ -576,7 +584,8 @@
         #rsvp form .button-default{
             display: inline-block;
             width: 45%;
-            padding: 2% 4%;
+			padding: 2% 4%;
+			letter-spacing: 0.7px;
         }
         #rsvp form .button-default img{top: 30%;}
         #rsvp form .button-wrap{
@@ -589,7 +598,10 @@
             width: 100%;
             text-align: left;
             background: transparent;
-        }
+		}
+		#rsvp form .button-wrap input.button-default:hover{
+			background-color: #808285;
+		}
         #rsvp form .button-wrap img{
             position: absolute;
             top: 40%;
@@ -617,7 +629,7 @@
             height: 100%
         }
         #rsvp #ebrochure.modal .modal-dialog .modal-content h4{
-            margin-bottom: 10%;
+            margin-bottom: 4%;
             width: 330px;
             font-size: 30px !important;
             line-height: 40px;
