@@ -50,7 +50,7 @@ $('.nav-event .menu-icon').click(function() {
       },
       1000: {
         items: 1,
-        dots: false,
+        dots: true,
         nav: true
       }
     }

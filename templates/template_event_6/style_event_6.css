@@ -70,9 +70,20 @@ input[type=number] {
 }
 .nav-event ul li a{
 	color: #fff;
+	transition: all .3s;
+}
+.nav-event ul li a:hover{
+	color: #f3b543;
+	border-bottom: 1px solid;
 }
 .header .carousel-header .owl-nav{
 	margin-top: 0;
+}
+.header .carousel-header .owl-dots{
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .header .carousel-header .owl-nav .owl-prev, .header .carousel-header .owl-nav .owl-next{
 	width: 70px;

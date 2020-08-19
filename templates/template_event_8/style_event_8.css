@@ -28,6 +28,7 @@ p,a,label,th,td,li, input{
 }
 .bg-blue{
 	background-color: #010fe0;
+	transition: all .3s;
 }
 .bg-black{
 	background-color: #000;
@@ -79,6 +80,10 @@ p,a,label,th,td,li, input{
 	color: #fff;
 	font-family: "BebasNeue Regular";
 	font-size: 22px;
+}
+.nav-event ul li a:hover{
+	color: #00d6c2;
+	border-bottom: 2px solid #00d6c2;
 }
 /* Content Header */
 .header{
@@ -203,6 +208,10 @@ p,a,label,th,td,li, input{
 .updates .row-content{
 	padding: 100px 0;
 }
+.updates .button-updates:hover{
+	background-color: #fff;
+	color: #010fe0 !important;
+}
 .venue{
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -247,6 +256,10 @@ p,a,label,th,td,li, input{
 	padding-top: 11rem;
 	padding-left: 5rem;
 }
+.about .button-blue:hover{
+	background-color: #fff;
+	color: #010fe0 !important;
+}
 .sponsors{
 	background-image: url(images/bg-sponsors-04.jpg);
 	background-size: cover;
@@ -273,6 +286,12 @@ p,a,label,th,td,li, input{
 .footer hr{
 	border-top: 1px solid #fff;
 	width: 90%;
+}
+.book-now.bg-blue:hover{
+	background-color: #00d6c2;
+}
+.book-now.bg-blue:hover h6{
+	color: #010fe0 !important;
 }
 @media screen and (max-width: 846px) {
 	p, a, label, th, td, li, input{
