@@ -240,6 +240,9 @@
             padding: 15px;
             width: 53%;
             background: #7c7a7d;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
         }
         #ourstory .quote .box{
             padding: 4% 19%;
@@ -384,6 +387,20 @@
             padding: 0.5em;
             -webkit-appearance: none;
             border: 1px solid #000;
+        }
+        .button-download{
+            font-family: "Cormorant Medium Italic";
+            padding: 1.4% 5%;
+            font-size: 20px !important;
+            line-height: 21.33px;
+            color: #7c7a7d;
+            background: #F5F5F5;
+            border: 1px solid #7c7a7d;
+        }
+        .button-download:hover{
+            color: #F5F5F5;
+            background: #7c7a7d;
+            border: 1px solid #7c7a7d;
         }
         #rsvp form input[type=radio]:checked{background: #eed9d9;}
         #rsvp form input[type=radio]:focus{outline-color: transparent;}

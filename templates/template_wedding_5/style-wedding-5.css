@@ -42,7 +42,21 @@
 		background: #819e82;
 		border: none;
 		border-radius: 50px;
-	}
+    }
+    .button-download{
+		padding: 10px 35px;
+	    font-family: "Belleza Regular";
+		font-size: 16px !important;
+		letter-spacing: 0.8px;
+		color: #819e82;
+		background: #fff;
+		border: none;
+        border-radius: 50px;
+        box-shadow: 2px 2px 10px rgba(74,74,74,0.25);
+    }
+    .button-download:hover{
+        color: #819e82;
+    }
 /* Navbar */
 	nav{
 		position: absolute;

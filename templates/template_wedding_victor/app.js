@@ -13,6 +13,15 @@ $(document).ready(function(){
     $(".gallery-content-section").addClass("show");
     $(".view-click").addClass("hide");
     $(".gallery-number").addClass("hide");
+    $(".view-close").removeClass("hide");
+  })
+  $('.view-close').click(function() {
+    $(".image-gallery").removeClass("hide");
+    $(".gallery-content-section").removeClass("show");
+    $(".view-click").removeClass("hide");
+    $(".gallery-number").removeClass("hide");
+    $(".view-close").addClass("hide");
+
   })
 
 
