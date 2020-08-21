@@ -343,8 +343,10 @@
 		line-height: 100px;
 		color: #F5947B;
 	}
-	#banner-wishlist .box p,
-	#brief-wishlist .boxc p{color: #79797a;}
+	#banner-wishlist .box p{color: #79797a;}
+	#brief-wishlist .boxc p{
+		color: #929497;
+	}
 	#wish{
 		margin-top: -15vh;
 		background: #79cdd5;

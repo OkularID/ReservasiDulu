@@ -315,6 +315,11 @@
             text-align: center;
             border: none;
             color: #fff;
+            transition: all .3s;
+        }
+        #rsvp form .button-form:hover, .button-default:hover{
+            background: url('images/button-07.png');
+            color: #fff;
         }
         #rsvp a{
             font-size: 15px !important;
@@ -331,6 +336,10 @@
 			bottom: 0;
 			left: 0;
         }
+        #rsvp .modal-content{
+            background-color: transparent;
+            border: none;
+        }
         #rsvp .modal .box,
         #pagewishlist #wish2 .modal .box{
 			position: relative;
@@ -338,7 +347,7 @@
 			margin: 0 auto;
 			padding: 15% 5%;
 			width: 70%;
-        	background: rgba(255,255,255,0.65);
+        	background: rgba(255,255,255,0.87);
         }
         #rsvp .modal .button-default,
         #pagewishlist #wish2 .modal .button-default{

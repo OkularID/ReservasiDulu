@@ -69,6 +69,7 @@
 		position: absolute;
 		right: 13%;
 		bottom: 50px;
+		z-index: 1;
 	}
 	.header-section .img-desktop{
 		width: 90%;
@@ -84,6 +85,10 @@
 	}
 	.nav-birthday-2 ul li a{
 		color: #9C9EA1;
+	}
+	.nav-birthday-2 ul li a:hover{
+		color: #606161;
+		border-bottom: 2px solid;
 	}
 	.gallery-section{
 		background-image: url(images/bg-gallery-section-05.jpg);
@@ -157,7 +162,9 @@
 		border: 2px solid #fff;
 		color: #768792;
 		border-radius: 25px;
-		padding: 5px 17px;
+		padding: 10px 22px;
+		font-size: 19px;
+		display: inline-block;
 	}
 	.rsvp-section .link-rsvp{
 		border-bottom: 2px solid #fff;
