@@ -506,13 +506,6 @@
 	}
 	#rsvp form input{padding: 25px 15px;}
 	#rsvp form .button-default{
-		position: absolute !important;
-		margin: 0 auto;
-		z-index: 1;
-		top: 65%;
-		left: 126%;
-		right: 0;
-		transform: translateY(-50%);
 		outline: none;
 	}
 	#rsvp form .add-to-cart{
@@ -707,8 +700,24 @@
       	}
     }
 
-
-
+.thankyou .modal-content{
+	background-image: url(images/bg-popup-03.jpg);
+	background-size: cover;
+	height: 685px;
+	background-position: center;
+}
+.close-modal {
+	position: absolute;
+	right: -2rem;
+	top: -1rem;
+}
+.button-download{
+	background-color: #fff;
+	color: #000 !important;
+	padding: 12px 62px;
+	border-radius: 50px;
+	text-align: center;
+}
 @media screen and (max-width: 846px) {
 	/* Default */
 	    h1{font-size: 28px !important;}
@@ -765,6 +774,19 @@
 		    top: 3%;
 		    left: unset;
 		    right: unset;
-		    transform: unset;
+			transform: unset;
+			display: block;
+			text-align: center;
+			margin: auto;
+		}
+		.close-modal {
+			position: absolute;
+			right: 0rem;
+			top: 0rem;
+			display: inline-block;
+		}
+		.button-download{
+			margin: 15px;
+			display: inline-block;
 		}
 }

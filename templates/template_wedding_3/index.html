@@ -294,12 +294,16 @@
                                 <label for="your-message">message</label>
                                 <textarea class="form-control" id="your-message" name="your-message" rows="5"></textarea>
                             </div>
-                            <!-- <button type="submit" class="button-default">RSVP</button> -->
-                            <button type="submit" class="add-to-cart button-default">
-                                <div class="default">RSVP</div>
-                                <div class="success">RESERVED</div>
-                                <div class="dots-animation"></div>
-                            </button>
+                            <div class="button-position">
+                                <button type="submit" class="add-to-cart button-default" data-toggle="modal" data-target="#thankyou" >
+                                    <div class="default">RSVP</div>
+                                    <div class="success">RESERVED</div>
+                                    <div class="dots-animation"></div>
+                                </button>
+                                <a class="button-download" href="invatation.pdf">
+                                    Download Invitation
+                                </a>
+                            </div>
                         </form>
                     </div>
                     <div class="col-lg-5 title pt-lg-10p text-center">
@@ -308,6 +312,30 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade thankyou" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl p-4 px-l-g-0" role="document">
+                <img class="close-modal" data-dismiss="modal" src="images/button-close-05.png" alt="">
+                <div class="modal-content py-5">
+                    <div class="row my-5 py-5">
+                        <div class="col-lg-3 pt-lg-5 offset-lg-3">
+                            <h3 class="font-maroon ml-lg-5 ml-4">
+                                Thank you<br>
+                                for the RSVP
+                            </h3>
+                        </div>
+                        <div class="col-lg-4 pt-lg-5">
+                            <p class="ml-lg-5 ml-4">
+                                We have save your seat and sent you an<br>
+                                email for your rsvp bookings. We really<br>
+                                appreciate you participating in our very<br>
+                                special day.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <footer class="pt-lg-1p pb-lg-1p text-center">
             <p class="mb-lg-0">All Rights Reserved © This website is made by Reservasi Dulu</p>

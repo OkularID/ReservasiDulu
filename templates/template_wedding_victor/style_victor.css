@@ -221,7 +221,7 @@ input[type=number] {
 	border-radius: 0;
 	border-bottom: 2px solid #eae3dc;
 }
-.venue .nav-pills .nav-link.active, .venue .nav-pills .show > .nav-link{
+.venue .nav-pills .nav-link.active, .venue .nav-pills .show > .nav-link,  .venue .nav-pills .nav-link:hover{
 	color: #ceb49b;
 	background: none;
 	border-bottom: 2px solid #aba298;
@@ -273,6 +273,7 @@ input[type=number] {
 	border: 2px solid #58595b;
 	padding: 5px 20px;
 	color: #58595b;
+	transition: all .3s;
 }
 .thank-you{
 	background-image: url(images/bg-form-submit-04.jpg);
@@ -292,6 +293,11 @@ input[type=number] {
 }
 .button-download:hover{
 	color: #ceb49b;
+}
+.footer .button:hover{
+	padding: 5px 20px;
+	color: #d6cfc9;
+	background-color: #58595b;
 }
 @media screen and (max-width: 846px) {
 	p, a, label, th, td, li, input{
