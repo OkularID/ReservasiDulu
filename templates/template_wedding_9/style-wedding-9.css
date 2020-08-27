@@ -39,7 +39,7 @@
 	p,a,label,th,td,li, input{
 		font-family: "TitilliumWeb Light";
 		font-size: 15px !important;
-		line-height: 23px !important;
+		line-height: 26px !important;
 		color: #808285 !important;
 	}
 	.container-fluid{position: relative;}
@@ -413,8 +413,11 @@
             right: 0;
             width: 30%;
         }
-    /* Accommodation */
-        #accommodation{border-bottom: 1px solid #bcbec0;}
+	/* Accommodation */
+		.border-bottom-gray{
+			border-bottom: 1px solid #bcbec0;
+		}
+        #accommodation{}
         #accommodation h5{
             line-height: 40px !important;
             letter-spacing: 5.2px;
@@ -549,7 +552,8 @@
         #rsvp form .radio-toolbar input[type="radio"]{
           opacity: 0;
           position: fixed;
-          width: 0;
+		  width: 0;
+		  transition: all .3s;
         }
         #rsvp form .radio-toolbar label{
             display: inline-block;
@@ -560,7 +564,8 @@
             color: #fff !important;
             background-color: #808285;
             border: 1px solid #808285;
-            border-radius: 50px;
+			border-radius: 50px;
+			transition: all .3s;
         }
         #rsvp form .radio-toolbar label:hover,
         #rsvp form .radio-toolbar input[type="radio"]:checked + label,
@@ -597,7 +602,8 @@
             padding: 5% 10%;
             width: 100%;
             text-align: left;
-            background: transparent;
+			background: transparent;
+			transition: all .3s;
 		}
 		#rsvp form .button-wrap input.button-default:hover{
 			background-color: #808285;

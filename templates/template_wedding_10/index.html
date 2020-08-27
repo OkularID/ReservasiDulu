@@ -267,62 +267,62 @@
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-02.png" />
+                                        <img class="img-fluid" src="images/images-02.png" data-toggle="modal" data-target="#images_1" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-03.png" />
+                                        <img class="img-fluid" src="images/images-03.png"  data-toggle="modal" data-target="#images_2" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-04.png" />
+                                        <img class="img-fluid" src="images/images-04.png" data-toggle="modal" data-target="#images_3"  />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-02.png" />
+                                        <img class="img-fluid" src="images/images-02.png"  data-toggle="modal" data-target="#images_4" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-03.png" />
+                                        <img class="img-fluid" src="images/images-03.png"  data-toggle="modal" data-target="#images_5" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-04.png" />
+                                        <img class="img-fluid" src="images/images-04.png"  data-toggle="modal" data-target="#images_6" />
                                     </div>
                                 </div>
                             </div><div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-02.png" />
+                                        <img class="img-fluid" src="images/images-02.png"  data-toggle="modal" data-target="#images_7" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-03.png" />
+                                        <img class="img-fluid" src="images/images-03.png"  data-toggle="modal" data-target="#images_8" />
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="wrap">
                                     <div class="boximg">
-                                        <img class="img-fluid" src="images/images-04.png" />
+                                        <img class="img-fluid" src="images/images-04.png"  data-toggle="modal" data-target="#images_9" />
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@
                             <div class="row">
                                 <div data-aos="fade-up" data-aos-offset="-4500" class="col-lg-6 mb-m-10p pr-m-0 pl-lg-0 pr-lg-1">
                                     <img class="img-fluid images" src="images/images-06.png" />
-                                    <div class="date">11/20</div>
+                                    <div class="date">20 November 2020</div>
                                     <div class="day">Saturday</div>
                                     <img class="img-fluid number" src="images/icon-07.png" />
                                     <div class="desc text-left">
@@ -406,7 +406,7 @@
                                 </div>
                                 <div data-aos="fade-up" data-aos-offset="-4500" class="col-lg-6 pl-m-0 pl-lg-1 pr-lg-0">
                                     <img class="img-fluid images" src="images/images-07.png" />
-                                    <div class="date">11/20</div>
+                                    <div class="date">21 November 2020</div>
                                     <div class="day">Sunday</div>
                                     <img class="img-fluid number" src="images/icon-08.png" />
                                     <div class="desc text-left">
@@ -497,13 +497,20 @@
                                 <input type="radio" id="radioNO" name="attending" value="no">
                                 <label for="radioNO">Not Attending</label>
                             </div>
+                            <div class="my-lg-3"></div>
                             <label for="your-email">EMAIL*</label>
                             <input type="email" class="form-control" id="your-email" name="your-email" placeholder="Type here" required>
                             <label for="your-phone">PHONE NUMBER*</label>
                             <input type="text" class="form-control" id="your-phone" name="your-phone" placeholder="Type here" required>
                             <label for="your-guest">ADDITIONAL GUEST*</label>
                             <input type="number" class="form-control" id="your-guest" name="your-guest" placeholder="Type here" required>
-                            <button type="submit" class="button-default" data-toggle="modal" data-target="#ebrochure">SUBMIT</button>
+                            <a role="button" id="step-decrement" class="btn btn-default" aria-label="remove 1" aria-labelledby="step-decrement label-text">
+                                <img class="img-fluid" src="images/arrow-left.png" />
+                            </a>
+                            <input class="text-center" type="number" name="your-guest" id="spinner" value="0" placeholder="0" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                            <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                                <img class="img-fluid" src="images/arrow-right.png" />
+                            </a>
                             <a href="invitation.pdf" class="button-download">Download Invitation</a>
                             <div class="modal fade" id="ebrochure">
                                 <div class="modal-dialog modal-dialog-centered">
@@ -535,6 +542,97 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="images_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-02.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-03.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-04.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-02.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-03.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-04.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-02.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-03.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white text-right" data-dismiss="modal">&times;</h2>
+                        <img class="mx-auto d-block" src="images/images-04.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <footer>
             <div class="container-fluid pt-m-10p pb-m-10p pl-m-10p pr-m-10p pt-lg-40 pb-lg-40 pl-lg-5p pr-lg-5p">
