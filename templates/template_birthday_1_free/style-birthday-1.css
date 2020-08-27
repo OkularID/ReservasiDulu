@@ -558,6 +558,12 @@
         color: #ff786e;
         background: #fff;
     }
+    .birthday-1-free .carousel-free .owl-prev{
+        left: -60px;
+    }
+    .birthday-1-free .carousel-free .owl-next{
+        right: -60px;
+    }
 
 @media screen and (max-width: 846px) {
 	h2{
@@ -743,7 +749,16 @@
 			height: 80px;
 			font-size: 13px !important;
 			letter-spacing: 0.6px;
-	    }
+        }
+        .birthday-1-free .wrapper-carousel{
+            margin-left: auto;
+            margin-top: -180px;
+            padding: 60px;
+        }
+        .birthday-1-free .submit-birthday{
+            display: block;
+            text-align: center;
+        }
 }
 /* Animation */
     /*Slide From Left*/
