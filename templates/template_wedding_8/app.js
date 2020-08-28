@@ -50,6 +50,29 @@ $(document).ready(function() {
       }
     }
   })
+  $('.carousel-gallery').addClass('owl-carousel owl-theme').owlCarousel({
+    margin: 0,
+    responsiveClass: true,
+    loop: true,
+    autoHeight:true,
+    responsive:{
+      0: {
+        items: 1,
+        dots: true,
+        nav: false
+      },
+      600: {
+        items: 1,
+        dots: true,
+        nav: false
+      },
+      1000: {
+        items: 1,
+        dots: true,
+        nav: false
+      }
+    }
+  })
 })
 
 //// ============Input number incrementer / stepper===============

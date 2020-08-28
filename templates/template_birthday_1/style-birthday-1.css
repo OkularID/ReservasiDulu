@@ -406,6 +406,10 @@
             border-radius: 0;
             border-bottom: 2px solid #00704b;
         }
+        #rsvp form input[type=number]{
+            width: 10%;
+            background: transparent;
+        }
         ::-webkit-input-placeholder{color: #BCBEC0 !important;}
         ::-ms-input-placeholder{color: #BCBEC0 !important;}
         ::placeholder{color: #BCBEC0 !important;}

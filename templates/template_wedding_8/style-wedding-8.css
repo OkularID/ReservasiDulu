@@ -490,8 +490,10 @@
 	        	line-height: 13px !important;
 	        }
 	        #accommodation .img-title{
-	        	top: 9%;
-	        	left: 3%;
+	        	top: 39%;
+				left: 3%;
+				height: auto;
+				width: 10%;
 	        }
 	        #accommodation .images{
 	        	width: 85%;
@@ -499,7 +501,18 @@
 	        	object-fit: cover;
 	        }
         /* Gallery */
-	        
+	        #gallery{
+				margin-top: 130px;
+			}
+			#gallery .owl-theme .owl-dots .owl-dot span {
+				width: 79px;
+				height: 5px;
+				margin: 0;
+				border-radius: 0;
+			}
+			#gallery .owl-dots .owl-dot.active span, #gallery .owl-dots .owl-dot:hover span{
+				background: #cdae8a !important;
+			}
         /* RSVP */
 	        #rsvp .motif{
 	        	top: -9%;

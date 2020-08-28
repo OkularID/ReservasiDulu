@@ -26,12 +26,10 @@
                 <div class="row d-none d-lg-block">
                     <div class="offset-lg-3 col-lg-9 pr-lg-0">
                         <ul class="menu">
-                            <li><a href="index.html">HOME</a></li>
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="#dateandplace">DATE & PLACE</a></li>
                             <li><a href="#gallery">GALLERY</a></li>
                             <li><a href="#rsvp">RSVP</a></li>
-                            <li><a href="wishlist.html">WISHLIST</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,12 +44,10 @@
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                         <ul class="list-unstyled">
-                            <li><a href="index.html">HOME</a></li>
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="#dateandplace">DATE & PLACE</a></li>
                             <li><a href="#gallery">GALLERY</a></li>
                             <li><a href="#rsvp">RSVP</a></li>
-                            <li><a href="wishlist.html">WISHLIST</a></li>
                         </ul>
                     </div>
                 </div>
@@ -294,12 +290,13 @@
                                 <tr>
                                     <td><label>Additional guest *</label></td>
                                     <td>
-                                        <div class="guest">
-                                            <input type="number" name="your-guest" id="spinner" value="0" placeholder="0" min="0" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
-                                            <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
-                                                <img class="img-fluid" src="images/arrow-down.png" />
-                                            </a>
-                                        </div>
+                                        <a role="button" id="step-decrement" class="btn btn-default" aria-label="remove 1" aria-labelledby="step-decrement label-text">
+                                            <i class="fa fa-caret-left font-green"></i>
+                                        </a>
+                                        <input class=" text-center" disabled type="number" name="qty" id="spinner" value="1" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                        <a role="button" id="step-increment" class="btn btn-default" aria-label="add 1" aria-labelledby="step-increment label-text">
+                                            <i class="fa fa-caret-right font-green"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             </table>
@@ -307,7 +304,7 @@
                                 <div class="order-3 order-lg-1 col-lg-5 pl-lg-0 pr-lg-0 mtext-center text-left">
                                     <a class="button-default bs" target="_blank" href="invitation.pdf">DOWNLOAD INVITATION</a>
                                 </div>
-                                <div class="order-2 order-lg-2 col-lg-4 pl-lg-0 pr-lg-0 text-center">
+                                <div class="order-2 order-lg-2 col-lg-4 pl-lg-0 pr-lg-0 text-center d-none">
                                     <a href="wishlist.html" class="button-default bs pl-lg-30 pr-lg-30">SEE WISHLIST</a>
                                 </div>
                                 <div class="order-1 order-lg-3 col-lg-3 pl-lg-0 pr-lg-0 mtext-center text-right">

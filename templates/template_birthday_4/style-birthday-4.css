@@ -243,18 +243,18 @@
         }
         #dateandplace .box .day{
             font-family: "LeckerliOne Regular";
-            font-size: 80px;
+            font-size: 60px;
             color: #A6CE28;
         }
         #dateandplace .box .title{
             font-family: "Krub Bold";
-            font-size: 35px;
+            font-size: 25px;
             color: #F56049;
         }
         #dateandplace .box p{
         	margin-bottom: 0;
-            font-size: 35px !important;
-            line-height: 45px;
+            font-size: 25px !important;
+            line-height: 35px;
             color: #042B5B;
         }
     /* RSVP */

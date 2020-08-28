@@ -59,6 +59,12 @@
 		background: #79cdd5;
 		border: none;
 		border-radius: 50px;
+		border: 2px solid #79cdd5;
+		transition: all .3s;
+	}
+	.button-bluesky:hover{
+		color: #79cdd5;
+		background: #fff;
 	}
 	.button-trans{
 		padding: 5px 20px;
@@ -170,6 +176,11 @@
 		margin-left: 10px;
 		width: 130px;
 		text-align: center;
+		transition: all .3s;
+	}
+	footer .button-trans:hover{
+		color: #fff;
+		background-color: #808184;
 	}
 /* Page Home */
 	#banner .box{
@@ -508,5 +519,8 @@
 			width: 80%;
 		}
 		.modal-content .font-bluesky{line-height: 21px;}
+		#rsvp form input[type="number"] {
+			margin-left: 1.5rem !important;
+		}
 	}
 }

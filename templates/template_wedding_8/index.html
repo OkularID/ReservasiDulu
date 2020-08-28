@@ -164,9 +164,9 @@
         <!-- Section Gallery -->
         <section id="gallery">
             <div class="container-fluid pl-lg-5 py-lg-5">
-                <div class="row my-lg-5">
+                <div class="row my-lg-5 d-none d-lg-flex">
                     <div class="col-lg-6 pl-lg-5">
-                        <img src="images/gallery-new-content-03.jpg" alt="">
+                        <img src="images/gallery-new-content-03.jpg" data-toggle="modal" data-target="#images_1" alt="">
                         <h3 class="my-lg-5 d-inline-block">
                             Our Memories
                         </h3>
@@ -176,15 +176,84 @@
                         </p>
                     </div>
                     <div class="image-pos">
-                    <img src="images/gallery-new-content-05.jpg" alt="">
+                    <img src="images/gallery-new-content-05.jpg" data-toggle="modal" data-target="#images_2" alt="">
                     </div>
                     <div class="col-lg-4 offset-lg-2 text-center">
-                        <img src="images/gallery-new-content-04.jpg" alt="">
-                        <img class="mt-5" src="images/gallery-new-content-06.jpg" alt="">
+                        <img src="images/gallery-new-content-04.jpg" data-toggle="modal" data-target="#images_3" alt="">
+                        <img class="mt-5" src="images/gallery-new-content-06.jpg" data-toggle="modal" data-target="#images_4" alt="">
+                    </div>
+                </div>
+                <div class="row d-lg-none">
+                    <div class="col-lg-12 text-center py-5">
+                        <h3 class="my-lg-5">
+                            Our Memories
+                        </h3>
+                    </div>
+                    <div class="col-lg-12 px-5">
+                        <div class="carousel-gallery owl-theme">
+                            <div class="item">
+                                <img src="images/gallery-new-content-03.jpg" data-toggle="modal" data-target="#images_1" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/gallery-new-content-05.jpg" data-toggle="modal" data-target="#images_2" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/gallery-new-content-04.jpg" data-toggle="modal" data-target="#images_3" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/gallery-new-content-06.jpg" data-toggle="modal" data-target="#images_4" alt="">
+                            </div>
+                        </div>
+                        <p class="font-grey mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adip<br>
+                            iscing elit. Sed fermentum lorem dignissim<br>
+                            sapien dapibu
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="images_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                        <img class="mx-auto d-block" src="images/gallery-new-content-03.jpg" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                        <img class="mx-auto d-block" src="images/gallery-new-content-05.jpg" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                        <img class="mx-auto d-block" src="images/gallery-new-content-04.jpg" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="images_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                        <img class="mx-auto d-block" src="images/gallery-new-content-06.jpg" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Section RSVP -->
         <section id="rsvp">
             <div class="container-fluid">
@@ -229,7 +298,7 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-3 col-2 pl-0">
-                                            <input class="w-100 form-control bg-white text-center" disabled type="number" name="qty" id="spinner" value="1" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+                                            <input class="w-100 form-control bg-white text-center ml-4 ml-lg-0" disabled type="number" name="qty" id="spinner" value="1" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
                                         </div>
                                         <div class="col-lg-2 col-1">
                                             <a role="button" id="step-increment" class="btn btn-default  mt-1" aria-label="add 1" aria-labelledby="step-increment label-text">
