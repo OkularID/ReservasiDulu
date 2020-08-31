@@ -190,7 +190,6 @@
 		background-image: url(images/bg-wishlist-header-02.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		padding-bottom: 100px;
 	}
 	.header-section-wishlist h2:first-child{
 		font-size: 125px;
@@ -206,18 +205,6 @@
 	.header-section-wishlist .content-title{
 		margin-top: 9em;
 	}
-	.header-section-wishlist ul{
-		column-count: 3;
-		text-align: center;
-		margin-top: 8.5em;
-		margin-bottom: 5em;
-	}
-	.header-section-wishlist ul li{
-		margin: 0 20px 20px;
-	}
-	.header-section-wishlist ul li a{
-		color: #768792;
-	}
 	#form-submit .modal-content, #wishlist-submit .modal-content{
 		background-image: url(images/bg-pop-up-08.jpg);
 		background-size: cover;
@@ -230,7 +217,7 @@
 		top: 2em;
 	}
 	.choose-one{
-		height: 1000px;
+		height: 750px;
 	}
 	.choose-one h1{
 		font-size: 125px;
@@ -239,6 +226,69 @@
 	.choose-one h1:last-child{
 		margin-top: -70px;
 		margin-left: 40px;
+	}
+	.choose-one .wrap-title{
+		background-image: url(images/ornament-wishlist-bg-05.png);
+		background-size: cover;
+		padding-left: 25%;
+		padding-top: 11%;
+		position: absolute;
+		width: 766px;
+		height: 350px;
+		background-position: center;
+		background-repeat: no-repeat;
+		top: 22rem;
+		left: 2%;
+	}
+	.choose-one .wishlist-content{
+		padding-top: 24rem;
+	}
+	.choose-one .wishlist-content ul li{
+		display: block;
+		display: block;
+		margin-right: 5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.choose-one .wishlist-content ul{
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+	}
+	.choose-one .wishlist-content ul li a{
+		color: #79797A;
+	}
+	.choose-one .wishlist-content ul li a:hover{
+		color: #e5d5cc;
+		border-bottom: 2px solid #e5d5cc; 	
+	}
+	.choose-one .wishlist-content img.divider{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.popup_1{
+		background-image: url(images/bg-popup-wishlist-1-03.jpg);
+		background-size: cover;
+	}
+	.button-pink{
+		background-color: #e5d5cc;
+		padding: 10px 20px;
+		color: #fff;
+		border-radius: 25px;
+		border: 2px solid #e5d5cc:
+	}
+	.button-pink:hover{
+		background-color: #fff;
+		color: #e5d5cc;
+	}
+	.popup_1 .input-text{
+		border: 2px solid #e5d5cc;
+		border-radius: 0;
+	}
+	.font-small{
+		font-size: 12px;
 	}
 	@media screen and (max-width: 846px) {
 		p, a, label, th, td, li, input{
@@ -381,13 +431,6 @@
     	}	
     	.header-section-wishlist .content-title{
     		margin-top: 5em;
-    	}
-    	.header-section-wishlist ul{
-    		margin-top: 3.5em;
-    		margin-bottom: 3em;
-    	}
-    	.header-section-wishlist ul li{
-    		margin: 0 0px 16px;
     	}
     	/* Navianidsnasiod */
     	.side-nav{
