@@ -1,6 +1,9 @@
     body{
         overflow-x: hidden;
     }
+    .z-index-3{
+        z-index: 3;
+    }
 /* Default */
 	@font-face{
 	    font-family: "Krub Regular";
@@ -28,7 +31,7 @@
 		font-size: 14px !important;
 		line-height: 20px;
 		color: #333333;
-	}
+    }
 	.container-fluid{position: relative;}
 	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
 	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
@@ -128,7 +131,7 @@
 		}
 	}
 /* Footer */
-	footer{background: #2bc1b2;}
+	footer{background: #2bc1b2; position: relative;  z-index: 3;}
 	footer p,
 	footer a{
 		margin-bottom: 0;
@@ -264,7 +267,10 @@
         }
         #rsvp form input[type=text],
         #rsvp form input[type=email],
-        #rsvp form input[type=number]{
+        #rsvp form input[type=number],
+        #ebrochure input[type=text],
+        #ebrochure input[type=email],
+        #ebrochure input[type=number]{
 	    	font-family: "Krub Regular";
             font-size: 19px !important;
             line-height: 26px;
@@ -304,7 +310,7 @@
         }
         #rsvp form label.radio{font-family: "Krub Bold";}
         #rsvp form label.font-lightgrey{font-size: 15px !important;}
-        #rsvp form .button-form, .button-cyan{
+        #rsvp form .button-form{
             background: url('images/button.png');
             background-size: cover !important;
             background-repeat: no-repeat !important;
@@ -317,7 +323,7 @@
             color: #fff;
             transition: all .3s;
         }
-        #rsvp form .button-form:hover, .button-default:hover, .button-cyan:hover{
+        #rsvp form .button-form:hover, .button-default:hover{
             background: url('images/button-07.png');
             color: #fff;
         }
@@ -340,14 +346,18 @@
             background-color: transparent;
             border: none;
         }
+        #pagewishlist .modal-content{
+            background-color: transparent;
+            border: none;
+        }
         #rsvp .modal .box,
         #pagewishlist #wish2 .modal .box{
 			position: relative;
 			z-index: 2;
 			margin: 0 auto;
-			padding: 15% 5%;
+			padding: 15% 5% 5%;
 			width: 70%;
-        	background: rgba(255,255,255,0.87);
+        	background: rgba(255,255,255);
         }
         #rsvp .modal .button-default,
         #pagewishlist #wish2 .modal .button-default{
@@ -362,11 +372,31 @@
 			cursor: pointer;
         }
         .button-cyan{
-            color: #fff;
+            background: url('images/button-new-07.png');
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            padding: 13px 31px;
+            font-family: "Krub Bold";
+            font-size: 20px !important;
+            text-align: center;
             border: none;
+            color: #fff;
+            transition: all .3s;
+            border-bottom: none !important;
+            color: #fff !important;
         }
         .button-cyan:hover{
-
+            background: url('images/button-new-hover-07-06.png');
+            color: #fff !important;
+        
+        }
+        #pagewishlist #wish2 .button-cyan{
+            color: #fff !important;
+        }
+        #pagewishlist #wish2 .button-cyan:hover{
+            background: url('images/button-new-hover-07-06.png');
+            color: #fff !important;
         }
     /* WISHLIST */
         #wishlist .motif{
@@ -406,16 +436,16 @@
 		right: 20%;
 	}
 	#pagewishlist #banner .motif{
-		bottom: -24%;
+		bottom: -59%;
 	}
 	#pagewishlist #banner .motif2{
 		position: absolute;
 		top: 0;
-		left: 0;
+		right: 0;
 	}
 	#pagewishlist #wish p,
 	#pagewishlist #wish2 p{
-		font-size: 20px !important;
+		font-size: 18px !important;
 		line-height: 30px;
 		color: #042B5B;
 	}
@@ -425,12 +455,15 @@
 		letter-spacing: 0.75px;
 		color: #F56049;
 		cursor: pointer;
-	}
+    }
+    #pagewishlist #wish2 a.button-cyan{
+        font-size: 14px !important;
+        padding: 9px 31px;
+    }
 	#pagewishlist #wish2 a:hover,
-	#pagewishlist #wish2 a:focus,
-	#pagewishlist #wish2 a:visited{
+	#pagewishlist #wish2 a:focus{
 		transition: 1s;
-		color : rgb(245, 96, 73, 0.3);
+		color: #042b5b !important;
 	}
 	#pagewishlist #wish2 a:hover .line,
 	#pagewishlist #wish2 a:focus .line,
@@ -448,9 +481,17 @@
 	}
 	#pagewishlist #wish2 .modal .box{
 		padding: 10% 5%;
-		width: 85%;
-	}
-
+		width: 100%;
+    }
+    #wish2 .ornament-bottom{
+        margin-top: -590px;
+        margin-bottom: -420px;
+        position: relative;
+        z-index: 2;
+    }
+    .font-small{
+        font-size: 12px !important;
+    }
 @media screen and (max-width: 846px) {
 	h1{font-size: 35px !important;}
 	h2{font-size: 30px !important;}        
