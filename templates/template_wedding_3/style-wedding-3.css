@@ -535,7 +535,12 @@
       	transition: box-shadow .3s, -webkit-transform .3s;
       	transition: transform .3s, box-shadow .3s;
       	transition: transform .3s, box-shadow .3s, -webkit-transform .3s;
-    }
+	}
+	#rsvp form .add-to-cart:hover{
+		background: #333333;
+		color: #fff;
+		transition: all .3s;
+	}
     #rsvp form .add-to-cart .default{
       	padding-left: 15px;
       	padding-right: 15px;
@@ -713,10 +718,14 @@
 }
 .button-download{
 	background-color: #fff;
-	color: #000 !important;
+	color: #572e32 !important;
 	padding: 12px 62px;
 	border-radius: 50px;
 	text-align: center;
+	transition: all .3s;
+}
+.button-download:hover{
+	background-color: #ebd8cf;
 }
 @media screen and (max-width: 846px) {
 	/* Default */
