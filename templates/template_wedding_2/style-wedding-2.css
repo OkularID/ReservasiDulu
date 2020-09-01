@@ -203,8 +203,8 @@
 	}
 	.accomodation .button-location{
 		color: #284c5b;
-		font-weight: bold;
 		border-bottom: 2px solid #c7b198;
+		font-family: "Overpass Bold";
 	}
 	.accomodation .garis{
 		position: absolute;

@@ -1,0 +1,662 @@
+	body{
+        overflow-x: hidden;
+    }
+/* Default */
+	@font-face{
+	    font-family: "EBGaramond Bold";
+	    src: url(EBGaramond-Bold.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "EBGaramond Italic";
+	    src: url(EBGaramond-Italic-VariableFont_wght.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "EBGaramond Medium";
+	    src: url(EBGaramond-Medium.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "EBGaramond Regular";
+	    src: url(EBGaramond-Regular.ttf) format("truetype");
+	}
+	h1, h2, h3, h4, h5, h6, h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+	    font-family: "EBGaramond Bold";
+		color: #cdae8a;
+	}
+	h2{font-size: 58px !important;}
+	h3{font-size: 45px !important;}
+	h4{font-size: 25px !important;}
+	h5{font-size: 22px !important;}
+	h6{font-size: 16px !important;}
+	p,a,label,th,td,li, input{
+	    font-family: "EBGaramond Medium";
+	  	font-size: 14px !important;
+		line-height: 23px !important;
+	  	color: #575756;
+	}
+	b, strong{
+		font-weight: unset !important;
+	    font-family: "EBGaramond Bold";
+	}
+	.container-fluid{position: relative;}
+	.rlgu{right: unset !important;}
+	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
+	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
+	.bg-green{background: #075561 !important;}
+    .bg-grey{background: #f2f2f2 !important;}
+    .font-green, .font-green p{color: #075561 !important;}
+	.line-white{
+		border: unset;
+		height: 1px;
+		background: #fff;
+	}
+	.button-default{
+		padding: 20px;
+	    font-family: "EBGaramond Regular";
+		font-size: 25px !important;
+	  	line-height: 45px !important;
+	  	letter-spacing: 7.5px;
+	  	text-transform: uppercase;
+	  	color: #fff;
+		background: #cdae8a;
+		border: 1px solid #cdae8a;
+        box-shadow: 6px 6px 9px rgba(74,74,74,0.65);
+	}
+	.button-default:hover{
+		color: #cdae8a;
+		background: #fff;
+	}
+	.button-download{
+		padding: 11px 20px;
+	    font-family: "EBGaramond Italic";
+		font-size: 25px !important;
+	  	line-height: 45px !important;
+	  	letter-spacing: 1px;
+	  	color: #cdae8a;
+		background: #fff;
+		border: 1px solid #fff;
+        box-shadow: 6px 6px 9px rgba(74,74,74,0.65);
+	}
+	.button-download:hover{
+		color: #fff;
+		background: #cdae8a;
+	}
+
+/* Navbar */
+	nav{
+		position: absolute;
+		z-index: 1;
+		padding: 5.5%;
+		top: 0;
+		left: 0;
+		width: 20%;
+		height: 100vh;
+	}
+	ul.menu{
+		position: absolute;
+		bottom: 0%;
+		padding-left: 0;
+		list-style: none;
+		width: 59%;
+	}
+	ul.menu li a{
+		position: relative;
+		display: block;
+		padding: 4%;
+		width: 100%;
+		font-family: "EBGaramond Italic";
+		font-size: 16px !important;
+		line-height: 40px !important;
+		color : #FFFFFF;
+		text-decoration: none;
+		outline: none;
+	}
+	ul.menu li a:hover{
+		border-bottom: 1px solid;
+		font-weight: bold;
+	}
+	@media screen and (max-width: 846px) {
+		nav{
+			position: absolute;
+			z-index: 1;
+			padding: 8% 5%;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+		}
+		nav .row{margin: 0;}
+		nav .logo{width: 30%;}
+		nav ul.bars{padding-left: 0;}
+		nav #toggle{
+			float: right;
+			width: 28px;
+			height: 23px;
+			cursor: pointer;
+		}
+		nav #toggle div{
+			margin: 4px 0 8px;
+			width: 100%;
+			height: 2px;
+			background: #fff;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+		}
+		.side-nav{
+			background: #f2f2f2;
+			position: fixed;
+			padding: 25% 5%;
+			top: 0;
+			left: -100%;
+			height: 100vh;
+			width: 100%;
+			text-align: center;
+			transition: all .3s;
+		}
+		.side-nav.active{
+			left: 0;
+		}
+		.side-nav .close-div{
+			position: absolute;
+			top: 2%;
+			right: 5%;
+			width: 17%;
+			cursor: pointer;
+		}
+		.side-nav .fa-times{
+			font-size: 40px;
+		}
+		.side-nav ul{
+			position: relative;
+			bottom: unset;
+			width: 100%;
+		}
+		.side-nav ul li{
+			display: block;
+			margin: 0 auto 25px;
+			padding-bottom: 5px;
+			text-align: center;
+			width: 60%;
+			border-bottom: 2px solid transparent;
+		}
+		.side-nav ul li:hover{
+			border-bottom: 2px solid #cdae8a;
+		}
+		#homepage nav ul li a{
+			font-family: "EBGaramond Italic" !important;
+			font-size: 20px !important;
+			line-height: 14px !important;
+			color: #cdae8a !important;
+		}
+		#homepage nav ul li a:hover,
+		#homepage nav ul li a:active,
+		#homepage nav ul li a.active{
+			font-family: "Barlow Bold";
+			color: #e39c6f;
+		}	
+	}
+	
+/* Footer */
+	footer{background: #075561;}
+	footer p,
+	footer a{
+		margin-bottom: 0;
+	    font-family: "EBGaramond Medium";
+	  	font-size: 18px !important;
+	  	line-height: 25.6px !important;
+	  	letter-spacing: 0.9px;
+	  	color: #DADADA;
+	}
+	footer .button-footer{
+		margin-right: 3%;
+		padding: 1.5% 10%;
+        font-family: "EBGaramond Italic";
+		font-size: 18px !important;
+		color: #CDAE8A;
+		border-radius: 0;
+		border: 1px solid #CDAE8A;
+	}
+	footer .button-footer:hover{
+		color: #CDAE8A;
+		background: #fff;
+	}
+/* Page Home */
+
+	/* Our Story */
+        #ourstory .motif{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #ourstory .col-lg-7{border-right: 1px solid #cdae8a;}
+        #ourstory .boxc{width: 75%;}
+        #ourstory .boxc p{
+            font-family: "EBGaramond Italic";
+            font-size: 16px !important;
+            line-height: 40px !important;
+            color: #706F6F;
+        }
+    /* Venue */
+        #venue{padding-bottom: 20%;}
+        #venue .motif1{
+            height: 150vh;
+            top: 68%;
+            width: 1px;
+            background: #cdae8a;
+        }
+        #venue .motif2{
+            top: unset;
+            bottom: -20%;
+            left: 30%;
+            transform: unset;
+            width: 22%;
+        }
+        #venue h3{
+            display: inline;
+            margin: 0 auto;
+            padding: 15px 50px;
+            color: #075561;
+            border: 1px solid #cdae8a;
+        }
+        #venue p{
+            font-size: 18px !important;
+            line-height: 26px !important;
+        }
+        #venue .images{
+            float: right;
+            width: 90%;
+        }
+        #venue .images2{
+            position: absolute;
+            top: -60%;
+            width: 90%;
+            box-shadow: 5px -4px 9px rgba(74,74,74,0.65);
+        }
+    /* Accommodation */
+        #accommodation .motif1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 67vh;
+            background: #f2f2f2;
+        }
+        #accommodation .wrap{
+            position: absolute;
+            z-index: 1;
+            padding: 2% 3%;
+            bottom: 3%;
+            right: 5%;
+            width: 38%;
+            background: #075561;
+        }
+        #accommodation .wrap p{
+            font-family: "EBGaramond Regular";
+            font-size: 16px !important;
+            line-height: 25px !important;
+            color : #F6F5F3;
+        }
+        #accommodation .wrap .note p{
+            margin-bottom: 0;
+            font-size: 14px !important;
+        }
+        #accommodation .img-title{
+        	position: absolute;
+        	top: 9.5%;
+			left: 13.5%;
+			height: 77vh;
+        }
+        #accommodation .rot{
+            position: absolute;
+            left: 13%;
+            top: 43.5%;
+            transform: translate(-50%) rotate(-90deg);
+            width: 38vw;
+        }
+        #accommodation .title{
+            position: relative;
+            width: 100%;
+        }
+        #accommodation .title h4{
+            margin-bottom: 0;
+            font-family: "EBGaramond Regular";
+            letter-spacing: 7.5px !important;
+            text-transform: uppercase;
+            color: #CDAE8A;
+        }
+        #accommodation .title .line{
+            margin: unset;
+            left: unset;
+            width: 37%;
+			height: 2px;
+            background: #CDAE8A;
+        }
+        #accommodation .images{
+            float: right;
+            width: 83%;
+        }
+    /* Gallery */
+        #gallery .wrap{
+            position: relative;
+            width: 100%;
+            height: 150vh;
+        }
+        #gallery .wrap .button-default{
+            width: 25%;
+            text-align: center;
+        }
+        #gallery .wrap .line{
+            margin: unset;
+            right: unset;
+            width: 50%;
+            height: 2px;
+            background: #cdae8a;
+        }
+        #gallery .wrap .box{
+            position: absolute;
+            margin: 0 auto;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            width: 33%;
+            text-align: center;
+        }
+        #gallery .wrap .box img{
+            width: 100%;
+        }
+        #gallery .wrap .images1{
+            top: 25%;
+            right: 67%;
+            width: 28%;
+        }
+        #gallery .wrap .images2{
+            top: 0;
+            transform: unset;
+            width: 13%;
+        }
+        #gallery .wrap .images3{
+            top: 20%;
+            left: 70%;
+            width: 30%;
+        }
+        #gallery .wrap .images4{
+            top: 64%;
+            right: 70%;
+            width: 17%;
+        }
+        #gallery .wrap .images5{
+            top: 83%;
+            left: 17%;
+        }
+        #gallery .wrap .images6{
+            top: 52.7%;
+            left: 70%;
+            width: 16%;
+        }
+        #gallery .wrap .motif1{
+            top: 3%;
+            right: 59%;
+            width: 29%;
+        }
+        #gallery .wrap .motif2{
+            top: 71%;
+            left: -19%;
+            width: 8%;
+        }
+        #gallery .wrap .motif3{
+            top: 59%;
+            left: 54%;
+            width: 8%;
+        }
+    /* RSVP */
+    	.free-wedding-8 .motif{
+    		position: absolute;
+			z-index: 1;
+			top: -13%;
+			right: 5%;
+			width: 15%;
+    	}
+        .free-wedding-8 .title{
+            position: relative;
+            width: 100%;
+        }
+        .free-wedding-8 .title h2{
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        .free-wedding-8 .title .line{
+            margin: unset;
+            left: unset;
+            width: 86%;
+            height: 2px;
+            background: #CDAE8A;
+		}
+		.free-wedding-8 input[type="number"]{
+			-moz-appearance: textfield;
+			-webkit-appearance: textfield;
+		}
+        .free-wedding-8 label{
+            padding-left: 10px;
+            font-family: "EBGaramond Italic";
+            font-size: 18px !important;
+            color: #414042;
+        }
+        .free-wedding-8 input{
+            margin-bottom: 10px;
+            padding: 10px;
+            height: auto;
+            font-family: "EBGaramond Italic";
+            font-size: 18px !important;
+            color: #414042;
+            background: transparent;
+            border: 1px solid #075561;
+            border-radius: 0;
+        }
+        .free-wedding-8 .box{border: 1px solid #075561;}
+        .free-wedding-8 .box input{margin-bottom: 0;}
+        .free-wedding-8 input[type=radio] {
+            margin: -5px 0px;
+            padding: 0.5em;
+            -webkit-appearance: none;
+            border: 1px solid #000;
+        }
+        .free-wedding-8 input[type=radio]:checked{background: #cdae8a;}
+        .free-wedding-8 input[type=radio]:focus{outline-color: transparent;}
+        .free-wedding-8 .button-default{
+            padding: 10px 50px;
+            font-family: "EBGaramond Italic";
+            font-size: 24px !important;
+            line-height: 34px !important;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+			float: right;
+		}
+	
+/* Template */
+		.free-wedding-8{
+			background-image: url(images/bg-free-03.jpg);
+			background-size: contain;
+			background-position: left;
+			background-repeat: no-repeat;
+		}
+		.wrap-content-held{
+			background-color: #075561;
+			width: 85%;
+			margin-left: 80px;
+			margin-top: -60px;
+		}
+		.free-wedding-8 .content-right{
+			padding-top: 100px;
+		}
+		.wrap-content-held .cincinati{
+			float: right;
+			margin-right: -160px;
+			margin-top: -60px;
+			width: 30%;
+		}
+@media screen and (max-width: 846px) {
+	/* Default */
+	    h3{font-size: 30px !important;}
+	   	p,a,label,th,td,li, input{
+	        font-size: 14px !important;
+	    	line-height: 17px !important;
+	    }
+	    .mtext-center{text-align: center !important;}
+	    .ts{text-shadow: 1px 1px 2px rgba(74,74,74,0.65);}
+	/* Footer */
+        footer p{
+            font-size: 15px !important;
+            line-height: 23.6px !important;
+        	letter-spacing: 0.85px;
+        }
+    /* Page Home */
+        /* Our Story */
+	        #ourstory .boxc{
+	        	position: relative;
+	        	margin: unset;
+	        	top: unset;
+	        	left: unset;
+	        	right: unset;
+	        	transform: unset;
+	        	width: 100%;
+	        }
+	        #ourstory .boxc p{line-height: 26px !important;}
+        /* Venue */
+	        #venue .motif1{display: none;}
+	        #venue .motif2{
+	        	margin: unset;
+	        	bottom: 0;
+	        	left: unset;
+	        	right: 0;
+	        	width: 45%;
+	        }
+	        #venue h3{display: block;}
+	        #venue p{font-size: 16px !important;}
+	        #venue .images{
+	        	float: unset;
+	        	width: 100%;
+	        }
+	        #venue .images2{
+	        	position: relative;
+	        	top: unset;
+	        	width: 100%;
+	        }
+        /* Accommodation */
+	        #accommodation .wrap{
+	        	padding: 5%;
+	        	bottom: 0;
+	        	right: 0;
+	        	width: 75%;
+	        }
+	        #accommodation .wrap p{
+	        	font-size: 14px !important;
+	        	line-height: 20px !important;
+	        }
+	        #accommodation .wrap .note p{
+	        	font-size: 11px !important;
+	        	line-height: 13px !important;
+	        }
+	        #accommodation .img-title{
+	        	top: 9%;
+	        	left: 3%;
+	        }
+	        #accommodation .images{
+	        	width: 85%;
+	        	height: 77vh;
+	        	object-fit: cover;
+	        }
+        /* Gallery */
+	        #gallery .wrap{height: 120vh;}
+	        #gallery .wrap .button-default{
+	        	font-size: 16px !important;
+	        	line-height: 20px !important;
+	        	letter-spacing: 4.4px;
+	        	width: 65%;
+	        }
+	        #gallery .wrap .images1{
+	        	top: 24%;
+	        	left: 7%;
+	        	width: 40%;
+	        }
+	        #gallery .wrap .images2{
+	        	left: 45%;
+	        	width: 25%;
+	        }
+	        #gallery .wrap .images3{
+	        	top: 32%;
+	        	left: 45%;
+	        	width: 40%;
+	        }
+	        #gallery .wrap .images4{
+	        	top: 87%;
+	        	right: 40%;
+	        	width: 32%;
+	        }
+	        #gallery .wrap .images5{
+	        	top: 68%;
+	        	left: -46%;
+	        	width: 40%;
+	        }
+	        #gallery .wrap .images6{
+	        	top: 80%;
+	        	left: 53%;
+	        	width: 33%;
+	        }
+	        #gallery .wrap .motif1{
+	        	top: 11%;
+	        	width: 52%;
+	        	left: 0%;
+	        }
+	        #gallery .wrap .motif2{
+	        	top: 96%;
+	        	left: -15%;
+	        	width: 15%;
+	        }
+	        #gallery .wrap .motif3{
+	        	top: 85%;
+	        	left: 20%;
+	        	width: 15%;
+	        }
+        /* RSVP */
+	        #rsvp .motif{
+	        	top: -9%;
+	        	right: 0;
+	        	width: 40%;
+	        }
+	        #rsvp .title{
+	        	position: relative;
+	        	width: 92%;
+	        	margin: 0 auto;
+	        }
+	        #rsvp .title h2{font-size: 30px !important;}
+	        #rsvp .title .line{
+	        	right: -9%;
+	        	width: 74%;
+	        }
+	        #rsvp form{padding: 5% 0 2%;}
+	        #rsvp form label,
+	        #rsvp form input{font-size: 17px !important;}
+	        #rsvp form .button-default{
+	        	width: 100%;
+	        	font-size: 17px !important;
+			}
+			.free-wedding-8 img.content-mobile{
+				float: right;
+			}
+			.free-wedding-8{
+				background-image: url(images/bg-free-mobile-04.jpg);
+				background-position: top;
+			}
+			.owl-theme .owl-dots .owl-dot span{
+				width: 140px;
+				height: 5px;
+				border-radius: 0;
+				margin: 0;
+			}
+			.owl-dots .owl-dot.active span{
+				background: #cdae8a !important;
+			}
+			.free-wedding-8 .content-right {
+				padding-top: 10px;
+			}
+}

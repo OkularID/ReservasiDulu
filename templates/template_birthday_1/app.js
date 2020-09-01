@@ -121,7 +121,7 @@ App.init();
 
 
 //  ============Move Down============
-$('#chevron-down').click(function(){
+$('#chevron-down, .menu a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 1500);

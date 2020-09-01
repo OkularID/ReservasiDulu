@@ -33,7 +33,7 @@
 	h5{font-size: 18px !important;}
 	p,a,label,th,td,li, input{
 		font-family: "Barlow Regular";
-		font-size: 12px !important;
+		font-size: 13px !important;
 		line-height: 20px;
 		letter-spacing: 0.3px;
         outline: none;
@@ -463,6 +463,7 @@
             font-family: "Barlow Black";
             font-size: 18px;
             color: #fff;
+            letter-spacing: 2px;
         }
     /* RSVP */
         #rsvp{

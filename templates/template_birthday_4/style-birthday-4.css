@@ -243,18 +243,18 @@
         }
         #dateandplace .box .day{
             font-family: "LeckerliOne Regular";
-            font-size: 80px;
+            font-size: 60px;
             color: #A6CE28;
         }
         #dateandplace .box .title{
             font-family: "Krub Bold";
-            font-size: 35px;
+            font-size: 25px;
             color: #F56049;
         }
         #dateandplace .box p{
         	margin-bottom: 0;
-            font-size: 35px !important;
-            line-height: 45px;
+            font-size: 25px !important;
+            line-height: 35px;
             color: #042B5B;
         }
     /* RSVP */
@@ -304,7 +304,7 @@
         }
         #rsvp form label.radio{font-family: "Krub Bold";}
         #rsvp form label.font-lightgrey{font-size: 15px !important;}
-        #rsvp form .button-form{
+        #rsvp form .button-form, .button-cyan{
             background: url('images/button.png');
             background-size: cover !important;
             background-repeat: no-repeat !important;
@@ -314,6 +314,11 @@
             font-size: 20px !important;
             text-align: center;
             border: none;
+            color: #fff;
+            transition: all .3s;
+        }
+        #rsvp form .button-form:hover, .button-default:hover, .button-cyan:hover{
+            background: url('images/button-07.png');
             color: #fff;
         }
         #rsvp a{
@@ -331,6 +336,10 @@
 			bottom: 0;
 			left: 0;
         }
+        #rsvp .modal-content{
+            background-color: transparent;
+            border: none;
+        }
         #rsvp .modal .box,
         #pagewishlist #wish2 .modal .box{
 			position: relative;
@@ -338,7 +347,7 @@
 			margin: 0 auto;
 			padding: 15% 5%;
 			width: 70%;
-        	background: rgba(255,255,255,0.65);
+        	background: rgba(255,255,255,0.87);
         }
         #rsvp .modal .button-default,
         #pagewishlist #wish2 .modal .button-default{
@@ -352,10 +361,17 @@
 			border-bottom: unset;
 			cursor: pointer;
         }
+        .button-cyan{
+            color: #fff;
+            border: none;
+        }
+        .button-cyan:hover{
+
+        }
     /* WISHLIST */
         #wishlist .motif{
             position: absolute;
-            top: -60%;
+            top: -220%;
             left: 0;
         }
         #wishlist .motif2{

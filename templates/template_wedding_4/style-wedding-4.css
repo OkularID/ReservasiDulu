@@ -35,7 +35,7 @@
 	p,a,label,th,td,li, input{
 		font-family: "Cormorant Medium";
 	  	font-size: 16px !important;
-		line-height : 22px;
+		line-height : 27px;
 		color : #8F8D91;
 	}
 	.container-fluid{position: relative;}
@@ -105,11 +105,10 @@
 		padding-bottom: 5px;
 		color: #fff;
 		border-bottom: 1px solid #eed9d9;
-		transition: .0s;
 	}
 	nav ul li a.logo{border-bottom: none;}
-	nav ul li a.logo img{border-bottom: 1px solid transparent;}
-	nav ul li a.logo img:hover{border-bottom: 1px solid #eed9d9;}
+	nav ul li a.logo img{border-bottom: none;}
+	nav ul li a.logo img:hover{border-bottom: none;}
 	.side-nav{
 		background: #b7a9a9 !important;
 		position: fixed;
@@ -216,7 +215,7 @@
         }
         #banner .one-carousel .owl-dots .owl-dot span{
             width: 80px;
-            height: 7px;
+            height: 5px;
             background: #ffffff !important;
         }
         #banner .one-carousel .owl-dots .owl-dot.active span{
@@ -404,6 +403,17 @@
         }
         #rsvp form input[type=radio]:checked{background: #eed9d9;}
         #rsvp form input[type=radio]:focus{outline-color: transparent;}
+        .popup-submit .modal-content{
+            background-image: url(images/popup-bg-03.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .popup-submit .button-close{
+            float: right;
+            margin-right: -2rem;
+            margin-bottom: -0.5rem;
+            margin-top: -1rem;
+        }
 	
 @media screen and (max-width: 846px) {
 	h2{font-size: 38px !important;}
@@ -500,5 +510,9 @@
             #rsvp form .button-default{
                 padding: 4.5% 7%;
                 width: 100%;
+            }
+            .button-download {
+                display: inline-block;
+                margin-top: 20px;
             }
 }

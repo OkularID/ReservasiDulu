@@ -1,0 +1,643 @@
+/* Default */
+	@font-face{
+	    font-family: "Chevin Bold";
+	    src: url(Chevin-Bold.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Chevin Medium";
+	    src: url(Chevin-Medium.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Chevin Medium Italic";
+	    src: url(Chevin-Medium-Italic.otf) format("truetype");
+	}
+	@font-face{
+	    font-family: "MrBedfort Regular";
+	    src: url(MrBedfort-Regular.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Pacifico Regular";
+	    src: url(Pacifico-Regular.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Raleway ExtraBold";
+	    src: url(Raleway-ExtraBold.ttf) format("truetype");
+	}
+	@font-face{
+	    font-family: "Raleway Medium";
+	    src: url(Raleway-Medium.ttf) format("truetype");
+	}
+	h1, h2, h3, h4, h5, h6, h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+		font-family: "Chevin Medium";
+		color: #7b4400;
+	}
+	h1{
+		padding-bottom: 10%;
+		font-family: "Pacifico Regular" !important;
+		font-size: 182px !important;
+		color: #fff;
+	}
+	h2{font-size: 42px !important;}
+	h3{font-size: 36px !important;}
+	h4{font-size: 23px !important;}
+	h5{font-size: 22px !important;}
+	h6{font-size: 21px !important;}
+	p,a,label,th,td,li, input{
+		font-family: "Chevin Medium";
+		font-size: 18px !important;
+		letter-spacing: 0.9px !important;
+		color: #6D6E71 !important;
+
+	}
+	.container-fluid{position: relative;}
+	.rlgu{right: unset !important;}
+	.pt-lg-14p{padding-top: 14% !important;}
+	.ts{text-shadow: 2px 2px 3px rgba(74,74,74,0.65);}
+	.bs{box-shadow: 2px 2px 10px rgba(74,74,74,0.65);}
+	.bg-lightpink{background: #f1f2f2 !important;}
+	.font-lightgreen,.font-lightgreen p{color: #819e82 !important;}
+	.line-white{border: 1px solid #fff;}
+	.line-brown{border: 1px solid #cb9f60;}
+	.line-yellow{border: 1px solid #fddd26;}
+	
+/* Navbar */
+	nav{
+		position: fixed;
+		z-index: 8;
+		top: 40%;
+		right: 1%;
+		width: auto;
+	}
+	nav ul li{
+		margin: 15px 0;
+	}
+	nav ul li a .dot{
+		width: 15px;
+		height: 15px;
+		background: #fff;
+		border-radius: 50%;
+		box-shadow: 2px 2px 10px rgba(74,74,74,0.25);
+	}
+	nav ul li a:hover .dot,
+	nav li a.active .dot{
+		background: #cb9f60;
+	}
+	@media screen and (max-width: 846px) {
+		nav{right: -7%;}
+		nav ul li a.nav-link{padding: .2rem 1rem;}
+		nav ul li a .dot{
+			width: 10px;
+			height: 10px;
+		}
+	}
+/* Footer */
+	footer{background: #fff;}
+	footer p,
+	footer a{
+		margin-bottom: 0;
+		font-family: "Raleway Medium";
+		font-size: 19px !important;
+		color: #7b4400 !important;
+	}
+	footer p b{
+		font-family: "Raleway ExtraBold";
+		font-weight: unset;
+	}
+	footer .button-footer{
+		margin-right: 3%;
+		padding: 3% 7%;
+		border-radius: 10px;
+		color: #fff !important;
+		background: #cb9f60;
+		border: 1px solid #cb9f60;
+	}
+	footer .button-footer:hover{
+		color: #cb9f60 !important;
+		background: #fff;
+	}
+	
+/* Page Home */
+	/* Banner */
+        #banner .ornament1{
+            position: absolute;
+            top: -2%;
+            left: 2%;
+            width: 22%;
+        }
+        #banner .ornament2{
+            position: absolute;
+            top: -5%;
+            right: 3%;
+            width: 22%;
+        }
+        #banner .ornament3{
+            top: 55%;
+            right: 54%;
+            width: 19%;
+        }
+        #banner .ornament4{
+            position: absolute;
+            bottom: 5%;
+            left: 2%;
+            width: 10%;
+        }
+        #banner .ornament5{
+            position: absolute;
+            z-index: 1;
+            bottom: -11%;
+            right: 5%;
+            width: 20%;
+        }
+    /* About */
+        #about .ornament1{
+            position: absolute;
+            z-index: 1;
+            bottom: -11%;
+            left: 5%;
+            width: 18%;
+        }
+        #about .wrap{
+            position: absolute;
+            top: 15%;
+            right: 8%;
+            width: 60%;
+            text-align: right;
+        }
+        #about .wrap h6{
+            margin-bottom: 2%;
+            font-family: "Chevin Bold";
+            letter-spacing : 1.05px;
+            color: #cb9f60;
+        }
+        #about .wrap h2{
+            font-family: "MrBedfort Regular";
+            color: #fff;
+        }
+    /* Date & Place */
+        #dateandplace .ornament1{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            width: 87%;
+        }
+        #dateandplace .ornament2{
+            position: absolute;
+            z-index: 1;
+            bottom: -9%;
+            left: -16%;
+            width: 40%;
+        }
+        #dateandplace h4{color: #939598;}
+        #dateandplace table{
+            margin-top: 10%;
+            width: 100%;
+        }
+        #dateandplace table td{padding-bottom: 10%;}
+        #dateandplace table td:first-child{
+            width: 17%;
+            vertical-align: top;
+        }
+        #dateandplace table td:last-child{
+            padding-left: 5%;
+            width: 78%;
+        }
+        #dateandplace table .icon{width: 100%;}
+        #dateandplace table h4{
+            margin-bottom: 5%;
+            color: #6D6E71;
+        }
+    /* RSVP */
+        #rsvp .background{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #rsvp .ornament1{
+            position: absolute;
+            z-index: 1;
+            top: -9%;
+            right: 7.5%;
+            width: 10%;
+        }
+        #rsvp .wrap .timeline{
+            position: relative;
+            margin-right: 1%;
+        }
+        #rsvp .wrap .timeline .timeline-item{
+            position: relative;
+            padding: 30px;
+            font-family: "Chevin Medium Italic";
+            font-size: 23px !important;
+            letter-spacing: 1.15px !important;
+            color: #AB7018 !important;
+            text-align: left;
+            border-left: 4px solid #fff;
+            list-style-type: none;
+            --item-width: calc(98%);
+        }
+        #rsvp .wrap .timeline .timeline-item .hide{
+            display: none;
+            position: absolute;
+            left: -4px;
+            width: 4px;
+            height: 40px;
+            background: #fedb21;
+        }
+        #rsvp .wrap .timeline .timeline-item:first-child .hide{
+            display: block;
+            top: 0;
+        }
+        #rsvp .wrap .timeline .timeline-item:last-child .hide{
+            display: block;
+            bottom: -1px;
+        }
+        #rsvp .wrap .timeline .timeline-item::after{
+            content: attr(data-date);
+            position: absolute;
+            top: 30px;
+            right: calc(var(--item-width) + 40px);
+            transform: rotate(-90deg);
+            float: right;
+            white-space: nowrap;
+            font-family: "Chevin Medium Italic";
+            font-size: 23px;
+            letter-spacing: 1.15px;
+            color: #7B4400;
+        }
+        #rsvp .wrap .timeline .timeline-item::before{
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            width: 16px;
+            height: 16px;
+            background-color: #ff3d3c;
+            border-radius: 50%;
+        }
+        #rsvp .form-rsvp{
+            position: absolute;
+            padding: 6.5% 5%;
+            top: -20%;
+            right: 10%;
+            width: 43.3%;
+            background: #ab7018;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        #rsvp .form-rsvp h3{
+            margin-bottom: 15%;
+            width: 360px;
+            font-family: "Chevin Bold";
+            letter-spacing : 1.8px;
+            color: #fff;
+        }
+        #rsvp form label,
+        #rsvp form .guest input[type=number],
+        #rsvp form .guest input[type=number]::placeholder{color: #fff !important;}
+        #rsvp form .radio-toolbar label{margin-left: 5px;}
+        #rsvp form input[type=text],
+        #rsvp form input[type=email],
+        #rsvp form input[type=number]{
+            color: #fff !important;
+            background: transparent;
+            border: 1px solid #cb9f60;
+            border-radius: 0;
+        }
+        ::-webkit-input-placeholder{color: #AEAEAF !important;}
+        ::-ms-input-placeholder{color: #AEAEAF !important;}
+        ::placeholder{color: #AEAEAF !important;}
+        #rsvp form input::-webkit-outer-spin-button,
+        #rsvp form input::-webkit-inner-spin-button{
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #rsvp form input[type=number] {
+            -moz-appearance:textfield; /* Firefox */
+        }
+        #rsvp form input[type=radio] {
+            margin: -5px 0px;
+            padding: 0.5em;
+            -webkit-appearance: none;
+            border-radius: 50%;
+            border: 1px solid #cb9f60;
+        }
+        #rsvp form input[type=radio]:checked,
+        #rsvp form input[type=radio]:hover{background: #cb9f60;}
+        #rsvp form input[type=radio]:focus{outline-color: transparent;}
+        #rsvp form .guest{padding-bottom: 3%;}
+        #rsvp form .guest input[type=number]{
+            text-align: center;
+            background: transparent;
+            border: none;
+            width: 10%;
+        }
+        #rsvp form .guest a{
+            margin: 0;
+            padding-top: 0;
+            border: none;
+        }
+        #rsvp form .guest a:first-child{padding-left: 0;}
+        #rsvp form .button-form{
+            padding: 8px 35px;
+            font-family: "Chevin Bold";
+            font-size: 20px !important;
+            letter-spacing: 1px !important;
+            color: #7B4400 !important;
+            background: #ffdf25;
+            border: 1px solid #ffdf25;
+            border-radius: 50px;
+        }
+        #rsvp form .button-form:hover{
+            color: #ffdf25 !important;
+            background: transparent;
+        }
+        #rsvp form .button-download{
+            padding-top: 10px;
+            font-family: "Chevin Bold";
+            font-size: 15px !important;
+            letter-spacing: 0.75px !important;
+            color: #fff !important;
+            border-bottom: 1px solid #fff;
+        }
+        #rsvp form .button-download:hover{
+            color: #ffdf25 !important;
+            border-bottom: 1px solid #ffdf25;
+        }
+        #rsvp form .fr{float: right !important;}
+        #rsvp #ebrochure.modal{padding: 0 !important;}
+        #rsvp #ebrochure.modal .modal-dialog{
+            margin: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content{
+            margin: 0 auto;
+            padding: 5%;
+            width: 70%;
+            border: unset;
+            border-radius: unset;
+            background: transparent;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .popup-bg{border-radius: 30px;}
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .close{
+            position: absolute;
+            top: -3%;
+            right: 0;
+            width: 7%;
+            opacity: 1;
+            cursor: pointer;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .ornament1{
+            position: absolute;
+            margin: 0 auto;
+            top: -7%;
+            left: 17%;
+            right: 0;
+            width: 7%;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .ornament2{
+            position: absolute;
+            top: 59%;
+            right: -4%;
+            transform: translateY(-50%);
+            width: 45%;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc{
+            padding: 5%;
+            left: 5%;
+            right: unset;
+            width: 60%;
+            border-radius: 50px;
+            background: #fff;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .wraptitle{
+            margin: 0 auto;
+            margin-left: 5%;
+            width: 80%;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .wraptitle .title{
+            font-family: "Pacifico Regular";
+            font-size: 112px;
+            line-height: 72px;
+            letter-spacing: -5.6px;
+            color: #D1D3D4;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .subtitle{
+            font-family: "Chevin Medium";
+            font-size: 31px;
+            letter-spacing: 1.55px;
+            text-align: center;
+            color: #AB7018;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .line-yellow{
+            margin: 5% auto;
+            width: 50%;
+        }
+        #rsvp #ebrochure.modal .modal-dialog .modal-content .boxc p{
+            font-size: 15px !important;
+            letter-spacing: 0.75px !important;
+            color: #CB9F60 !important;
+        }
+    /* Brief */
+        #brief .ornament1{
+            right: unset;
+            width: 19%;
+        }
+        #brief .ornament2{
+            position: absolute;
+            top: -85%;
+            right: 0;
+        }
+        #brief .boxc h3{
+            font-family: "Chevin Medium Italic";
+            letter-spacing: 1.8px !important;
+            color: #fff !important;
+        }
+	
+
+@media screen and (max-width: 846px) {
+	h1{
+		font-size: 88px !important;
+		line-height: 90px !important;
+	}
+	h2{font-size: 31px !important;}
+	h3{
+		font-size: 23px !important;
+		letter-spacing : 1.15px;
+	}
+	h4{font-size: 15px !important;}
+	h5{
+		font-size: 12px !important;
+		letter-spacing: 0.75px;
+	}
+	h6{font-size: 21px !important;}
+	p,a,label,th,td,li, input{
+		font-size: 10px !important;
+		letter-spacing: 0.5px;
+	}
+	.pt-m-0{padding-top: 0 !important;}
+	.mtext-center{text-align: center !important;}
+	.mtext-right{text-align: right !important;}
+	.ts{text-shadow: 1px 1px 2px rgba(74,74,74,0.65);}
+	/* Footer */
+		footer p,
+		footer a{
+			font-size: 10px !important;
+			line-height: 17.6px;
+			letter-spacing: 0.85px !important;
+		}
+	/* Page Home */
+		/* Banner */
+			#banner{overflow: hidden;}
+			#banner .banner-bg{
+				width: 100%;
+				height: 100vh;
+			}
+			#banner .ornament1{width: 40%;}
+			#banner .ornament2{
+				top: 0;
+				right: -21%;
+				width: 42%;
+			}
+			#banner .ornament3{
+				top: 55%;
+				left: -27%;
+				right: unset;
+				width: 50%;
+			}
+			#banner .ornament4{
+				left: 7%;
+				width: 20%;
+			}
+			#banner h3{font-size: 18px !important;}
+			#banner .logo{
+				margin: 0 auto;
+				width: 10%;
+			}
+		/* About */
+			#about .ornament1{
+				bottom: -11.5%;
+				width: 50%;
+			}
+			#about .ornament2{
+				position: absolute;
+				top: -16%;
+				right: 15%;
+				width: 25%;
+			}
+			#about .images{
+				height: 100vh;
+				object-fit: cover;
+			}
+			#about .wrap{
+				top: 25%;
+				right: 10%;
+			}
+			#about .wrap h6{
+				margin-bottom: 10%;
+				font-size: 10px !important;
+			}
+		/* Date & Place */
+			#dateandplace .ornament2{
+				bottom: -15%;
+				left: unset;
+				right: 0;
+				width: 30%;
+			}
+			#dateandplace iframe{height: 50vh;}
+			#dateandplace .line-brown{margin: 10% auto;}
+			#dateandplace table{margin-top: 0;}
+			#dateandplace table td:first-child{width: 20%;}
+			#dateandplace table td:last-child{width: 80%;}
+		/* RSVP */
+			#rsvp .background{object-fit: cover;}
+			#rsvp .ornament1{
+				top: unset;
+				bottom: 51%;
+				width: 20%;
+			}
+			#rsvp .wrap{padding: 0 10% 10%;}
+			#rsvp .wrap .timeline .timeline-item{font-size: 15px !important;}
+			#rsvp .wrap .timeline .timeline-item:last-child .hide{bottom: -13px;}
+			#rsvp .wrap .timeline .timeline-item::after{
+				top: 40px;
+				right: calc(var(--item-width) + 20px);
+				font-size: 15px;
+			}
+			#rsvp .form-rsvp{
+				position: relative;
+				padding: 20% 10%;
+				top: 0;
+				right: 0;
+				width: 100%;
+			}
+			#rsvp .form-rsvp h3{width: 100%;}
+			#rsvp form .button-form{font-size: 13px !important;}
+			#rsvp form .button-download{font-size: 10px !important;}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content{
+				padding: 10%;
+				width: 100%;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .close{
+				right: -3%;
+				width: 15%;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .ornament1{
+				left: 7%;
+				width: 15%;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .ornament2{
+				top: unset;
+				bottom: 2%;
+				right: 2%;
+				transform: unset;
+				width: 80%;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc{
+				padding: 20% 5%;
+				top: 5%;
+				left: 0;
+				right: 0;
+				transform: unset;
+				width: 90%;
+				height: auto;
+				border-radius: 25px;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .wraptitle{}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .wraptitle .title{
+				font-size : 59px;
+				line-height : 32.84px;
+				letter-spacing : -2.95px;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .subtitle{
+				font-size : 15px;
+				letter-spacing : 0.75px;
+			}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc .line-yellow{margin: 10% auto;}
+			#rsvp #ebrochure.modal .modal-dialog .modal-content .boxc p{
+				font-size: 10px !important;
+				letter-spacing: 0.5px !important;
+				text-align: center;
+			}
+		/* Brief */
+			#brief .brief-bg{
+				height: 20vh;
+				object-fit: cover;
+			}
+			#brief .ornament1{
+				transform: unset;
+				width: 20% !important;
+			}
+			#brief .ornament2{
+				top: -100%;
+				width: 60%;
+			}
+			#brief .boxc{width: 80%;}
+			#brief .boxc h3{font-size: 15px !important;}
+}

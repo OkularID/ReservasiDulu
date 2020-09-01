@@ -28,11 +28,6 @@
             <div class="col-lg-7 py-lg-4 text-right d-none d-lg-block">
                <ul class="list-unstyled d-inline">
                    <li>
-                       <a href="#">
-                            HOME
-                       </a>
-                   </li>
-                   <li>
                        <a href="#gallery">
                             ABOUT
                        </a>
@@ -45,11 +40,6 @@
                    <li>
                        <a href="#rsvp-section">
                             RSVP
-                       </a>
-                   </li>
-                   <li>
-                       <a href="wishlist.html">
-                            WISH LIST
                        </a>
                    </li>
                </ul> 
@@ -68,11 +58,6 @@
                           </h3>
                         </div>
                         <ul class="list-unstyled">
-                        <li>
-                       <a href="#">
-                            HOME
-                       </a>
-                   </li>
                    <li>
                        <a href="#gallery">
                             ABOUT
@@ -88,11 +73,7 @@
                             RSVP
                        </a>
                    </li>
-                   <li>
-                       <a href="wishlist.html">
-                            WISH LIST
-                       </a>
-                   </li>
+                   </ul>
                     </div>
         </div>
     </div>
@@ -144,16 +125,16 @@
         <div class="offset-lg-1 pl-lg-5 col-lg-9">
           <div class="carousel-gallery owl-theme">
               <div class="item">
-                <img src="images/item-gallery-05.jpg" class="img-fluid">
+                <img src="images/item-gallery-05.jpg" data-toggle="modal" data-target="#images_1" class="img-fluid">
               </div>
               <div class="item">
-                <img src="images/item-gallery-06.jpg" class="img-fluid">
+                <img src="images/item-gallery-06.jpg" data-toggle="modal" data-target="#images_2" class="img-fluid">
               </div>
               <div class="item">
-                <img src="images/item-gallery-07.jpg" class="img-fluid">
+                <img src="images/item-gallery-07.jpg" data-toggle="modal" data-target="#images_3" class="img-fluid">
               </div>
               <div class="item">
-                <img src="images/item-gallery-07.jpg" class="img-fluid">
+                <img src="images/item-gallery-07.jpg" data-toggle="modal" data-target="#images_4" class="img-fluid">
               </div>
           </div>
         </div>
@@ -250,17 +231,24 @@
           <p class="text-gray pt-lg-3">
             Will you bring additional guest(s) along with you?
           </p>
-          <div class="position-relative">
-            <input class="form-control" type="number" name="your-guest" id="spinner" value="1" placeholder="1" min="1" max="10" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
-            <a role="button" id="step-increment" class="btn btn-default pt-1 pt-lg-2" aria-label="add 1" aria-labelledby="step-increment label-text">
-                <h5 class="text-gray">
-                    <i class="fa fa-chevron-down"></i>
-                </h5>
-            </a>
+          <div class="row">
+            <div class="col-lg-1 px-0">
+              <a role="button" id="step-decrement" class="btn btn-default pt-3" aria-label="remove 1" aria-labelledby="step-decrement label-text">
+                <i class="fa fa-chevron-left text-gray"></i>
+              </a>
+            </div>
+            <div class="col-lg-2 px-0">
+              <input class="w-100 form-control bg-white text-center" disabled type="number" name="qty" id="spinner" value="1" aria-live="polite" tabindex="-1" aria-labelledby="label-text">
+            </div>
+            <div class="col-lg-1 px-0">
+              <a role="button" id="step-increment" class="btn btn-default  pt-3" aria-label="add 1" aria-labelledby="step-increment label-text">
+                <i class="fa fa-chevron-right text-gray"></i>
+              </a>
+            </div>
           </div>
           <br>
           <a href="#" class="button-submit" data-toggle="modal" data-target="#form-submit">Submit</a><br><br>
-          <a class="link-rsvp text-gray" href="#">Download Invitation</a> <a class="ml-5 link-rsvp text-gray" href="wishlist.html">View Wishlist Idea</a>
+          <a class="link-rsvp text-gray" href="#">Download Invitation</a>
         </div>
         </div>
       </div>
@@ -296,13 +284,59 @@
             </p>
             <br>
             <p class="text-gray mx-auto text-center">
-                Your presence on my celebration means a lot to me.<br>
-                Cannot wait to see you there!
+              Your presence on my celebration means a lot to me<br>
+              and my family. Cannot wait to see you there! Don’t<br>
+              forget to select the gift you may give from my wishlist,<br>
+              so others will not need to give the same gift as you.
             </p>
+            <div class="col-lg-12 text-center pt-5">
+              <a class="button-pink" href="wishlist.html">View my gift wishlist!</a>
+            </div>
             </div>
         </div>
       </div>
     </div>
+    <!-- Modal -->
+      <div class="modal fade" id="images_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                      <img class="mx-auto d-block" src="images/item-gallery-05.jpg" alt="images">
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal fade" id="images_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                      <img class="mx-auto d-block" src="images/item-gallery-06.jpg" alt="images">
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal fade" id="images_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                      <img class="mx-auto d-block" src="images/item-gallery-07.jpg" alt="images">
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal fade" id="images_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h1 class="text-white text-right" data-dismiss="modal">&times;</h1>
+                      <img class="mx-auto d-block" src="images/item-gallery-07.jpg" alt="images">
+                  </div>
+              </div>
+        </div>
+      </div>
     <!-- Features JS -->
     <script type="text/javascript" src="../../features/animatecss/wow.min.js"></script>
     <script>

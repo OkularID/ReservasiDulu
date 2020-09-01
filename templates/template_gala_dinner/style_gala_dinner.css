@@ -48,6 +48,10 @@ input[type=number] {
 }
 .nav-wedding li.mx-4 a{
 	color: #fff;
+	transition: all .3s;
+}
+.nav-wedding li.mx-4 a:hover{
+	border-bottom: 1px solid #fff;
 }
 .header-home .header-home-content{
 	position: absolute;
@@ -107,7 +111,7 @@ input[type=number] {
 	width: 20%;
 }
 .time-div{
-	width: 9%;
+	width: 12%;
 }
 .home-bottom-content input[type=text], .home-bottom-content input[type=text]:focus,.home-bottom-content input[type=number], .home-bottom-content input[type=number]:focus{
 	border: 2px solid #fff;

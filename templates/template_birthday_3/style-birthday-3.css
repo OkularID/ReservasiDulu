@@ -1,6 +1,13 @@
 	body{
 		overflow-x: hidden;
 	}
+	input[type="checkbox"], input[type="radio"] {
+		box-sizing: border-box;
+		padding: 0;
+		-ms-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
 /* Default */
 	@font-face{
 	    font-family: "Sacramento";
@@ -25,7 +32,7 @@
 	h4{font-size: 26px !important;}
 	p,a,label,th,td,li, input{
 		font-family: "Proxima Nova";
-	  	font-size: 20px;
+	  	font-size: 17px;
 	  	line-height: 29px;
 	  	letter-spacing: 0.4px;
 	  	color: #333333;
@@ -35,7 +42,10 @@
 	.pt-lg-6p{padding-top: 6% !important;}
 	.pb-lg-6p{padding-bottom: 6% !important;}
 	.font-gold,.font-gold p{color: #f6c834 !important;}
-	.font-grey,.font-grey p{color: #79797A;}
+	.font-grey,.font-grey p{color: #3C3C3C;}
+	.font-light-grey{
+		color: #aeaeaf;
+	}
 	.font-lightgrey,.font-lightgrey p{color: #AEAEAF !important;}
 	.font-bluesky,.font-bluesky p{color: #79cdd5;}
 	.bg-bluesky{background: #79cdd5;}
@@ -52,6 +62,12 @@
 		background: #79cdd5;
 		border: none;
 		border-radius: 50px;
+		border: 2px solid #79cdd5;
+		transition: all .3s;
+	}
+	.button-bluesky:hover{
+		color: #79cdd5;
+		background: #fff;
 	}
 	.button-trans{
 		padding: 5px 20px;
@@ -163,6 +179,11 @@
 		margin-left: 10px;
 		width: 130px;
 		text-align: center;
+		transition: all .3s;
+	}
+	footer .button-trans:hover{
+		color: #fff;
+		background-color: #808184;
 	}
 /* Page Home */
 	#banner .box{
@@ -301,7 +322,7 @@
 		border-bottom: 2px solid #f6c834;
 	}
 	#rsvp #ebrochure .modal-content,
-	#wish #wishlist .modal-content{
+	#wish #wishlist .modal-content, #brief-wishlist #wishlist .modal-content, #brief-wishlist #email_wishlist .modal-content{
 		padding: 15px;
 		width: 100%;
 		border-radius: 50px;
@@ -336,8 +357,10 @@
 		line-height: 100px;
 		color: #F5947B;
 	}
-	#banner-wishlist .box p,
-	#brief-wishlist .boxc p{color: #79797a;}
+	#banner-wishlist .box p{color: #79797a;}
+	#brief-wishlist .boxc p{
+		color: #929497;
+	}
 	#wish{
 		margin-top: -15vh;
 		background: #79cdd5;
@@ -350,11 +373,52 @@
 	}
 	#brief-wishlist{margin-bottom: -3vh;}
 	#brief-wishlist .boxc{
-		left: 40%;
-		width: 27%;
+		left: unset;
+		width: 50%;
 	}
-	
-
+	#brief-wishlist .boxc ul{
+		columns: 3;
+		-webkit-columns: 3;
+		-moz-columns: 3;
+		width: 85%;
+	}
+	#brief-wishlist .boxc .item-wishlist{
+		border: 1px solid #fff;
+		padding: 10px 15px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 15px;
+		transition: all .3s;
+	}
+	#brief-wishlist .boxc .item-wishlist.custom{
+		margin-right: 37%;;
+	}
+	#brief-wishlist .boxc .item-wishlist:hover{
+		background-color: #fff;
+	}
+	#brief-wishlist .boxc .item-wishlist a{
+		color: #fff;
+		letter-spacing: 1.5px;
+	}
+	#brief-wishlist .boxc .item-wishlist:hover a{
+		color: #7aced6;
+	}
+	#brief-wishlist .title{
+		font-family: "Sacramento";
+		font-size: 80px;
+		letter-spacing: 2.4px;
+		color: #fff;
+	}
+	#brief-wishlist #wishlist h2, #brief-wishlist #email_wishlist h2{
+		font-size: 2rem !important;
+	}
+	#brief-wishlist .form-text{
+		border: 2px solid #79cdd5;
+		border-radius: 0;
+	}
+	#brief-wishlist #wishlist .font-small, #brief-wishlist #email_wishlist .font-small{
+		font-size: 12px;
+	}
 @media screen and (max-width: 846px) {
 	p,a,label,th,td,li, input{
 		font-size: 9px !important;
@@ -484,7 +548,7 @@
 		#wishpage footer{margin-top: 3vh;}
 		#brief-wishlist .motif{margin: 0 0 5vh;}
 		#rsvp #ebrochure .modal-content,
-		#wish #wishlist .modal-content{
+		#wish #wishlist .modal-content, #brief-wishlist #wishlist .modal-content, #brief-wishlist #email_wishlist .modal-content{
 			margin: 0 auto;
 			width: 90%;
 		}
@@ -499,5 +563,8 @@
 			width: 80%;
 		}
 		.modal-content .font-bluesky{line-height: 21px;}
+		#rsvp form input[type="number"] {
+			margin-left: 1.5rem !important;
+		}
 	}
 }

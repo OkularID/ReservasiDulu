@@ -31,7 +31,6 @@
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#dateandplace">DATE & PLACE</a></li>
                         <li><a href="#rsvp">RSVP</a></li>
-                        <li><a href="wishlist.html">WISH LIST</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +49,6 @@
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="#dateandplace">DATE & PLACE</a></li>
                             <li><a href="#rsvp">RSVP</a></li>
-                            <li><a href="wishlist.html">WISH LIST</a></li>
                         </ul>
                     </div>
             </div>
@@ -81,8 +79,10 @@
                     <img class="img-fluid motif w-lg-100p d-none d-lg-block" src="images/image-03.png" />
                     <img class="img-fluid motif w-lg-100p d-block d-lg-none" src="images/mobile-image-03.png" />
                     <div class="boxc text-center">
-                        <h2 data-aos="fade-down" class="font-gold ts">Christine’s</h2>
-                        <h2 data-aos="fade-down" class="font-white ts mb-m-25 mb-lg-40">3<sup>rd</sup> Birthday</h2>
+                        <div data-aos="fade-down" >
+                        <h2 class="font-gold ts">Christine’s</h2>
+                        <h2 class="font-white ts mb-m-25 mb-lg-40">3<sup>rd</sup> Birthday</h2>
+                        </div>
                         <div class="line-white w-lg-10p ma-lg mb-m-25 mb-lg-45"></div>
                         <div data-aos="fade-up" data-aos-offset="-70" class="w-m-80p w-lg-25p ma-lg font-white">
                             <p>Please join us in celebration of Christine’s third birthday. It’s a party and you are cordially invited.</p>
@@ -143,7 +143,8 @@
                                 </div>
                                 <div class="col-6 col-lg-6">
                                     <div class="box font-grey">
-                                        <p>Marina Village Baja Room 939 Quivira Way, San Diego California 92109</p>
+                                        <h5>Marina Village</h5>
+                                        <p>Baja Room 939 Quivira Way, San Diego California 92109</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 info font-grey">
@@ -177,9 +178,9 @@
                         <label class="d-block mb-lg-2p">Are you attending the party?</label>
                         <div class="mb-m-5p mb-lg-4p">
                             <input type="radio" id="yes" name="gender" value="yes">
-                            <label class="radio mb-lg-0 mr-lg-10" for="yes">Yes</label>
+                            <label class="radio mb-lg-0 mr-lg-5 ml-lg-2" for="yes">Yes</label>
                             <input type="radio" id="no" name="gender" value="no">
-                            <label class="radio mb-lg-0" for="no">No</label>
+                            <label class="radio mb-lg-0 ml-lg-2" for="no">No</label>
                         </div>
                         <label class="d-block">Fill in your full name and contact lists</label>
                         <div class="row mb-lg-4p">
@@ -210,7 +211,7 @@
                     </form>
                     <div class="modal fade" id="ebrochure">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
+                            <div class="modal-content pb-5">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-lg-12 text-center pl-lg-0 pr-lg-0">
@@ -220,7 +221,16 @@
                                             <img class="img-fluid image ml-lg-10p" src="images/popup-02.png" />
                                             <p class="font-bluesky font-lg-21"><b>See you at the celebration!</b></p>
                                             <div class="w-lg-75p ma-lg mb-lg-10p font-grey">
-                                                <p>Your presence on my celebration means a lot to me and my family. Cannot wait to see you there!</p>
+                                                <p>
+                                                    Your presence on my celebration means a lot to me and my family.<br>
+                                                    Cannot wait to see you there! Don’t forget to select the gift you may give<br>
+                                                    from my wishlist, so others will not need to give the same gift as you.<br>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a class="button-bluesky text-white py-2 px-3" href="wishlist.html">
+                                                    View my gift wishlist!
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -231,7 +241,7 @@
                 </div>
                 <div class="col-lg-12">
                     <a target="_blank" href="Lorem-Ipsum.pdf">Download Invitation</a>
-                    <a href="wishlist.html">View Wishlist Idea</a>
+                    <a href="wishlist.html" class="d-none">View Wishlist Idea</a>
                 </div>
             </div>
         </div>
