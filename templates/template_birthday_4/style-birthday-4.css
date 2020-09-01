@@ -304,7 +304,7 @@
         }
         #rsvp form label.radio{font-family: "Krub Bold";}
         #rsvp form label.font-lightgrey{font-size: 15px !important;}
-        #rsvp form .button-form{
+        #rsvp form .button-form, .button-cyan{
             background: url('images/button.png');
             background-size: cover !important;
             background-repeat: no-repeat !important;
@@ -317,7 +317,7 @@
             color: #fff;
             transition: all .3s;
         }
-        #rsvp form .button-form:hover, .button-default:hover{
+        #rsvp form .button-form:hover, .button-default:hover, .button-cyan:hover{
             background: url('images/button-07.png');
             color: #fff;
         }
@@ -361,10 +361,17 @@
 			border-bottom: unset;
 			cursor: pointer;
         }
+        .button-cyan{
+            color: #fff;
+            border: none;
+        }
+        .button-cyan:hover{
+
+        }
     /* WISHLIST */
         #wishlist .motif{
             position: absolute;
-            top: -60%;
+            top: -220%;
             left: 0;
         }
         #wishlist .motif2{
