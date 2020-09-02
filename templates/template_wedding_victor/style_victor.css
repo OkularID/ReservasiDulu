@@ -174,6 +174,11 @@ input[type=number] {
 	transform: translateX(-50%);
 	bottom: 180px;
 	z-index: 3;
+	transition: all .3s;
+	color: #ceb49b;
+}
+.view-click:hover{
+	color: #657565;
 }
 .view-click.hide{
 	display: none;
@@ -183,6 +188,11 @@ input[type=number] {
 	right: 8rem;
 	top: 1rem;
 	z-index: 9;
+	color: #ceb49b;
+	transition: all .3s;
+}
+.view-close:hover{
+	color: #657565;
 }
 .view-close.hide{
 	display: none;
@@ -260,9 +270,14 @@ input[type=number] {
 	opacity: 0.4;
 }
 .contact .submit-btn{
+	color: #fff;
 	border: none;
 	border-bottom: 2px solid;
 	background: none;
+	transition: all .3s;
+}
+.contact .submit-btn:hover{
+	color: #ceb49b;
 }
 .footer{
 	background-color: #d6cfc9;
@@ -292,7 +307,7 @@ input[type=number] {
 	border-bottom: 2px solid;
 }
 .button-download:hover{
-	color: #ceb49b;
+	color: #fff;
 }
 .footer .button:hover{
 	padding: 5px 20px;
