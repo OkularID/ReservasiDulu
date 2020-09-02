@@ -63,12 +63,17 @@
         transition: .5s;
 	}
 	.button-pink{
-		padding: 4% 10%;
-		letter-spacing: 2.8px;
-		color: #fff;
-		background: #ff92a7;
-		border-radius: 50px;
-		border: 1px solid #ff92a7;
+		padding: 9% 14%;
+        letter-spacing: 2.8px;
+        color: #fff !important;
+        background: #ff92a7;
+        border-radius: 50px;
+        border: 1px solid #ff92a7;
+    }
+    .button-pink:hover{
+        color: #ff92a7 !important;
+        background: #fff;
+        border: 1px solid #fff;
 	}
 	.button-pink:hover{
 		color: #ff92a7;
@@ -88,6 +93,20 @@
         background: #fff;
         color: #a7dee9;
         transition: .5s;
+    }
+    .button-cyan{
+        background-color: #a7dee9;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        color: #fff;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.19);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.19);
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.19);
+        letter-spacing: 1px;
+    }
+    .button-cyan:hover{
+        background-color: #fff;
+        color: #a7dee9;
     }
 /* Navbar */
 	nav{
@@ -167,7 +186,7 @@
 			color: #58595B;
 			border-bottom: 2px solid #58595B;
 		}
-		#wishlist nav h3{color: #58595b !important;}
+        #wishlist nav h3{color: #58595b !important;}
 	}
 /* Footer */
 	footer p,
@@ -396,7 +415,9 @@
         #rsvp form table tr td:last-child{width: 70%;}
         #rsvp form input[type=text],
         #rsvp form input[type=email],
-        #rsvp form input[type=number]{
+        #rsvp form input[type=number],
+        #wishlist-popup input[type=text],
+        #wishlist-popup input[type=email]{
             padding: 5px 10px;
             width: 80%;
             font-size : 15px !important;
@@ -453,7 +474,7 @@
         }
         #rsvp #ebrochure .boxc h2 span{font-size: 30px !important;}
         #rsvp #ebrochure .boxc p{
-            font-size : 21px !important;
+            font-size : 17px !important;
             letter-spacing : 0.53px;
         }
         #rsvp #ebrochure .boxc .button-blue{
@@ -483,7 +504,11 @@
 
 /* Page Wishlist */
 	/* CONTENT */
-		#content-wishlist{width: 100%;}
+		#content-wishlist{
+            width: 100%;
+            background-image: url(images/section-wishlist-02.jpg);
+            background-size: cover;
+        }
         #content-wishlist .bg1{
             position: absolute;
             top: 10%;
@@ -493,29 +518,26 @@
             bottom: 8%;
         }
         #content-wishlist p span{color: #ff786e;}
-        #content-wishlist #wishlist-popup .modal-lg{max-width: 70%;}
-        #content-wishlist #wishlist-popup .boxc{
+        #content-wishlist #wishlist-popup .modal-lg, #content-wishlist #confirm-popup .modal-lg{max-width: 70%;}
+        #content-wishlist #wishlist-popup .boxc, #content-wishlist #confirm-popup .boxc{
             text-align: center;
         }
-        #content-wishlist #wishlist-popup .boxc h2{
+        #content-wishlist #wishlist-popup .boxc h2, #content-wishlist #confirm-popup .boxc h2{
             font-size : 21px !important;
             line-height : 29.31px !important;
             letter-spacing : 4.2px;
         }
-        #content-wishlist #wishlist-popup .boxc h2 span{font-size: 30px !important;}
-        #content-wishlist #wishlist-popup .boxc p{
-            font-size : 21px !important;
+        #content-wishlist #wishlist-popup .boxc h2 span, #content-wishlist #confirm-popup .boxc h2 span{font-size: 30px !important;}
+        #content-wishlist #wishlist-popup .boxc p, #content-wishlist #confirm-popup .boxc p{
+            font-size : 17px !important;
             letter-spacing : 0.53px;
         }
-        #content-wishlist #wishlist-popup .boxc .button-wishlist{
+        #content-wishlist #wishlist-popup .boxc .button-wishlist, #ebrochure .button-wishlist, #wishlist-popup .button-wishlist, #confirm-popup .button-wishlist{
             margin: 3% auto 0;
             cursor: pointer;
             display: block;
-            background: url('images/popup-03.png');
-            background-size: 100% 100% !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
-            padding: 55px 10px 10px 0;
+            background-color: #a7dee9;
+            padding: 3.9rem 0;
             width: 150px;
             height: 150px;
             font-size: 18px !important;
@@ -523,8 +545,66 @@
             text-align: center;
             border: none;
             color: #fff !important;
+            border-radius: 50%;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
         }
-	
+        #content-wishlist #wishlist-popup .boxc .button-wishlist:hover, #ebrochure .button-wishlist:hover, #wishlist-popup .button-wishlist:hover, #confirm-popup .button-wishlist:hover{
+            background-color: #fff;
+            color: #a7dee9 !important;
+        }
+        #ebrochure .button-yellow{
+            margin: 3% auto 0;
+            cursor: pointer;
+            display: block;
+            background-color: #eec319;
+            padding: 2.9rem 0;
+            width: 150px;
+            height: 150px;
+            font-size: 18px !important;
+            letter-spacing: 3.6px;
+            text-align: center;
+            border: none;
+            color: #fff !important;
+            border-radius: 50%;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+        }
+        #ebrochure .wrap-button{
+            width: 30%;
+            margin: 4rem auto 0;
+        }
+        #content-wishlist .col-lg-4 .title{
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%);
+            color: #fff;
+        }
+        .button-green{
+            margin: 3% auto 0;
+            cursor: pointer;
+            display: block;
+            background-color: #00704b;
+            padding: 2.9rem 0;
+            width: 150px;
+            height: 150px;
+            font-size: 18px !important;
+            letter-spacing: 3.6px;
+            text-align: center;
+            border: none;
+            color: #fff !important;
+            border-radius: 50%;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+        }
+        .button-green:hover{
+            background-color: #fff;
+            color: #00704b !important;
+        }
 
 @media screen and (max-width: 846px) {
 	h2{
@@ -652,7 +732,9 @@
             #rsvp form table tr td:last-child{padding-bottom: 10%;}
             #rsvp form input[type=text],
             #rsvp form input[type=email],
-            #rsvp form input[type=number]{
+            #rsvp form input[type=number],
+            #wishlist-popup input[type=text],
+            #wishlist-popup input[type=email]{
                 padding: 5px 10px;
                 width: 100%;
                 font-size : 15px !important;
@@ -691,18 +773,18 @@
             }
             #thanks .desc p{font-size: 12px !important;}
     /* Page Wishlist*/
-	    #content-wishlist #wishlist-popup .modal-lg{max-width: 100%;}
-	    #content-wishlist #wishlist-popup .boxc h2{
+	    #content-wishlist #wishlist-popup .modal-lg, #content-wishlist #confirm-popup .modal-lg{max-width: 100%;}
+	    #content-wishlist #wishlist-popup .boxc h2, #content-wishlist #confirm-popup .boxc h2{
 	    	font-size: 10px !important;
 	    	line-height: 15.31px !important;
 	    }
-	    #content-wishlist #wishlist-popup .boxc h2 span{font-size: 23px !important;}
-	    #content-wishlist #wishlist-popup .boxc p{
+	    #content-wishlist #wishlist-popup .boxc h2 span, #content-wishlist #confirm-popup .boxc h2 span{font-size: 23px !important;}
+	    #content-wishlist #wishlist-popup .boxc p, #content-wishlist #confirm-popup .boxc p{
 	    	margin-bottom: 10px;
 	    	font-size: 10px !important;
 	    	line-height: 16px;
 	    }
-	    #content-wishlist #wishlist-popup .boxc .button-wishlist{
+	    #content-wishlist #wishlist-popup .boxc .button-wishlist, #content-wishlist #confirm-popup .boxc .button-wishlist{
 	    	float: unset;
 			margin: 0 auto;
 	    	padding-top: 25px;
