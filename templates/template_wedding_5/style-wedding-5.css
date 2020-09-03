@@ -44,7 +44,12 @@
 		color: #F1F2F2;
 		background: #819e82;
 		border: none;
-		border-radius: 50px;
+        border-radius: 50px;
+        transition: all .3s;
+    }
+    .button-green:hover{
+        color: #819e82;
+		background: #F1F2F2;
     }
     .button-download{
 		padding: 10px 35px;
@@ -58,7 +63,8 @@
         box-shadow: 2px 2px 10px rgba(74,74,74,0.25);
     }
     .button-download:hover{
-        color: #819e82;
+        color: #fff;
+        background: #819e82;
     }
 /* Navbar */
 	nav{
@@ -94,7 +100,7 @@
 		padding-bottom: 5px;
 		color: #fff;
 		border-bottom: 2px solid #fff;
-		transition: .0s;
+		transition: all .3s;
 	}
 	.side-nav{
 		z-index: 1080;
