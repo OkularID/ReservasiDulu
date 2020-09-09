@@ -572,6 +572,10 @@
             -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
             box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
         }
+        #ebrochure .button-yellow:hover{
+            background-color: #fff;
+            color: #eec319 !important;
+        }
         #ebrochure .wrap-button{
             width: 30%;
             margin: 4rem auto 0;
